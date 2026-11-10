@@ -1,0 +1,84 @@
+{
+ "weeks": [
+  {
+   "week": 1,
+   "date": "2026-09-04",
+   "title": "제니 영어 인터뷰",
+   "subtitle": "BLACKPINK JENNIE",
+   "file": "week01.json",
+   "count": 14
+  },
+  {
+   "week": 2,
+   "date": "2026-09-12",
+   "title": "73 Questions With Zendaya",
+   "subtitle": "Vogue",
+   "file": "week02.json",
+   "count": 22
+  },
+  {
+   "week": 3,
+   "date": "2026-09-14",
+   "title": "마틸다 배우의 스피치",
+   "subtitle": "Imagination and Theatre",
+   "file": "week03.json",
+   "count": 11
+  },
+  {
+   "week": 4,
+   "date": "",
+   "title": "호주 억양 특강 — Sam Campbell 스탠드업",
+   "subtitle": "Growing Up In Australia With This Body",
+   "file": "week04.json",
+   "count": 13
+  },
+  {
+   "week": 5,
+   "date": "2026-10-07",
+   "title": "AI 아티스트의 강연",
+   "subtitle": "Creating with AI",
+   "file": "week05.json",
+   "count": 13
+  },
+  {
+   "week": 6,
+   "date": "2026-10-13",
+   "title": "Sadie Sink 인터뷰",
+   "subtitle": "Glamour Unfiltered",
+   "file": "week06.json",
+   "count": 16
+  },
+  {
+   "week": 7,
+   "date": "2026-10-25",
+   "title": "Katie Paris TED",
+   "subtitle": "Campaigns Spend Millions to Influence Voters. This Works Better",
+   "file": "week07.json",
+   "count": 15
+  },
+  {
+   "week": 8,
+   "date": "2026-10-31",
+   "title": "타블로의 고민 상담",
+   "subtitle": "Hey Tablo",
+   "file": "week08.json",
+   "count": 16
+  },
+  {
+   "week": 9,
+   "date": "2026-11-06",
+   "title": "Anne Hathaway Life in Looks",
+   "subtitle": "From The Devil Wears Prada to Interstellar",
+   "file": "week09.json",
+   "count": 16
+  },
+  {
+   "week": 10,
+   "date": "2026-11-15",
+   "title": "Kendall Jenner 크리스마스 홈투어",
+   "subtitle": "Architectural Digest Open Door",
+   "file": "week10.json",
+   "count": 15
+  }
+ ]
+}

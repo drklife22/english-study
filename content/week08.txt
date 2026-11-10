@@ -1,0 +1,107 @@
+week: 8
+date: 2026-10-31
+title: 타블로의 고민 상담
+subtitle: Hey Tablo
+video: https://youtu.be/9GZggCBZurY
+
+## here I am (still) ~ing | (남들은 다 앞서가는데) 나는 아직 ~하고 있다 | 자조 섞인 한탄. 문장 맨 앞에 와요.
+match: here i am; and here i am
+- Everyone's buying houses, and [here I am] still living with my parents. = 다들 집 사는데 나는 아직 부모님이랑 살고 있네.
+- My friends are all married, and [here I am] still swiping on dating apps. = 친구들은 다 결혼했는데 나는 아직 데이팅 앱이나 넘기고 있어.
+- It's 2 a.m., and [here I am], still doing homework. = 새벽 두 시인데 나는 아직 숙제하고 있다.
+
+## keep someone awake | ~를 잠 못 들게 하다 | 걱정·소음·카페인 등이 주어로 와요. keep me up도 같은 뜻.
+match: keep me awake; keeps me awake; kept me awake; keeping me awake; keep you awake; keeps you awake; keep me up; kept me up; keeps me up
+- The noise from upstairs [kept me awake] all night. = 윗집 소음 때문에 밤새 잠을 못 잤어.
+- What [keeps you awake] at night these days? = 요즘 무엇 때문에 밤에 잠 못 들어?
+- Too much coffee [keeps me up]. = 커피를 너무 마시면 잠이 안 와.
+
+## ~-inducing | ~을 유발하는, ~을 불러일으키는 | anxiety-inducing, sleep-inducing, cringe-inducing 처럼 하이픈으로 붙여요.
+match: inducing
+- Job interviews are so anxiety-[inducing]. = 면접은 정말 불안을 유발해.
+- That lecture was totally sleep-[inducing]. = 그 강의는 완전 수면제였어.
+- Watching my old videos is cringe-[inducing]. = 내 옛날 영상 보면 오글거려.
+
+## rest on | ~에 달려 있다, ~에 기대다 | rest on one's shoulders = ~의 어깨에 달려 있다.
+match: rest on; rests on; rested on; resting on
+- The whole project [rests on] this one meeting. = 프로젝트 전체가 이 회의 하나에 달려 있어.
+- Don't let everything [rest on] your shoulders. = 모든 걸 네 어깨에 짊어지려고 하지 마.
+- His argument [rests on] old data. = 그의 주장은 오래된 데이터에 기대고 있어.
+
+## what ifs | '만약에 ~하면 어쩌지' 하는 걱정들 | 명사로 써요. Stop living in the what-ifs.
+match: what ifs; what-ifs; what if
+- I spent all night thinking about the [what-ifs]. = 밤새 '만약에'라는 걱정만 했어.
+- Don't let the [what-ifs] stop you from trying. = '만약에' 하는 걱정 때문에 시도를 포기하지 마.
+- [What if] I fail? — Then you'll learn something. = 실패하면 어쩌지? — 그럼 뭔가 배우겠지.
+
+## put off | 미루다, 연기하다 | put off + ~ing / put it off. 명사형 procrastinate보다 일상적.
+match: put off; putting off; puts off; put it off; put them off
+- I keep [putting off] going to the dentist. = 치과 가는 걸 계속 미루고 있어.
+- Let's not [put it off] any longer. = 더는 미루지 말자.
+- They [put off] the wedding until next spring. = 그들은 결혼식을 내년 봄으로 미뤘어.
+
+## in itself | 그 자체로, 그것만으로도 | 대상이 복수면 in themselves.
+match: in itself; in themselves; in and of itself
+- Getting an interview is an achievement [in itself]. = 면접 기회를 얻은 것만으로도 성과야.
+- The trip [in itself] wasn't expensive, but the food was. = 여행 자체는 비싸지 않았는데 음식이 비쌌어.
+- Learning a language is fun [in itself]. = 언어를 배우는 건 그 자체로 재밌어.
+
+## all over the place | 들쭉날쭉한, 중구난방인 / 사방에 | 생각·일정·글이 정리 안 됐을 때도 써요.
+- My schedule is [all over the place] this week. = 이번 주 내 일정이 엉망진창이야.
+- Sorry, my thoughts are [all over the place] right now. = 미안, 지금 생각이 정리가 안 돼.
+- There were toys [all over the place]. = 사방에 장난감이 널려 있었어.
+
+## work one's butt off | 죽어라 일하다, 뼈 빠지게 노력하다 | 캐주얼한 표현. 공식 자리에선 work extremely hard.
+match: work my butt off; worked my butt off; working my butt off; works her butt off; works his butt off; worked her butt off; worked his butt off; worked our butts off; butt off; butts off
+- I [worked my butt off] to pass that exam. = 그 시험 붙으려고 죽어라 공부했어.
+- She [works her butt off] every single day. = 그녀는 매일 뼈 빠지게 일해.
+- We [worked our butts off], and it paid off. = 우리는 죽어라 노력했고, 결국 보상받았어.
+
+## put aside | (돈·시간을) 따로 떼어 두다 / 잠시 제쳐 두다 | put something to the side도 같은 뜻.
+match: put aside; putting aside; puts aside; put it aside; put to the side; put it to the side; set aside
+- I [put aside] 100,000 won every month for travel. = 매달 여행용으로 10만 원씩 따로 떼어 둬.
+- Let's [put our differences aside] for now. = 일단 서로 다른 의견은 제쳐 두자.
+- Try to [put aside] an hour a day for yourself. = 하루 한 시간은 너 자신을 위해 떼어 둬 봐.
+
+## find a balance | (A와 B 사이에서) 균형을 찾다 | find a balance between work and life.
+match: find a balance; found a balance; finding a balance; strike a balance; find the balance; find balance
+- It's hard to [find a balance] between work and family. = 일과 가족 사이에서 균형을 찾기가 어려워.
+- I'm still [finding a balance] between studying and resting. = 아직 공부와 휴식 사이에서 균형을 찾는 중이야.
+- You need to [find the balance] that works for you. = 너한테 맞는 균형을 찾아야 해.
+
+## run into | (문제에) 부딪히다 / (사람을) 우연히 마주치다 | run into trouble / run into an old friend.
+match: run into; ran into; running into; runs into
+- I [ran into] my old teacher at the supermarket. = 마트에서 옛날 선생님을 우연히 마주쳤어.
+- We [ran into] a few problems with the app. = 앱에서 문제가 몇 가지 생겼어.
+- If you [run into] trouble, call me. = 문제 생기면 전화해.
+
+## back in the day | 예전에, 그 시절엔 | 약간 그리운 뉘앙스. 문장 앞이나 끝에.
+- [Back in the day], we used to write letters. = 예전엔 우리 편지를 썼었지.
+- This street was full of bookstores [back in the day]. = 그 시절엔 이 거리에 서점이 가득했어.
+- My dad was a great dancer [back in the day]. = 우리 아빠 왕년에 춤 엄청 잘 추셨어.
+
+## be hell-bent on | (누가 뭐래도) ~하기로 작정하다 | 강한 고집. 캐주얼하지만 다소 센 표현.
+match: hell-bent on; hellbent on; hell bent on
+- She's [hell-bent on] running a marathon this year. = 그녀는 올해 마라톤을 뛰겠다고 작정했어.
+- Why are you so [hell-bent on] moving abroad? = 왜 그렇게 해외로 가려고 작정한 거야?
+- He was [hell-bent on] proving everyone wrong. = 그는 모두가 틀렸다는 걸 증명하겠다고 작정했어.
+
+## way ahead of | ~보다 훨씬 앞서 있는 | way가 '훨씬'을 강조. way ahead of one's time = 시대를 앞서간.
+match: way ahead of; way ahead; ahead of
+- My friends seem [way ahead of] me in life. = 친구들이 인생에서 나보다 훨씬 앞서 있는 것 같아.
+- That designer was [way ahead of] her time. = 그 디자이너는 시대를 훨씬 앞서갔어.
+- Don't worry, you're [way ahead of] schedule. = 걱정 마, 일정보다 훨씬 앞서 있어.
+
+## end up ~ing | 결국 ~하게 되다 | 계획과 다르게 흘러간 결과. end up + 장소/명사도 가능.
+match: end up; ended up; ending up; ends up
+- We [ended up] staying home because of the rain. = 비 때문에 결국 집에 있었어.
+- I [ended up] talking to her for three hours. = 결국 그녀랑 세 시간 동안 얘기했어.
+- If you keep skipping meals, you'll [end up] sick. = 계속 끼니를 거르면 결국 아플 거야.
+
+@role 친구가 요즘 왜 그렇게 피곤해 보이냐고 물어봐요. | You look exhausted. Are you sleeping okay? | keep someone awake; what ifs; ~-inducing | Not really. The what-ifs keep me awake at night. This whole job search is so anxiety-inducing.
+@role 친구가 다이어트 계획이 어떻게 되고 있냐고 물어봐요. | How's your plan to start working out going? | put off; end up ~ing | Honestly, I keep putting it off. I always end up watching Netflix instead.
+@role 후배가 일과 공부를 같이 하느라 힘들다고 상담해요. | I'm working and studying at the same time. It's too much. | find a balance; in itself; put aside | Doing both is impressive in itself. Try to find a balance — maybe put aside one evening a week just to rest.
+@role 친구가 다른 사람들이 다 앞서가는 것 같다고 우울해해요. | Everyone around me is way more successful than me. | here I am (still) ~ing; way ahead of; back in the day | I feel that way too! Everyone seems way ahead of me, and here I am still figuring things out. But back in the day, we were all just kids.
+
+@para 요즘 나의 고민 | here I am (still) ~ing; what ifs; keep someone awake; find a balance | My friends are getting promoted, and here I am still trying to figure out my career. The what-ifs keep me awake some nights. I'm trying to find a balance between pushing myself and being kind to myself.
+@para 열심히 해서 이뤄 낸 일 | be hell-bent on; work one's butt off; run into; end up ~ing | Last year I was hell-bent on passing the certification exam. I worked my butt off for six months. I ran into a lot of problems along the way, but I ended up passing with a great score.

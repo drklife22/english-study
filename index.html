@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Speak Up 스터디</title>
+  <meta name="description" content="매주 배우는 영어 표현을 듣고, 떠올리고, 말하며 복습하는 스피킹 연습장">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234f46e5'/%3E%3Cpath d='M18 22h28a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H30l-8 7v-7h-4a4 4 0 0 1-4-4V26a4 4 0 0 1 4-4z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">💬</span>
+      <span>Speak Up</span>
+    </a>
+    <button id="syncBadge" class="sync-badge" type="button" title="동기화 상태">로컬 저장</button>
+  </header>
+
+  <main id="app" class="app" aria-live="polite"></main>
+
+  <nav class="tabbar" aria-label="메뉴">
+    <a href="#/" data-tab="home"><span aria-hidden="true">🏠</span>홈</a>
+    <a href="#/weeks" data-tab="weeks"><span aria-hidden="true">📚</span>표현</a>
+    <a href="#/practice" data-tab="practice"><span aria-hidden="true">🎮</span>연습</a>
+    <a href="#/paragraph" data-tab="paragraph"><span aria-hidden="true">✍️</span>문단</a>
+    <a href="#/me" data-tab="me"><span aria-hidden="true">📈</span>내 기록</a>
+  </nav>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

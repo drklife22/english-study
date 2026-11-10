@@ -1,0 +1,107 @@
+week: 6
+date: 2026-10-13
+title: Sadie Sink 인터뷰
+subtitle: Glamour Unfiltered
+video:
+
+## take a step back | 한 발짝 물러서다, 거리를 두고 돌아보다 | 2회차에도 나온 표현! 감정·상황에서 잠시 떨어지는 것.
+match: take a step back; took a step back; taking a step back; takes a step back
+- I [took a step back] from work to focus on my health. = 건강에 집중하려고 일에서 한 발짝 물러났어.
+- Before you reply, [take a step back] and breathe. = 답장하기 전에 한 발짝 물러서서 숨 좀 쉬어.
+- Sometimes [taking a step back] is the best move. = 가끔은 한 발 물러서는 게 최선이야.
+
+## go up and down | 오르락내리락하다, 기복이 있다 | 기분·수치·실력의 변동. 격식 있게는 fluctuate.
+match: go up and down; goes up and down; went up and down; going up and down; up and down; fluctuate; fluctuates; fluctuated; fluctuating
+- My motivation [goes up and down] every week. = 내 의욕은 매주 오르락내리락해.
+- Prices [fluctuate] a lot in winter. = 겨울에는 가격 변동이 심해.
+- It's normal for your confidence to [go up and down]. = 자신감에 기복이 있는 건 정상이야.
+
+## outspoken | 할 말은 하는, 거침없이 솔직한 | 긍정·부정 둘 다 가능. 의견을 숨기지 않는 사람.
+- My aunt is very [outspoken]; she always says what she thinks. = 우리 이모는 할 말 다 하는 성격이라 생각을 늘 그대로 말해.
+- She's an [outspoken] supporter of animal rights. = 그녀는 동물권을 거침없이 지지하는 사람이야.
+- I wish I were more [outspoken] in meetings. = 회의에서 좀 더 할 말을 했으면 좋겠어.
+
+## find oneself | 진정한 나를 찾다, 나를 알아가다 | find myself in ~는 '어느새 ~에 있다'라는 다른 뜻도 있어요.
+match: find myself; found myself; finding myself; find yourself; found herself; found himself; find themselves; finding yourself
+- I traveled alone for a month to [find myself]. = 나를 찾으려고 한 달 동안 혼자 여행했어.
+- Your twenties are a time for [finding yourself]. = 20대는 자신을 알아가는 시기야.
+- She really [found herself] through music. = 그녀는 음악을 통해 진짜 자신을 찾았어.
+
+## get past | (힘든 일을) 넘기다, 극복하다 | get over와 비슷. 장애물을 지나가는 이미지.
+match: get past; got past; getting past; gets past; gotten past
+- It took me a year to [get past] the breakup. = 이별을 극복하는 데 1년 걸렸어.
+- Once you [get past] the first week, it gets easier. = 첫 주만 넘기면 쉬워져.
+- I can't [get past] how rude he was. = 그가 얼마나 무례했는지 도저히 넘어가지지가 않아.
+
+## come into one's own | 제 실력을 발휘하다, 자기 자리를 찾다 | 시간이 흘러 진가가 드러나고 자신감이 붙을 때.
+match: come into my own; came into my own; came into her own; came into his own; coming into her own; coming into his own; coming into my own; come into your own; came into their own; into her own; into his own; into my own
+- She really [came into her own] in her third year at the company. = 그녀는 입사 3년 차에 진가를 제대로 발휘했어.
+- I feel like I'm finally [coming into my own] as a teacher. = 이제야 선생님으로서 자리를 잡아 가는 느낌이야.
+- He [came into his own] after he moved to the design team. = 그는 디자인팀으로 옮긴 뒤에 제 실력을 발휘했어.
+
+## comfort zone | 편안한 영역, 익숙한 안전지대 | step out of / get out of one's comfort zone 으로 자주 써요.
+match: comfort zone; comfort zones
+- Joining this study group pushed me out of my [comfort zone]. = 이 스터디에 들어온 게 날 안전지대 밖으로 밀어냈어.
+- Try something outside your [comfort zone] this year. = 올해는 익숙하지 않은 걸 해 봐.
+- Speaking English on the phone is way out of my [comfort zone]. = 영어로 통화하는 건 나한테 엄청 불편한 일이야.
+
+## go through | (힘든 일·과정을) 겪다 | go through a lot / a hard time / a breakup 처럼 써요.
+match: go through; went through; going through; goes through; gone through
+- She's [going through] a lot right now. = 그녀는 요즘 많이 힘든 일을 겪고 있어.
+- We [went through] a tough time together. = 우리는 힘든 시기를 함께 겪었어.
+- Everyone [goes through] a phase like this. = 누구나 이런 시기를 겪어.
+
+## paths cross | (우연히) 인연이 닿다, 마주치다 | our paths crossed = 우리의 길이 교차했다.
+match: paths cross; paths crossed; paths will cross; paths have crossed; paths crossing
+- Our [paths crossed] again at a friend's wedding. = 친구 결혼식에서 우리가 다시 마주쳤어.
+- I hope our [paths cross] again someday. = 언젠가 또 인연이 닿았으면 좋겠어요.
+- It's funny how our [paths crossed] in another country. = 다른 나라에서 우리가 마주친 게 참 신기해.
+
+## grounded | 겸손하고 중심이 잡힌, 현실 감각 있는 | 유명하거나 성공해도 들뜨지 않는 사람. (부모가 외출 금지시키는 grounded와 구분!)
+- Even after becoming famous, he stayed really [grounded]. = 그는 유명해진 뒤에도 정말 겸손하고 중심이 잡혀 있었어.
+- My family keeps me [grounded]. = 가족 덕분에 들뜨지 않고 중심을 잡을 수 있어.
+- Yoga helps me feel more [grounded]. = 요가를 하면 마음이 더 안정돼.
+
+## have one's best interest at heart | 진심으로 ~가 잘되기를 바라다 | 잔소리처럼 들려도 진심일 때 자주 써요.
+match: best interest at heart; best interests at heart; best interest in mind; best interests in mind
+- I know my parents have my [best interests at heart]. = 부모님이 진심으로 내가 잘되길 바라신다는 거 알아.
+- A good friend has your [best interest at heart], even when it hurts. = 좋은 친구는 아프게 말할 때도 진심으로 네가 잘되길 바라.
+- Make sure your agent really has your [best interests at heart]. = 에이전트가 정말 네 편인지 확실히 해.
+
+## get caught up in | ~에 휩쓸리다, 정신없이 빠져들다 | 비슷하게 be overwhelmed with = ~에 압도되다.
+match: get caught up in; got caught up in; getting caught up in; caught up in; be overwhelmed with; overwhelmed with; overwhelmed by
+- I [got caught up in] work and forgot to eat lunch. = 일에 정신이 팔려서 점심 먹는 걸 잊었어.
+- Don't [get caught up in] other people's drama. = 남의 일에 휩쓸리지 마.
+- I was [overwhelmed with] emails after my vacation. = 휴가 끝나고 이메일에 파묻혔어.
+
+## ride it out | (힘든 상황·감정을) 버티며 지나가게 두다 | 파도를 타듯 억지로 바꾸려 하지 않고 지나갈 때까지 버티는 것.
+match: ride it out; rode it out; riding it out; ride out; ride that out; rode out
+- The market is down, but I'm just going to [ride it out]. = 시장이 안 좋지만 그냥 버텨 볼 거야.
+- When you feel anxious, try to [ride it out] instead of panicking. = 불안할 땐 당황하지 말고 그냥 지나가게 둬 봐.
+- We [rode out] the storm in a tiny café. = 우리는 작은 카페에서 폭풍이 지나가길 기다렸어.
+
+## sit with | (감정을) 피하지 않고 그대로 느껴 보다, 곱씹다 | sit with a feeling / sit with it. 바로 해결하려 하지 않는 것.
+match: sit with; sat with; sitting with; sits with
+- Instead of distracting yourself, just [sit with] the sadness for a while. = 딴 데 정신 팔지 말고 잠시 그 슬픔을 그대로 느껴 봐.
+- Let me [sit with] this idea before I decide. = 결정하기 전에 이 생각을 좀 곱씹어 볼게.
+- I [sat with] that question all weekend. = 그 질문을 주말 내내 곱씹었어.
+
+## start fresh | 새로 시작하다, 처음부터 다시 하다 | 과거를 털고 깨끗한 상태에서 다시 시작하는 느낌.
+match: start fresh; started fresh; starting fresh; starts fresh; a fresh start
+- I moved to a new city to [start fresh]. = 새 출발하려고 새로운 도시로 이사했어.
+- Every Monday is a chance to [start fresh]. = 매주 월요일은 새로 시작할 기회야.
+- Let's forget about it and [start fresh]. = 그건 잊고 처음부터 다시 하자.
+
+## let loose | 긴장 풀고 마음껏 놀다 | 평소의 틀에서 벗어나 신나게 풀어지는 것.
+match: let loose; letting loose; lets loose
+- After exams, we went to karaoke to [let loose]. = 시험 끝나고 노래방 가서 신나게 놀았어.
+- It's good to [let loose] once in a while. = 가끔은 마음껏 풀어지는 것도 좋아.
+- My quiet coworker really [let loose] at the party. = 조용하던 동료가 파티에서 완전히 풀어졌어.
+
+@role 친구가 요즘 기분이 어떠냐고 물어봐요. 힘든 시기를 지나고 있어요. | You seem a little down lately. Are you okay? | go through; ride it out; sit with | I'm going through a hard time, honestly. But I'm trying to sit with my feelings and just ride it out.
+@role 친구가 새 직장으로 옮긴 이유를 물어봐요. | Why did you decide to leave your old job? | comfort zone; start fresh; find oneself | I was too deep in my comfort zone. I wanted to start fresh and find myself again.
+@role 친구가 같은 팀 동료가 어떤 사람인지 물어봐요. | What's your new teammate like? | outspoken; grounded | She's really outspoken in meetings, but she's also super grounded and kind.
+@role 친구가 부모님의 잔소리 때문에 짜증 난다고 해요. | My parents keep telling me what to do. It drives me crazy. | have one's best interest at heart; take a step back | I get it, but they have your best interests at heart. Maybe take a step back and listen once.
+
+@para 내가 성장한 시기 | go through; get past; come into one's own; comfort zone | In my mid-twenties, I went through a really tough year. It took time to get past it, but I learned a lot. Stepping out of my comfort zone helped me come into my own.
+@para 스트레스 푸는 법 | get caught up in; take a step back; let loose; go up and down | My mood goes up and down when I get caught up in work. When that happens, I take a step back and call my friends. We go out and let loose for a night.

@@ -1,0 +1,516 @@
+{
+ "week": 6,
+ "date": "2026-10-13",
+ "title": "Sadie Sink 인터뷰",
+ "subtitle": "Glamour Unfiltered",
+ "video": "",
+ "expressions": [
+  {
+   "en": "take a step back",
+   "ko": "한 발짝 물러서다, 거리를 두고 돌아보다",
+   "note": "2회차에도 나온 표현! 감정·상황에서 잠시 떨어지는 것.",
+   "match": [
+    "take a step back",
+    "took a step back",
+    "taking a step back",
+    "takes a step back"
+   ],
+   "examples": [
+    {
+     "en": "I [took a step back] from work to focus on my health.",
+     "ko": "건강에 집중하려고 일에서 한 발짝 물러났어."
+    },
+    {
+     "en": "Before you reply, [take a step back] and breathe.",
+     "ko": "답장하기 전에 한 발짝 물러서서 숨 좀 쉬어."
+    },
+    {
+     "en": "Sometimes [taking a step back] is the best move.",
+     "ko": "가끔은 한 발 물러서는 게 최선이야."
+    }
+   ],
+   "id": "w06-take-a-step-back",
+   "week": 6
+  },
+  {
+   "en": "go up and down",
+   "ko": "오르락내리락하다, 기복이 있다",
+   "note": "기분·수치·실력의 변동. 격식 있게는 fluctuate.",
+   "match": [
+    "go up and down",
+    "goes up and down",
+    "went up and down",
+    "going up and down",
+    "up and down",
+    "fluctuate",
+    "fluctuates",
+    "fluctuated",
+    "fluctuating"
+   ],
+   "examples": [
+    {
+     "en": "My motivation [goes up and down] every week.",
+     "ko": "내 의욕은 매주 오르락내리락해."
+    },
+    {
+     "en": "Prices [fluctuate] a lot in winter.",
+     "ko": "겨울에는 가격 변동이 심해."
+    },
+    {
+     "en": "It's normal for your confidence to [go up and down].",
+     "ko": "자신감에 기복이 있는 건 정상이야."
+    }
+   ],
+   "id": "w06-go-up-and-down",
+   "week": 6
+  },
+  {
+   "en": "outspoken",
+   "ko": "할 말은 하는, 거침없이 솔직한",
+   "note": "긍정·부정 둘 다 가능. 의견을 숨기지 않는 사람.",
+   "match": [],
+   "examples": [
+    {
+     "en": "My aunt is very [outspoken]; she always says what she thinks.",
+     "ko": "우리 이모는 할 말 다 하는 성격이라 생각을 늘 그대로 말해."
+    },
+    {
+     "en": "She's an [outspoken] supporter of animal rights.",
+     "ko": "그녀는 동물권을 거침없이 지지하는 사람이야."
+    },
+    {
+     "en": "I wish I were more [outspoken] in meetings.",
+     "ko": "회의에서 좀 더 할 말을 했으면 좋겠어."
+    }
+   ],
+   "id": "w06-outspoken",
+   "week": 6
+  },
+  {
+   "en": "find oneself",
+   "ko": "진정한 나를 찾다, 나를 알아가다",
+   "note": "find myself in ~는 '어느새 ~에 있다'라는 다른 뜻도 있어요.",
+   "match": [
+    "find myself",
+    "found myself",
+    "finding myself",
+    "find yourself",
+    "found herself",
+    "found himself",
+    "find themselves",
+    "finding yourself"
+   ],
+   "examples": [
+    {
+     "en": "I traveled alone for a month to [find myself].",
+     "ko": "나를 찾으려고 한 달 동안 혼자 여행했어."
+    },
+    {
+     "en": "Your twenties are a time for [finding yourself].",
+     "ko": "20대는 자신을 알아가는 시기야."
+    },
+    {
+     "en": "She really [found herself] through music.",
+     "ko": "그녀는 음악을 통해 진짜 자신을 찾았어."
+    }
+   ],
+   "id": "w06-find-oneself",
+   "week": 6
+  },
+  {
+   "en": "get past",
+   "ko": "(힘든 일을) 넘기다, 극복하다",
+   "note": "get over와 비슷. 장애물을 지나가는 이미지.",
+   "match": [
+    "get past",
+    "got past",
+    "getting past",
+    "gets past",
+    "gotten past"
+   ],
+   "examples": [
+    {
+     "en": "It took me a year to [get past] the breakup.",
+     "ko": "이별을 극복하는 데 1년 걸렸어."
+    },
+    {
+     "en": "Once you [get past] the first week, it gets easier.",
+     "ko": "첫 주만 넘기면 쉬워져."
+    },
+    {
+     "en": "I can't [get past] how rude he was.",
+     "ko": "그가 얼마나 무례했는지 도저히 넘어가지지가 않아."
+    }
+   ],
+   "id": "w06-get-past",
+   "week": 6
+  },
+  {
+   "en": "come into one's own",
+   "ko": "제 실력을 발휘하다, 자기 자리를 찾다",
+   "note": "시간이 흘러 진가가 드러나고 자신감이 붙을 때.",
+   "match": [
+    "come into my own",
+    "came into my own",
+    "came into her own",
+    "came into his own",
+    "coming into her own",
+    "coming into his own",
+    "coming into my own",
+    "come into your own",
+    "came into their own",
+    "into her own",
+    "into his own",
+    "into my own"
+   ],
+   "examples": [
+    {
+     "en": "She really [came into her own] in her third year at the company.",
+     "ko": "그녀는 입사 3년 차에 진가를 제대로 발휘했어."
+    },
+    {
+     "en": "I feel like I'm finally [coming into my own] as a teacher.",
+     "ko": "이제야 선생님으로서 자리를 잡아 가는 느낌이야."
+    },
+    {
+     "en": "He [came into his own] after he moved to the design team.",
+     "ko": "그는 디자인팀으로 옮긴 뒤에 제 실력을 발휘했어."
+    }
+   ],
+   "id": "w06-come-into-one-s-own",
+   "week": 6
+  },
+  {
+   "en": "comfort zone",
+   "ko": "편안한 영역, 익숙한 안전지대",
+   "note": "step out of / get out of one's comfort zone 으로 자주 써요.",
+   "match": [
+    "comfort zone",
+    "comfort zones"
+   ],
+   "examples": [
+    {
+     "en": "Joining this study group pushed me out of my [comfort zone].",
+     "ko": "이 스터디에 들어온 게 날 안전지대 밖으로 밀어냈어."
+    },
+    {
+     "en": "Try something outside your [comfort zone] this year.",
+     "ko": "올해는 익숙하지 않은 걸 해 봐."
+    },
+    {
+     "en": "Speaking English on the phone is way out of my [comfort zone].",
+     "ko": "영어로 통화하는 건 나한테 엄청 불편한 일이야."
+    }
+   ],
+   "id": "w06-comfort-zone",
+   "week": 6
+  },
+  {
+   "en": "go through",
+   "ko": "(힘든 일·과정을) 겪다",
+   "note": "go through a lot / a hard time / a breakup 처럼 써요.",
+   "match": [
+    "go through",
+    "went through",
+    "going through",
+    "goes through",
+    "gone through"
+   ],
+   "examples": [
+    {
+     "en": "She's [going through] a lot right now.",
+     "ko": "그녀는 요즘 많이 힘든 일을 겪고 있어."
+    },
+    {
+     "en": "We [went through] a tough time together.",
+     "ko": "우리는 힘든 시기를 함께 겪었어."
+    },
+    {
+     "en": "Everyone [goes through] a phase like this.",
+     "ko": "누구나 이런 시기를 겪어."
+    }
+   ],
+   "id": "w06-go-through",
+   "week": 6
+  },
+  {
+   "en": "paths cross",
+   "ko": "(우연히) 인연이 닿다, 마주치다",
+   "note": "our paths crossed = 우리의 길이 교차했다.",
+   "match": [
+    "paths cross",
+    "paths crossed",
+    "paths will cross",
+    "paths have crossed",
+    "paths crossing"
+   ],
+   "examples": [
+    {
+     "en": "Our [paths crossed] again at a friend's wedding.",
+     "ko": "친구 결혼식에서 우리가 다시 마주쳤어."
+    },
+    {
+     "en": "I hope our [paths cross] again someday.",
+     "ko": "언젠가 또 인연이 닿았으면 좋겠어요."
+    },
+    {
+     "en": "It's funny how our [paths crossed] in another country.",
+     "ko": "다른 나라에서 우리가 마주친 게 참 신기해."
+    }
+   ],
+   "id": "w06-paths-cross",
+   "week": 6
+  },
+  {
+   "en": "grounded",
+   "ko": "겸손하고 중심이 잡힌, 현실 감각 있는",
+   "note": "유명하거나 성공해도 들뜨지 않는 사람. (부모가 외출 금지시키는 grounded와 구분!)",
+   "match": [],
+   "examples": [
+    {
+     "en": "Even after becoming famous, he stayed really [grounded].",
+     "ko": "그는 유명해진 뒤에도 정말 겸손하고 중심이 잡혀 있었어."
+    },
+    {
+     "en": "My family keeps me [grounded].",
+     "ko": "가족 덕분에 들뜨지 않고 중심을 잡을 수 있어."
+    },
+    {
+     "en": "Yoga helps me feel more [grounded].",
+     "ko": "요가를 하면 마음이 더 안정돼."
+    }
+   ],
+   "id": "w06-grounded",
+   "week": 6
+  },
+  {
+   "en": "have one's best interest at heart",
+   "ko": "진심으로 ~가 잘되기를 바라다",
+   "note": "잔소리처럼 들려도 진심일 때 자주 써요.",
+   "match": [
+    "best interest at heart",
+    "best interests at heart",
+    "best interest in mind",
+    "best interests in mind"
+   ],
+   "examples": [
+    {
+     "en": "I know my parents have my [best interests at heart].",
+     "ko": "부모님이 진심으로 내가 잘되길 바라신다는 거 알아."
+    },
+    {
+     "en": "A good friend has your [best interest at heart], even when it hurts.",
+     "ko": "좋은 친구는 아프게 말할 때도 진심으로 네가 잘되길 바라."
+    },
+    {
+     "en": "Make sure your agent really has your [best interests at heart].",
+     "ko": "에이전트가 정말 네 편인지 확실히 해."
+    }
+   ],
+   "id": "w06-have-one-s-best-interest-at-heart",
+   "week": 6
+  },
+  {
+   "en": "get caught up in",
+   "ko": "~에 휩쓸리다, 정신없이 빠져들다",
+   "note": "비슷하게 be overwhelmed with = ~에 압도되다.",
+   "match": [
+    "get caught up in",
+    "got caught up in",
+    "getting caught up in",
+    "caught up in",
+    "be overwhelmed with",
+    "overwhelmed with",
+    "overwhelmed by"
+   ],
+   "examples": [
+    {
+     "en": "I [got caught up in] work and forgot to eat lunch.",
+     "ko": "일에 정신이 팔려서 점심 먹는 걸 잊었어."
+    },
+    {
+     "en": "Don't [get caught up in] other people's drama.",
+     "ko": "남의 일에 휩쓸리지 마."
+    },
+    {
+     "en": "I was [overwhelmed with] emails after my vacation.",
+     "ko": "휴가 끝나고 이메일에 파묻혔어."
+    }
+   ],
+   "id": "w06-get-caught-up-in",
+   "week": 6
+  },
+  {
+   "en": "ride it out",
+   "ko": "(힘든 상황·감정을) 버티며 지나가게 두다",
+   "note": "파도를 타듯 억지로 바꾸려 하지 않고 지나갈 때까지 버티는 것.",
+   "match": [
+    "ride it out",
+    "rode it out",
+    "riding it out",
+    "ride out",
+    "ride that out",
+    "rode out"
+   ],
+   "examples": [
+    {
+     "en": "The market is down, but I'm just going to [ride it out].",
+     "ko": "시장이 안 좋지만 그냥 버텨 볼 거야."
+    },
+    {
+     "en": "When you feel anxious, try to [ride it out] instead of panicking.",
+     "ko": "불안할 땐 당황하지 말고 그냥 지나가게 둬 봐."
+    },
+    {
+     "en": "We [rode out] the storm in a tiny café.",
+     "ko": "우리는 작은 카페에서 폭풍이 지나가길 기다렸어."
+    }
+   ],
+   "id": "w06-ride-it-out",
+   "week": 6
+  },
+  {
+   "en": "sit with",
+   "ko": "(감정을) 피하지 않고 그대로 느껴 보다, 곱씹다",
+   "note": "sit with a feeling / sit with it. 바로 해결하려 하지 않는 것.",
+   "match": [
+    "sit with",
+    "sat with",
+    "sitting with",
+    "sits with"
+   ],
+   "examples": [
+    {
+     "en": "Instead of distracting yourself, just [sit with] the sadness for a while.",
+     "ko": "딴 데 정신 팔지 말고 잠시 그 슬픔을 그대로 느껴 봐."
+    },
+    {
+     "en": "Let me [sit with] this idea before I decide.",
+     "ko": "결정하기 전에 이 생각을 좀 곱씹어 볼게."
+    },
+    {
+     "en": "I [sat with] that question all weekend.",
+     "ko": "그 질문을 주말 내내 곱씹었어."
+    }
+   ],
+   "id": "w06-sit-with",
+   "week": 6
+  },
+  {
+   "en": "start fresh",
+   "ko": "새로 시작하다, 처음부터 다시 하다",
+   "note": "과거를 털고 깨끗한 상태에서 다시 시작하는 느낌.",
+   "match": [
+    "start fresh",
+    "started fresh",
+    "starting fresh",
+    "starts fresh",
+    "a fresh start"
+   ],
+   "examples": [
+    {
+     "en": "I moved to a new city to [start fresh].",
+     "ko": "새 출발하려고 새로운 도시로 이사했어."
+    },
+    {
+     "en": "Every Monday is a chance to [start fresh].",
+     "ko": "매주 월요일은 새로 시작할 기회야."
+    },
+    {
+     "en": "Let's forget about it and [start fresh].",
+     "ko": "그건 잊고 처음부터 다시 하자."
+    }
+   ],
+   "id": "w06-start-fresh",
+   "week": 6
+  },
+  {
+   "en": "let loose",
+   "ko": "긴장 풀고 마음껏 놀다",
+   "note": "평소의 틀에서 벗어나 신나게 풀어지는 것.",
+   "match": [
+    "let loose",
+    "letting loose",
+    "lets loose"
+   ],
+   "examples": [
+    {
+     "en": "After exams, we went to karaoke to [let loose].",
+     "ko": "시험 끝나고 노래방 가서 신나게 놀았어."
+    },
+    {
+     "en": "It's good to [let loose] once in a while.",
+     "ko": "가끔은 마음껏 풀어지는 것도 좋아."
+    },
+    {
+     "en": "My quiet coworker really [let loose] at the party.",
+     "ko": "조용하던 동료가 파티에서 완전히 풀어졌어."
+    }
+   ],
+   "id": "w06-let-loose",
+   "week": 6
+  }
+ ],
+ "roleplays": [
+  {
+   "situation": "친구가 요즘 기분이 어떠냐고 물어봐요. 힘든 시기를 지나고 있어요.",
+   "line": "You seem a little down lately. Are you okay?",
+   "use": [
+    "w06-go-through",
+    "w06-ride-it-out",
+    "w06-sit-with"
+   ],
+   "sample": "I'm going through a hard time, honestly. But I'm trying to sit with my feelings and just ride it out."
+  },
+  {
+   "situation": "친구가 새 직장으로 옮긴 이유를 물어봐요.",
+   "line": "Why did you decide to leave your old job?",
+   "use": [
+    "w06-comfort-zone",
+    "w06-start-fresh",
+    "w06-find-oneself"
+   ],
+   "sample": "I was too deep in my comfort zone. I wanted to start fresh and find myself again."
+  },
+  {
+   "situation": "친구가 같은 팀 동료가 어떤 사람인지 물어봐요.",
+   "line": "What's your new teammate like?",
+   "use": [
+    "w06-outspoken",
+    "w06-grounded"
+   ],
+   "sample": "She's really outspoken in meetings, but she's also super grounded and kind."
+  },
+  {
+   "situation": "친구가 부모님의 잔소리 때문에 짜증 난다고 해요.",
+   "line": "My parents keep telling me what to do. It drives me crazy.",
+   "use": [
+    "w06-have-one-s-best-interest-at-heart",
+    "w06-take-a-step-back"
+   ],
+   "sample": "I get it, but they have your best interests at heart. Maybe take a step back and listen once."
+  }
+ ],
+ "paragraphs": [
+  {
+   "topic": "내가 성장한 시기",
+   "use": [
+    "w06-go-through",
+    "w06-get-past",
+    "w06-come-into-one-s-own",
+    "w06-comfort-zone"
+   ],
+   "text": "In my mid-twenties, I went through a really tough year. It took time to get past it, but I learned a lot. Stepping out of my comfort zone helped me come into my own."
+  },
+  {
+   "topic": "스트레스 푸는 법",
+   "use": [
+    "w06-get-caught-up-in",
+    "w06-take-a-step-back",
+    "w06-let-loose",
+    "w06-go-up-and-down"
+   ],
+   "text": "My mood goes up and down when I get caught up in work. When that happens, I take a step back and call my friends. We go out and let loose for a night."
+  }
+ ]
+}

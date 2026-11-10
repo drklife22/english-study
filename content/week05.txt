@@ -1,0 +1,91 @@
+week: 5
+date: 2026-10-07
+title: AI 아티스트의 강연
+subtitle: Creating with AI
+video: https://youtu.be/Hd8npxrnpuo
+
+## figure out | (고민 끝에) 알아내다, 파악하다 | how / what / where 같은 의문사절과 자주 붙어요.
+match: figure out; figured out; figuring out; figures out; figure it out; figured it out
+- I still can't [figure out] how this coffee machine works. = 이 커피 머신 어떻게 쓰는지 아직도 모르겠어.
+- We need to [figure out] where to eat tonight. = 오늘 저녁 어디서 먹을지 정해야 해.
+- It took me a while to [figure it out]. = 그걸 알아내는 데 시간이 좀 걸렸어.
+
+## incorporate A into B | A를 B에 접목하다, 녹여 넣다 | 업무 대화에서 '반영하다'로도 자주 써요.
+match: incorporate; incorporated; incorporating; incorporates
+- I try to [incorporate] more vegetables into my meals. = 식단에 채소를 더 넣으려고 해.
+- We [incorporated] your feedback into the final design. = 주신 피드백을 최종 디자인에 반영했어요.
+- She [incorporates] traditional patterns into modern clothes. = 그녀는 전통 문양을 현대 옷에 녹여 내.
+
+## spark one's curiosity | 호기심을 불러일으키다 | spark = 불꽃. 작은 계기가 큰 관심으로 번지는 느낌. spark one's interest도 같아요.
+match: spark my curiosity; sparked my curiosity; sparks my curiosity; spark your curiosity; sparked my interest; sparked her interest; sparked his interest; spark; sparked; sparks
+- A documentary [sparked my curiosity] about space. = 한 다큐멘터리가 우주에 대한 호기심을 불러일으켰어.
+- Good questions [spark] students' curiosity. = 좋은 질문은 학생들의 호기심을 자극해.
+- What first [sparked your interest] in photography? = 처음에 어떻게 사진에 관심을 갖게 됐어?
+
+## lean into | (피하지 않고) 오히려 받아들이다, 적극 살리다 | 약점·어색함을 숨기지 않고 그쪽으로 더 기울이는 것.
+match: lean into; leaned into; leaning into; leans into; leant into
+- I decided to [lean into] my accent instead of hiding it. = 억양을 숨기는 대신 오히려 살리기로 했어.
+- The brand [leaned into] the joke and made it their slogan. = 그 브랜드는 그 농담을 오히려 받아들여서 슬로건으로 만들었어.
+- Sometimes you just have to [lean into] the chaos. = 가끔은 그냥 혼란을 받아들여야 해.
+
+## take on a life of its own | (처음 의도를 넘어) 저절로 커지다, 혼자 굴러가다 | 소문·프로젝트·밈이 내 손을 떠나 커질 때.
+match: take on a life of its own; took on a life of its own; taken on a life of its own; taking on a life of its own; a life of its own
+- The rumor [took on a life of its own]. = 소문이 걷잡을 수 없이 커졌어.
+- My little side project has [taken on a life of its own]. = 작게 시작한 사이드 프로젝트가 어느새 저절로 커졌어.
+- Once a meme goes viral, it [takes on a life of its own]. = 밈은 한번 퍼지면 혼자 알아서 굴러가.
+
+## land a deal | (계약·일자리를) 따내다 | land a job / a client / an interview 처럼 '원하던 걸 손에 넣다'.
+match: land a; landed a; landing a; lands a; land the; landed the
+- She just [landed a job] at her dream company. = 그녀는 꿈꾸던 회사에 막 취직했어.
+- Our startup [landed a deal] with a big investor. = 우리 스타트업이 큰 투자자와 계약을 따냈어.
+- How did you [land the interview]? = 그 면접 기회를 어떻게 잡았어?
+
+## fit in | 어울리다, 적응하다, 자리 잡다 | 사람: 무리에 섞이다 / 사물·개념: 어디에 들어맞는지 (where it fits in).
+match: fit in; fits in; fitted in; fitting in
+- It took me a few months to [fit in] at my new school. = 새 학교에 적응하는 데 몇 달 걸렸어.
+- I'm not sure where this idea [fits in]. = 이 아이디어가 어디에 들어맞는지 잘 모르겠어.
+- You don't have to change yourself to [fit in]. = 어울리려고 너 자신을 바꿀 필요는 없어.
+
+## bring someone joy | ~에게 기쁨을 주다 | make me happy보다 따뜻하고 진심이 담긴 느낌.
+match: bring me joy; brings me joy; brought me joy; bring you joy; brings you joy; bring joy; brings joy; brought joy; bring them joy
+- Cooking for my friends [brings me joy]. = 친구들에게 요리해 주는 게 나한테 기쁨이야.
+- Keep only the things that [bring you joy]. = 너에게 기쁨을 주는 것만 남겨 둬.
+- Her little notes always [brought joy] to the office. = 그녀의 작은 쪽지는 늘 사무실에 기쁨을 줬어.
+
+## take someone behind the scenes | (제작 과정·비하인드를) 보여 주다 | Let me take you behind the scenes는 발표에서 쓰기 좋은 패턴.
+match: behind the scenes; behind-the-scenes
+- Let me take you [behind the scenes] of our photo shoot. = 저희 촬영 비하인드를 보여 드릴게요.
+- I love watching [behind-the-scenes] videos of movies. = 영화 비하인드 영상 보는 거 좋아해.
+- A lot of work happens [behind the scenes]. = 보이지 않는 곳에서 많은 일이 일어나.
+
+## take off | (인기·사업이) 확 뜨다, 급성장하다 / 이륙하다 | 원래 뜻은 비행기 이륙. like a rocket을 붙이면 더 생생해요.
+match: take off; took off; taken off; taking off; takes off
+- Her career really [took off] after that show. = 그 프로그램 이후 그녀의 커리어가 확 떴어.
+- Online shopping [took off] during the pandemic. = 팬데믹 동안 온라인 쇼핑이 급성장했어.
+- I hope my little shop [takes off] this year. = 올해 내 작은 가게가 잘됐으면 좋겠다.
+
+## find one's way to | (자연스럽게·우연히) ~에 닿다, ~를 찾아오다 | 억지로가 아니라 각자의 길을 따라 결국 도착한 느낌.
+match: found my way to; find my way to; found their way to; find their way to; found its way to; found your way to; find your way to; found our way to
+- How did you [find your way to] this job? = 어떻게 이 일을 하게 됐어요?
+- This old photo somehow [found its way to] my desk. = 이 옛날 사진이 어쩌다 내 책상까지 왔네.
+- Many fans [found their way to] us through YouTube. = 많은 팬분들이 유튜브를 통해 저희를 찾아오셨어요.
+
+## close to one's heart | 마음속 깊이 소중한, 각별한 | 개인적 경험·애정이 얽혀 특별히 아끼는 것.
+match: close to my heart; close to your heart; close to her heart; close to his heart; close to our hearts; close to their hearts; close to my heart
+- Animal rescue is a cause [close to my heart]. = 동물 구조는 나한테 정말 각별한 일이야.
+- This recipe is [close to my heart]; it's my mom's. = 이 레시피는 나한테 특별해. 엄마 거거든.
+- She writes stories that are [close to her heart]. = 그녀는 마음속 깊이 소중한 이야기들을 써.
+
+## never ~ a day in one's life | 평생 단 하루도 ~한 적 없다 | never를 강하게 강조. 과장 섞인 농담으로도 자주 써요.
+match: a day in my life; a day in his life; a day in her life; a day in their life; a day in their lives; a day in your life
+- He's never cooked [a day in his life]. = 그는 평생 요리를 한 번도 안 해 봤어.
+- I've never been late [a day in my life]! = 나 살면서 하루도 지각한 적 없어!
+- She's never worked out [a day in her life], but she's so fit. = 그녀는 평생 운동 한 번 안 했는데도 엄청 건강해.
+
+@role 친구가 요즘 새로 시작한 취미에 대해 물어봐요. | You've been posting a lot of drawings lately. How did that start? | spark one's curiosity; figure out; bring someone joy | A friend's art sparked my curiosity, so I started figuring out how to draw on my tablet. It really brings me joy.
+@role 면접관이 본인의 강점을 어떻게 일에 활용할지 물어봐요. | How would you use your background in this role? | incorporate A into B; fit in | I'd incorporate my design experience into your marketing work. I think I'd fit in well with the team.
+@role 친구가 사업이 잘되는지 물어봐요. | How's your online shop doing these days? | take off; land a deal; take on a life of its own | It's finally taking off! We just landed a deal with a big store, and the brand is taking on a life of its own.
+@role 친구가 단점이라고 생각하는 점을 고민해요. | I hate how quiet I am in meetings. | lean into; fit in | Why not lean into it? Quiet people listen well. You don't have to be loud to fit in.
+
+@para 내가 새로운 기술을 받아들인 경험 | spark one's curiosity; figure out; incorporate A into B; lean into | At first, I didn't trust AI tools. But a coworker's demo sparked my curiosity, so I started figuring out how they worked. Now I incorporate them into my daily work, and I've learned to lean into the weird results.
+@para 작게 시작해서 커진 일 | take off; take on a life of its own; find one's way to; close to one's heart | I started a small book club with three friends. It took off faster than we expected and took on a life of its own. Now about thirty people have found their way to us, and the club is very close to my heart.

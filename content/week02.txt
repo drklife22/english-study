@@ -1,0 +1,140 @@
+week: 2
+date: 2026-09-12
+title: 73 Questions With Zendaya
+subtitle: Vogue
+video: https://youtu.be/MGO4_8YRKro
+
+## unwind | 긴장을 풀다, 쉬다 | relax와 비슷하지만 '감긴 태엽이 풀리듯' 하루의 긴장을 푸는 느낌.
+match: unwind; unwinding; unwound; unwinds
+- I take a long bath to [unwind] after work. = 퇴근하고 긴장을 풀려고 오래 목욕해.
+- What do you usually do to [unwind]? = 쉴 때 보통 뭐 해?
+- A short walk really helps me [unwind]. = 짧게 산책하면 긴장이 확 풀려.
+
+## take up one's time | (시간을) 잡아먹다, 차지하다 | take up most of my day / take up a lot of time 형태로 자주 써요.
+match: take up; takes up; taking up; took up; taken up
+- My commute [takes up] almost two hours a day. = 출퇴근이 하루에 거의 두 시간을 잡아먹어.
+- Wedding planning is [taking up] all my weekends. = 결혼 준비가 내 주말을 다 잡아먹고 있어.
+- I don't want to [take up] too much of your time. = 시간 너무 많이 뺏고 싶진 않아요.
+
+## as of late | 최근에, 요즘 들어 | lately와 같은 뜻의 조금 더 격식 있는 표현.
+- I've been sleeping badly [as of late]. = 요즘 들어 잠을 잘 못 자.
+- [As of late], he's been really into cooking. = 최근에 그는 요리에 푹 빠졌어.
+- Things have been quiet at work [as of late]. = 요즘 회사가 조용한 편이야.
+
+## rely heavily on | ~에 크게 의존하다 | rely on에 heavily를 넣어 '많이' 기댄다는 걸 강조.
+match: rely heavily on; relies heavily on; relied heavily on; relying heavily on; rely too heavily on; rely on; relied on
+- I [rely heavily on] my calendar app to stay organized. = 일정 정리할 때 캘린더 앱에 많이 의존해.
+- Small shops [rely heavily on] regular customers. = 작은 가게들은 단골손님에게 크게 의존해.
+- Try not to [rely too heavily on] translation apps. = 번역 앱에 너무 의존하지 않도록 해 봐.
+
+## take a step back | 한발 물러서다, 거리를 두고 보다 | 감정이 격하거나 일이 꼬였을 때 잠깐 떨어져서 생각하는 것.
+match: take a step back; took a step back; taking a step back; takes a step back
+- Let's [take a step back] and look at the big picture. = 한발 물러서서 큰 그림을 보자.
+- I [took a step back] from social media for a month. = 한 달 동안 SNS에서 거리를 뒀어.
+- When I'm angry, I try to [take a step back] before I reply. = 화가 나면 답하기 전에 한발 물러서려고 해.
+
+## keep someone on one's toes | 방심 못 하게 하다, 늘 긴장하게 만들다 | 부정적인 압박뿐 아니라 좋은 자극이라는 의미로도 써요.
+match: keep me on my toes; keeps me on my toes; kept me on my toes; on my toes; on your toes; on our toes; on their toes; on his toes; on her toes
+- My two-year-old [keeps me on my toes] all day. = 두 살짜리 아이 때문에 하루 종일 한시도 방심할 수가 없어.
+- Pop quizzes [keep students on their toes]. = 쪽지 시험은 학생들을 늘 긴장하게 해.
+- Working with smart people [keeps me on my toes]. = 똑똑한 사람들과 일하면 늘 좋은 자극을 받아.
+
+## long story short | 간단히 말하면, 요약하자면 | 긴 사연을 결론만 말할 때 문장 맨 앞에 붙여요.
+- [Long story short], I missed my flight. = 간단히 말하면, 비행기를 놓쳤어.
+- [Long story short], we're moving to Busan next month. = 요약하자면, 우리 다음 달에 부산으로 이사 가.
+- It was a crazy day, but [long story short], everything worked out. = 정신없는 하루였는데, 결론만 말하면 다 잘 풀렸어.
+
+## go-to | 늘 찾는, 단골의, 가장 애용하는 | my go-to + 명사 (메뉴·옷·노래·카페 등). 사람에게도 써요: my go-to person.
+match: go-to; go to
+- Kimchi fried rice is my [go-to] meal when I'm busy. = 바쁠 때 내 단골 메뉴는 김치볶음밥이야.
+- This hoodie is my [go-to] on lazy days. = 늘어지는 날엔 이 후드티만 입어.
+- She's my [go-to] person for computer problems. = 컴퓨터 문제 생기면 늘 그녀를 찾아.
+
+## hone one's skills | 실력을 갈고닦다 | improve보다 '날을 세우듯' 꾸준히 다듬는 느낌.
+match: hone; honing; honed; hones
+- I joined a speaking club to [hone] my English. = 영어 실력을 갈고닦으려고 스피킹 모임에 들어갔어.
+- She spent years [honing] her cooking skills. = 그녀는 몇 년 동안 요리 실력을 갈고닦았어.
+- Online games actually [hone] your reaction speed. = 온라인 게임이 사실 반응 속도를 키워 줘.
+
+## follow your gut | 직감을 따르다 | gut은 '배, 직감'. go with your gut도 같은 뜻.
+match: follow your gut; follow my gut; followed my gut; following my gut; go with your gut; go with my gut; went with my gut; gut
+- I didn't overthink it; I just [followed my gut]. = 너무 고민하지 않고 그냥 직감을 따랐어.
+- If something feels wrong, [follow your gut]. = 뭔가 이상하다 싶으면 직감을 따라.
+- I [went with my gut] and took the job. = 직감을 믿고 그 일을 받아들였어.
+
+## hit close to home | 남 일 같지 않다, 깊이 와닿다 | 내 경험·감정과 겹쳐서 마음이 찔릴 때.
+match: hit close to home; hits close to home; hit closest to home; hitting close to home
+- That drama about job hunting really [hit close to home]. = 취업 준비하는 드라마가 정말 남 일 같지 않았어.
+- Her speech [hit close to home] for a lot of parents. = 그녀의 연설은 많은 부모에게 깊이 와닿았어.
+- That joke [hits a little too close to home]. = 그 농담 좀 너무 찔리는데.
+
+## blow someone's mind | 엄청 놀라게 하다, 감탄하게 만들다 | mind-blowing(놀라운)으로도 자주 써요.
+match: blow my mind; blew my mind; blows my mind; blowing my mind; blew his mind; blew her mind; blow your mind; blew everyone's mind; mind-blowing
+- The view from the top [blew my mind]. = 꼭대기에서 본 경치는 정말 놀라웠어.
+- This fact is going to [blow your mind]. = 이 사실 들으면 깜짝 놀랄걸.
+- It still [blows my mind] that we met by chance. = 우리가 우연히 만났다는 게 아직도 신기해.
+
+## through the grapevine | 소문으로, 건너 듣기로 | 공식 경로가 아니라 사람들 입을 통해 들었을 때. 캐주얼한 표현.
+- I heard [through the grapevine] that you got promoted! = 너 승진했다는 소문 들었어!
+- News travels fast [through the grapevine] in a small office. = 작은 회사에선 소문이 금방 퍼져.
+- How did you know? — Oh, just [through the grapevine]. = 어떻게 알았어? 아, 그냥 건너 들었어.
+
+## a giving person | 잘 베푸는 사람, 마음이 넉넉한 사람 | 시간·마음·물건을 아낌없이 나누는 사람.
+match: giving person; giving people; giving nature
+- My dad is [a giving person]; he'd give you his last dollar. = 우리 아빠는 정말 잘 베푸는 분이라 마지막 남은 돈도 내어 주실 거야.
+- She's so [giving] with her time. = 그녀는 자기 시간을 정말 아낌없이 내어 줘.
+- I want to be a more [giving person] this year. = 올해는 좀 더 베푸는 사람이 되고 싶어.
+
+## keep one's distance | 거리를 두다 | 물리적인 거리와 감정적인 거리 둘 다 가능해요.
+match: keep my distance; keep your distance; keep our distance; keep their distance; keeping my distance; kept my distance; keep his distance; keep her distance; distance
+- I have a cold, so I'll [keep my distance] today. = 감기 걸려서 오늘은 거리를 둘게.
+- After the fight, they [kept their distance] for a while. = 싸운 뒤로 그들은 한동안 거리를 뒀어.
+- It's smart to [keep your distance] from gossip at work. = 회사에선 뒷담화와 거리를 두는 게 현명해.
+
+## without fail | 빠짐없이, 어김없이 | 매일·매주 습관처럼 꼭 하는 일에 붙여요.
+- I call my grandma every Sunday [without fail]. = 매주 일요일마다 빠짐없이 할머니께 전화해.
+- He's late to every meeting [without fail]. = 그는 회의마다 어김없이 늦어.
+- [Without fail], my cat wakes me up at 6 a.m. = 우리 고양이는 어김없이 아침 6시에 나를 깨워.
+
+## feel most at home with | ~와 있을 때 가장 편안하다 | feel at home(편하다) + most. 장소에는 in을 써요.
+match: feel most at home; feels most at home; felt most at home; feel at home; feels at home; felt at home
+- I [feel most at home with] my college friends. = 대학 친구들이랑 있을 때 제일 편해.
+- She [feels most at home] in the kitchen. = 그녀는 부엌에 있을 때 가장 편안해해.
+- I didn't [feel at home] in Seoul until my second year. = 서울살이 2년 차가 돼서야 편해졌어.
+
+## get serious buzz | 크게 화제가 되다, 입소문이 나다 | buzz는 '웅성거림'. get a lot of buzz, be getting buzz도 같은 뜻.
+match: buzz
+- That new ramen shop is getting [serious buzz] online. = 그 새 라멘집이 온라인에서 엄청 화제야.
+- The trailer got a lot of [buzz] before the movie came out. = 개봉 전에 예고편이 크게 화제가 됐어.
+- There's a lot of [buzz] about the new phone. = 새 휴대폰에 대한 입소문이 대단해.
+
+## a departure from | ~와는 다른 시도, 기존에서 벗어난 것 | 스타일·방식이 평소와 확 달라졌을 때.
+match: departure from
+- This song is a big [departure from] her usual style. = 이 노래는 그녀의 평소 스타일과 완전히 달라.
+- Working from home was a [departure from] how we used to do things. = 재택근무는 예전 방식에서 벗어난 거였지.
+- Short hair is a fun [departure from] my usual look. = 짧은 머리는 평소 내 모습과 다른 재밌는 변화야.
+
+## at this very moment | 바로 지금 이 순간 | right now를 강조한 표현. very가 '바로 그'를 강조해요.
+- [At this very moment], all I want is a cold drink. = 바로 지금 이 순간 내가 원하는 건 시원한 음료뿐이야.
+- Somewhere, someone is thinking of you [at this very moment]. = 어딘가에서 누군가는 바로 지금 너를 생각하고 있을 거야.
+- I can't answer that [at this very moment]. = 지금 당장은 대답하기 어려워.
+
+## hold someone down | 곁을 지켜 주다, 든든하게 지지해 주다 | 힙합·구어에서 '의리 있게 받쳐 준다'는 뜻. 문맥 없으면 '누르다'로 오해할 수 있어요.
+match: hold me down; holding me down; held me down; holds me down; hold you down; held us down; hold it down
+- My sister has always [held me down]. = 언니는 늘 내 곁을 든든하게 지켜 줬어.
+- Thanks for [holding me down] through all of this. = 이 모든 걸 겪는 동안 곁에 있어 줘서 고마워.
+- Don't worry, I'll [hold you down]. = 걱정 마, 내가 지켜 줄게.
+
+## closest to one's heart | 가장 소중한, 가장 마음이 가는 | 여러 개 중 특별히 애착이 가는 것.
+match: closest to my heart; closest to your heart; closest to her heart; closest to his heart; closest to their heart; close to my heart; close to your heart; close to her heart
+- Of all my trips, Jeju is the one [closest to my heart]. = 내가 다녀온 여행 중에 제주가 가장 소중해.
+- Which song is [closest to your heart]? = 어떤 노래가 가장 마음에 남아?
+- This charity is [close to her heart]. = 이 자선 단체는 그녀에게 각별해.
+
+@role 친구가 요즘 왜 이렇게 연락이 없냐고 물어봐요. | Hey, I haven't heard from you in ages! What's going on? | as of late; take up one's time; long story short | Sorry! Work has been taking up all my time as of late. Long story short, I got a new project and it's crazy.
+@role 동료가 스트레스를 어떻게 푸는지 물어봐요. | You always look so calm. How do you deal with stress? | unwind; go-to; without fail | Thanks! I go for a walk every evening without fail. That's my go-to way to unwind.
+@role 친구가 이직을 고민하며 조언을 구해요. | I got a job offer, but I can't decide. What should I do? | take a step back; follow your gut | Take a step back and think about what really matters to you. In the end, follow your gut.
+@role 친구가 어디서 그 소식을 들었냐고 물어봐요. | Wait, how did you know I'm getting married? | through the grapevine; blow someone's mind | I heard it through the grapevine! It kind of blew my mind, but congratulations!
+
+@para 나를 지탱해 주는 사람들 | hold someone down; a giving person; feel most at home with; closest to one's heart | My best friend has held me down since high school. She's such a giving person, and I feel most at home with her. Out of everyone in my life, she's the one closest to my heart.
+@para 요즘 내 일상 | as of late; take up one's time; unwind; without fail | As of late, my new job has been taking up most of my time. To unwind, I watch one episode of a drama every night without fail. It's my little reward for the day.

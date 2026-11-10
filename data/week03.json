@@ -1,0 +1,364 @@
+{
+ "week": 3,
+ "date": "2026-09-14",
+ "title": "마틸다 배우의 스피치",
+ "subtitle": "Imagination and Theatre",
+ "video": "https://youtu.be/TeVE4TQPEwM",
+ "expressions": [
+  {
+   "en": "go way back",
+   "ko": "오래전부터 알던 사이다, 인연이 깊다",
+   "note": "사람뿐 아니라 '나와 어떤 것'의 오래된 인연에도 써요.",
+   "match": [
+    "go way back",
+    "goes way back",
+    "went way back",
+    "going way back",
+    "way back"
+   ],
+   "examples": [
+    {
+     "en": "Jisoo and I [go way back]; we met in kindergarten.",
+     "ko": "지수랑 나는 오래된 사이야. 유치원 때 만났거든."
+    },
+    {
+     "en": "Me and this café [go way back].",
+     "ko": "나랑 이 카페는 인연이 깊어."
+    },
+    {
+     "en": "Do you two know each other? — Oh, we [go way back].",
+     "ko": "둘이 아는 사이야? 아, 우리 엄청 오래됐어."
+    }
+   ],
+   "id": "w03-go-way-back",
+   "week": 3
+  },
+  {
+   "en": "make it to",
+   "ko": "~까지 진출하다, 해내다, 도착하다",
+   "note": "make it만 써도 '해내다/제때 도착하다'. all the way를 넣으면 강조.",
+   "match": [
+    "make it to",
+    "made it to",
+    "making it to",
+    "makes it to",
+    "made it all the way to",
+    "make it all the way to",
+    "make it",
+    "made it"
+   ],
+   "examples": [
+    {
+     "en": "Our team [made it all the way to] the finals!",
+     "ko": "우리 팀이 결승까지 올라갔어!"
+    },
+    {
+     "en": "I hope I can [make it to] your party tonight.",
+     "ko": "오늘 밤 네 파티에 갈 수 있으면 좋겠다."
+    },
+    {
+     "en": "We finally [made it to] the top of the mountain.",
+     "ko": "드디어 산 정상까지 올라갔어."
+    }
+   ],
+   "id": "w03-make-it-to",
+   "week": 3
+  },
+  {
+   "en": "get to",
+   "ko": "(기회가 생겨) ~하게 되다",
+   "note": "have to(해야 한다)와 정반대로 '~할 수 있는 행운'이라는 긍정 뉘앙스.",
+   "match": [
+    "get to",
+    "got to",
+    "gets to",
+    "getting to"
+   ],
+   "examples": [
+    {
+     "en": "I [got to] meet my favorite author at the book fair!",
+     "ko": "도서전에서 내가 제일 좋아하는 작가를 만나게 됐어!"
+    },
+    {
+     "en": "You [get to] choose the restaurant tonight.",
+     "ko": "오늘 저녁 식당은 네가 고르는 거야."
+    },
+    {
+     "en": "I don't have to work this weekend — I [get to] rest!",
+     "ko": "이번 주말엔 일 안 해도 돼. 쉴 수 있어!"
+    }
+   ],
+   "id": "w03-get-to",
+   "week": 3
+  },
+  {
+   "en": "dive into",
+   "ko": "푹 빠지다, 깊이 파고들다",
+   "note": "물에 뛰어들 듯 책·일·주제에 몰입하는 느낌.",
+   "match": [
+    "dive into",
+    "dived into",
+    "dove into",
+    "diving into",
+    "dives into"
+   ],
+   "examples": [
+    {
+     "en": "Let's [dive into] today's topic.",
+     "ko": "오늘 주제로 바로 들어가 볼게요."
+    },
+    {
+     "en": "I [dove into] the new novel as soon as I got home.",
+     "ko": "집에 오자마자 새 소설에 푹 빠졌어."
+    },
+    {
+     "en": "She loves [diving into] old history.",
+     "ko": "그녀는 옛날 역사를 파고드는 걸 좋아해."
+    }
+   ],
+   "id": "w03-dive-into",
+   "week": 3
+  },
+  {
+   "en": "stand up to",
+   "ko": "~에게 맞서다, 당당히 대항하다",
+   "note": "stand up for(~를 편들다)와 짝으로 기억하세요.",
+   "match": [
+    "stand up to",
+    "stood up to",
+    "standing up to",
+    "stands up to"
+   ],
+   "examples": [
+    {
+     "en": "It takes courage to [stand up to] a bully.",
+     "ko": "괴롭히는 사람에게 맞서려면 용기가 필요해."
+    },
+    {
+     "en": "She finally [stood up to] her controlling boss.",
+     "ko": "그녀는 마침내 통제하려 드는 상사에게 맞섰어."
+    },
+    {
+     "en": "I wish I had [stood up to] him back then.",
+     "ko": "그때 그 사람한테 맞섰어야 했는데."
+    }
+   ],
+   "id": "w03-stand-up-to",
+   "week": 3
+  },
+  {
+   "en": "get one's own back",
+   "ko": "앙갚음하다, 되갚아 주다",
+   "note": "영국식 표현. 미국식은 get back at someone.",
+   "match": [
+    "get my own back",
+    "got my own back",
+    "get her own back",
+    "get his own back",
+    "get your own back",
+    "get back at",
+    "got back at",
+    "getting back at"
+   ],
+   "examples": [
+    {
+     "en": "He pranked me last week, so I'll [get my own back].",
+     "ko": "지난주에 걔가 나한테 장난쳤으니까 되갚아 줄 거야."
+    },
+    {
+     "en": "She [got back at] her brother by hiding his phone.",
+     "ko": "그녀는 동생 휴대폰을 숨겨서 앙갚음했어."
+    },
+    {
+     "en": "Don't try to [get back at] people who hurt you; just move on.",
+     "ko": "상처 준 사람한테 복수하려 하지 말고 그냥 털어 버려."
+    }
+   ],
+   "id": "w03-get-one-s-own-back",
+   "week": 3
+  },
+  {
+   "en": "be supposed to",
+   "ko": "~하기로 되어 있다",
+   "note": "약속·규칙·예정. 과거형이면 '원래 그러기로 했는데 (안 됐다)'.",
+   "match": [
+    "supposed to"
+   ],
+   "examples": [
+    {
+     "en": "I'm [supposed to] meet him at seven.",
+     "ko": "일곱 시에 그를 만나기로 했어."
+    },
+    {
+     "en": "You're not [supposed to] eat in here.",
+     "ko": "여기서는 음식 먹으면 안 돼요."
+    },
+    {
+     "en": "We were [supposed to] go camping, but it rained.",
+     "ko": "캠핑 가기로 했는데 비가 왔어."
+    }
+   ],
+   "id": "w03-be-supposed-to",
+   "week": 3
+  },
+  {
+   "en": "not notice a thing",
+   "ko": "전혀 눈치채지 못하다",
+   "note": "부정문 속 a thing이 '하나도'를 강조해요.",
+   "match": [
+    "notice a thing",
+    "noticed a thing",
+    "notices a thing",
+    "noticing a thing"
+   ],
+   "examples": [
+    {
+     "en": "I spilled coffee on my shirt, but nobody [noticed a thing].",
+     "ko": "셔츠에 커피를 쏟았는데 아무도 전혀 눈치 못 챘어."
+    },
+    {
+     "en": "My mom cut her hair, and my dad didn't [notice a thing].",
+     "ko": "엄마가 머리를 잘랐는데 아빠는 하나도 눈치 못 챘어."
+    },
+    {
+     "en": "Act natural and they won't [notice a thing].",
+     "ko": "자연스럽게 행동하면 아무도 눈치 못 챌 거야."
+    }
+   ],
+   "id": "w03-not-notice-a-thing",
+   "week": 3
+  },
+  {
+   "en": "let me tell you",
+   "ko": "진짜라니까, 내 말 믿어",
+   "note": "문장 앞이나 뒤에 붙여 강조하는 구어 표현.",
+   "match": [],
+   "examples": [
+    {
+     "en": "That exam was hard, [let me tell you].",
+     "ko": "그 시험 진짜 어려웠어, 정말이라니까."
+    },
+    {
+     "en": "[Let me tell you], this pizza is the best in town.",
+     "ko": "내 말 믿어, 이 피자 동네에서 최고야."
+    },
+    {
+     "en": "Moving house in summer is no fun, [let me tell you].",
+     "ko": "여름에 이사하는 거 하나도 재미없어, 진짜로."
+    }
+   ],
+   "id": "w03-let-me-tell-you",
+   "week": 3
+  },
+  {
+   "en": "every single",
+   "ko": "하나하나 모두, 단 하나도 빠짐없이",
+   "note": "every보다 훨씬 강조돼요.",
+   "match": [],
+   "examples": [
+    {
+     "en": "I read [every single] comment on my post.",
+     "ko": "내 글에 달린 댓글을 하나도 빠짐없이 다 읽었어."
+    },
+    {
+     "en": "He texts me [every single] morning.",
+     "ko": "그는 매일 아침 빠짐없이 문자해."
+    },
+    {
+     "en": "[Every single] seat was taken.",
+     "ko": "좌석이 하나도 빠짐없이 다 찼어."
+    }
+   ],
+   "id": "w03-every-single",
+   "week": 3
+  },
+  {
+   "en": "deserve a medal",
+   "ko": "상 받아야 해, 정말 대단해",
+   "note": "힘든 걸 견뎌 낸 사람에게 반농담처럼 하는 칭찬.",
+   "match": [
+    "deserve a medal",
+    "deserves a medal",
+    "deserved a medal",
+    "deserve medals",
+    "deserved medals"
+   ],
+   "examples": [
+    {
+     "en": "You worked three night shifts in a row? You [deserve a medal].",
+     "ko": "3일 연속 야간 근무를 했다고? 상 줘야겠다."
+    },
+    {
+     "en": "Anyone who takes the subway at rush hour [deserves a medal].",
+     "ko": "출근길 지하철 타는 사람은 다 상 받아야 해."
+    },
+    {
+     "en": "Mom raised four kids alone — she [deserves a medal].",
+     "ko": "엄마는 혼자서 아이 넷을 키우셨어. 정말 대단하셔."
+    }
+   ],
+   "id": "w03-deserve-a-medal",
+   "week": 3
+  }
+ ],
+ "roleplays": [
+  {
+   "situation": "친구가 둘이 어떻게 알게 됐냐고 물어봐요.",
+   "line": "How do you know Minji?",
+   "use": [
+    "w03-go-way-back"
+   ],
+   "sample": "Oh, we go way back. We were neighbors when we were five."
+  },
+  {
+   "situation": "동료가 지난 주말에 뭐 했냐고 물어봐요.",
+   "line": "Did you do anything fun last weekend?",
+   "use": [
+    "w03-get-to",
+    "w03-dive-into",
+    "w03-let-me-tell-you"
+   ],
+   "sample": "I got to visit a huge bookstore and dove into a new mystery novel. It was so good, let me tell you."
+  },
+  {
+   "situation": "친구가 약속에 못 온다고 미안해해요.",
+   "line": "I'm so sorry I couldn't make it yesterday.",
+   "use": [
+    "w03-be-supposed-to",
+    "w03-make-it-to"
+   ],
+   "sample": "No worries! We were supposed to start at six anyway, but half of us didn't make it to the restaurant on time."
+  },
+  {
+   "situation": "친구가 무대에서 실수를 해서 속상해해요.",
+   "line": "I messed up on stage today. I'm so embarrassed.",
+   "use": [
+    "w03-not-notice-a-thing",
+    "w03-deserve-a-medal"
+   ],
+   "sample": "Honestly, the audience didn't notice a thing. You got through the whole show — you deserve a medal!"
+  }
+ ],
+ "paragraphs": [
+  {
+   "topic": "내가 용기를 냈던 순간",
+   "use": [
+    "w03-stand-up-to",
+    "w03-be-supposed-to",
+    "w03-let-me-tell-you",
+    "w03-every-single"
+   ],
+   "text": "In middle school, a classmate made fun of my friend every single day. We were supposed to ignore it, but one day I stood up to him. I was shaking, let me tell you, but I'm still proud of it."
+  },
+  {
+   "topic": "꿈을 이룬 경험",
+   "use": [
+    "w03-make-it-to",
+    "w03-get-to",
+    "w03-deserve-a-medal",
+    "w03-go-way-back"
+   ],
+   "text": "My dance team and I go way back. Last year, we made it all the way to the national finals, and we got to perform on a huge stage. After months of practice, we all deserved a medal."
+  }
+ ]
+}

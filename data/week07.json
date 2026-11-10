@@ -1,0 +1,493 @@
+{
+ "week": 7,
+ "date": "2026-10-25",
+ "title": "Katie Paris TED",
+ "subtitle": "Campaigns Spend Millions to Influence Voters. This Works Better",
+ "video": "",
+ "expressions": [
+  {
+   "en": "the ick",
+   "ko": "갑자기 확 정 떨어지는 느낌",
+   "note": "원래 데이팅 슬랭. give someone the ick / get the ick.",
+   "match": [
+    "the ick",
+    "an ick",
+    "ick"
+   ],
+   "examples": [
+    {
+     "en": "He chewed with his mouth open, and I instantly got [the ick].",
+     "ko": "그가 입 벌리고 쩝쩝거리는 걸 보자마자 정이 확 떨어졌어."
+    },
+    {
+     "en": "Rude waiters give me [the ick].",
+     "ko": "무례한 직원을 보면 정이 뚝 떨어져."
+    },
+    {
+     "en": "What's your biggest [ick] on a first date?",
+     "ko": "첫 데이트에서 제일 정 떨어지는 게 뭐야?"
+    }
+   ],
+   "id": "w07-the-ick",
+   "week": 7
+  },
+  {
+   "en": "turn someone off",
+   "ko": "정 떨어지게 하다, 흥미를 잃게 하다",
+   "note": "반대는 turn someone on이 아니라 attract / draw in이 무난해요. 명사 a turn-off.",
+   "match": [
+    "turn me off",
+    "turned me off",
+    "turns me off",
+    "turn you off",
+    "turned off",
+    "turn-off",
+    "turn off",
+    "turned people off",
+    "turns people off"
+   ],
+   "examples": [
+    {
+     "en": "His bragging really [turned me off].",
+     "ko": "그의 자랑질에 정말 정이 떨어졌어."
+    },
+    {
+     "en": "Long, boring ads [turn people off].",
+     "ko": "길고 지루한 광고는 사람들의 흥미를 떨어뜨려."
+    },
+    {
+     "en": "Bad manners are a huge [turn-off].",
+     "ko": "매너 없는 건 엄청 깨는 포인트야."
+    }
+   ],
+   "id": "w07-turn-someone-off",
+   "week": 7
+  },
+  {
+   "en": "tune out",
+   "ko": "귀를 닫다, 신경을 끄다, 외면하다",
+   "note": "라디오 주파수를 돌려 버리는 이미지.",
+   "match": [
+    "tune out",
+    "tuned out",
+    "tuning out",
+    "tunes out"
+   ],
+   "examples": [
+    {
+     "en": "I [tune out] when people talk about stocks.",
+     "ko": "사람들이 주식 얘기하면 나는 귀를 닫아."
+    },
+    {
+     "en": "The kids [tuned out] halfway through the lecture.",
+     "ko": "아이들은 강의 중간쯤부터 딴생각했어."
+    },
+    {
+     "en": "You can't just [tune out] the news forever.",
+     "ko": "뉴스를 영원히 외면할 수는 없어."
+    }
+   ],
+   "id": "w07-tune-out",
+   "week": 7
+  },
+  {
+   "en": "unlearn",
+   "ko": "(잘못 배운 것을) 버리다, 고쳐 배우다",
+   "note": "습관·고정관념을 의식적으로 지우는 것.",
+   "match": [
+    "unlearn",
+    "unlearned",
+    "unlearning",
+    "unlearns",
+    "unlearnt"
+   ],
+   "examples": [
+    {
+     "en": "I had to [unlearn] a lot of bad habits from my old job.",
+     "ko": "예전 직장에서 생긴 나쁜 습관을 많이 버려야 했어."
+    },
+    {
+     "en": "Learning English means [unlearning] some textbook phrases.",
+     "ko": "영어를 배운다는 건 교과서식 표현 일부를 버리는 것이기도 해."
+    },
+    {
+     "en": "It's hard to [unlearn] the idea that rest is lazy.",
+     "ko": "쉬는 게 게으른 거라는 생각을 버리기가 어려워."
+    }
+   ],
+   "id": "w07-unlearn",
+   "week": 7
+  },
+  {
+   "en": "light a fire under someone",
+   "ko": "~에게 불을 붙이다, 자극해서 움직이게 하다",
+   "note": "light-lit-lit. 마감이나 사건이 동기가 될 때.",
+   "match": [
+    "light a fire under",
+    "lit a fire under",
+    "lighting a fire under",
+    "lights a fire under"
+   ],
+   "examples": [
+    {
+     "en": "The deadline really [lit a fire under] our team.",
+     "ko": "마감일이 우리 팀에 제대로 불을 붙였어."
+    },
+    {
+     "en": "My doctor's warning [lit a fire under] me to exercise.",
+     "ko": "의사의 경고가 운동하도록 나를 자극했어."
+    },
+    {
+     "en": "Sometimes you need someone to [light a fire under] you.",
+     "ko": "가끔은 누군가 너를 자극해 줄 필요가 있어."
+    }
+   ],
+   "id": "w07-light-a-fire-under-someone",
+   "week": 7
+  },
+  {
+   "en": "hit the road",
+   "ko": "길을 나서다, 출발하다",
+   "note": "여행·운전뿐 아니라 '이제 가 볼게'라는 작별 인사로도 써요.",
+   "match": [
+    "hit the road",
+    "hitting the road",
+    "hits the road"
+   ],
+   "examples": [
+    {
+     "en": "It's getting late. I should [hit the road].",
+     "ko": "늦었네, 이제 가 봐야겠다."
+    },
+    {
+     "en": "We [hit the road] at 5 a.m. to avoid traffic.",
+     "ko": "차 막히는 거 피하려고 새벽 다섯 시에 출발했어."
+    },
+    {
+     "en": "After graduation, she [hit the road] and traveled across Asia.",
+     "ko": "졸업 후 그녀는 길을 떠나 아시아 전역을 여행했어."
+    }
+   ],
+   "id": "w07-hit-the-road",
+   "week": 7
+  },
+  {
+   "en": "it hit me",
+   "ko": "문득 깨달았다, 확 와닿았다",
+   "note": "it hit me that ~ / then it hit me.",
+   "match": [
+    "it hit me",
+    "it hits me",
+    "it finally hit me",
+    "it just hit me",
+    "then it hit me",
+    "it suddenly hit me"
+   ],
+   "examples": [
+    {
+     "en": "Then [it hit me] — I'd left my keys at the office.",
+     "ko": "그때 문득 생각났어, 열쇠를 사무실에 두고 왔다는 게."
+    },
+    {
+     "en": "[It finally hit me] that I was moving abroad.",
+     "ko": "해외로 이사 간다는 게 그제야 실감 났어."
+    },
+    {
+     "en": "Standing at the airport, [it hit me] how much I'd miss them.",
+     "ko": "공항에 서 있으니 그들이 얼마나 그리울지 확 와닿았어."
+    }
+   ],
+   "id": "w07-it-hit-me",
+   "week": 7
+  },
+  {
+   "en": "tap into",
+   "ko": "(잠재력·자원을) 끌어내다, 활용하다",
+   "note": "1회차에도 나온 표현! 이번엔 '힘·자원을 끌어내다'에 집중해요.",
+   "match": [
+    "tap into",
+    "tapped into",
+    "tapping into",
+    "taps into"
+   ],
+   "examples": [
+    {
+     "en": "This program helps teens [tap into] their leadership skills.",
+     "ko": "이 프로그램은 십 대들이 리더십을 끌어내도록 도와."
+    },
+    {
+     "en": "We [tapped into] our savings to fix the roof.",
+     "ko": "지붕을 고치려고 저축한 돈을 썼어."
+    },
+    {
+     "en": "Great coaches know how to [tap into] a player's potential.",
+     "ko": "훌륭한 코치는 선수의 잠재력을 끌어낼 줄 알아."
+    }
+   ],
+   "id": "w07-tap-into",
+   "week": 7
+  },
+  {
+   "en": "all in",
+   "ko": "올인하다, 전적으로 참여하다",
+   "note": "포커에서 온 말. I'm all in = 나 완전 찬성/전부 걸게.",
+   "match": [
+    "all in",
+    "all-in",
+    "go all in",
+    "went all in",
+    "going all in"
+   ],
+   "examples": [
+    {
+     "en": "If you're doing this, you have to be [all in].",
+     "ko": "이거 할 거면 완전히 올인해야 해."
+    },
+    {
+     "en": "A weekend trip to Busan? I'm [all in]!",
+     "ko": "주말에 부산 여행? 나 완전 찬성!"
+    },
+    {
+     "en": "She [went all in] on her new business.",
+     "ko": "그녀는 새 사업에 모든 걸 걸었어."
+    }
+   ],
+   "id": "w07-all-in",
+   "week": 7
+  },
+  {
+   "en": "have each other's backs",
+   "ko": "서로 뒤를 봐주다, 든든하게 지켜 주다",
+   "note": "I've got your back = 내가 네 편이야.",
+   "match": [
+    "have each other's backs",
+    "had each other's backs",
+    "has each other's backs",
+    "got each other's backs",
+    "got your back",
+    "have your back",
+    "got my back",
+    "has my back",
+    "had my back"
+   ],
+   "examples": [
+    {
+     "en": "Our team works well because we [have each other's backs].",
+     "ko": "우리 팀은 서로 뒤를 봐줘서 잘 굴러가."
+    },
+    {
+     "en": "Don't worry about the presentation. I've [got your back].",
+     "ko": "발표 걱정 마. 내가 받쳐 줄게."
+    },
+    {
+     "en": "Real friends [have each other's backs].",
+     "ko": "진짜 친구는 서로를 지켜 줘."
+    }
+   ],
+   "id": "w07-have-each-other-s-backs",
+   "week": 7
+  },
+  {
+   "en": "afford",
+   "ko": "(돈·시간·상황을) 감당할 여유가 있다",
+   "note": "can't afford to + 동사 = ~할 여유가 없다(~하면 안 된다).",
+   "match": [
+    "afford",
+    "afforded",
+    "affording",
+    "affordable"
+   ],
+   "examples": [
+    {
+     "en": "I can't [afford] a new laptop right now.",
+     "ko": "지금은 새 노트북 살 여유가 없어."
+    },
+    {
+     "en": "We can't [afford] to lose another player.",
+     "ko": "선수를 또 잃을 여유가 없어."
+    },
+    {
+     "en": "Can you [afford] to take a whole month off?",
+     "ko": "한 달 통째로 쉴 여유가 돼?"
+    }
+   ],
+   "id": "w07-afford",
+   "week": 7
+  },
+  {
+   "en": "show up",
+   "ko": "나타나다, 참석하다 / (힘들 때) 곁에 있어 주다",
+   "note": "show up for someone = ~를 위해 와 주다.",
+   "match": [
+    "show up",
+    "showed up",
+    "showing up",
+    "shows up",
+    "shown up"
+   ],
+   "examples": [
+    {
+     "en": "Only five people [showed up] to the meeting.",
+     "ko": "회의에 다섯 명밖에 안 왔어."
+    },
+    {
+     "en": "She always [shows up] for her friends when it matters.",
+     "ko": "그녀는 중요한 순간마다 친구들 곁에 있어 줘."
+    },
+    {
+     "en": "Just [showing up] every day is half the battle.",
+     "ko": "매일 꾸준히 나오는 것만으로도 반은 한 거야."
+    }
+   ],
+   "id": "w07-show-up",
+   "week": 7
+  },
+  {
+   "en": "open up",
+   "ko": "속마음을 털어놓다, 마음을 열다",
+   "note": "open up to someone / about something.",
+   "match": [
+    "open up",
+    "opened up",
+    "opening up",
+    "opens up"
+   ],
+   "examples": [
+    {
+     "en": "It took a while for him to [open up] to me.",
+     "ko": "그가 나한테 마음을 여는 데 시간이 좀 걸렸어."
+    },
+    {
+     "en": "She finally [opened up] about her stress at work.",
+     "ko": "그녀가 마침내 회사 스트레스에 대해 털어놨어."
+    },
+    {
+     "en": "It's not easy for me to [open up] to new people.",
+     "ko": "나는 새로운 사람에게 마음을 여는 게 쉽지 않아."
+    }
+   ],
+   "id": "w07-open-up",
+   "week": 7
+  },
+  {
+   "en": "let one's guard down",
+   "ko": "경계를 풀다, 마음의 빗장을 내리다",
+   "note": "방어 자세를 내려놓는 이미지.",
+   "match": [
+    "let my guard down",
+    "let her guard down",
+    "let his guard down",
+    "let your guard down",
+    "let our guard down",
+    "let their guard down",
+    "letting my guard down",
+    "guard down"
+   ],
+   "examples": [
+    {
+     "en": "I finally [let my guard down] and told them how I felt.",
+     "ko": "마침내 경계를 풀고 내 감정을 말했어."
+    },
+    {
+     "en": "Don't [let your guard down] until the game is over.",
+     "ko": "경기 끝날 때까지 방심하지 마."
+    },
+    {
+     "en": "She rarely [lets her guard down] around strangers.",
+     "ko": "그녀는 낯선 사람 앞에서 좀처럼 마음을 열지 않아."
+    }
+   ],
+   "id": "w07-let-one-s-guard-down",
+   "week": 7
+  },
+  {
+   "en": "run the numbers",
+   "ko": "수치를 계산해 보다, 데이터를 돌려 보다",
+   "note": "결정 전에 비용·수익을 따져 볼 때.",
+   "match": [
+    "run the numbers",
+    "ran the numbers",
+    "running the numbers",
+    "runs the numbers"
+   ],
+   "examples": [
+    {
+     "en": "Let me [run the numbers] before we decide.",
+     "ko": "결정하기 전에 숫자 좀 계산해 볼게."
+    },
+    {
+     "en": "We [ran the numbers], and the trip costs less than we thought.",
+     "ko": "계산해 보니 여행 비용이 생각보다 적게 들어."
+    },
+    {
+     "en": "If you [run the numbers], buying is cheaper than renting.",
+     "ko": "따져 보면 사는 게 빌리는 것보다 싸."
+    }
+   ],
+   "id": "w07-run-the-numbers",
+   "week": 7
+  }
+ ],
+ "roleplays": [
+  {
+   "situation": "친구가 소개팅이 어땠냐고 물어봐요. 별로였어요.",
+   "line": "So? How was your date last night?",
+   "use": [
+    "w07-the-ick",
+    "w07-turn-someone-off"
+   ],
+   "sample": "Honestly, I got the ick. He was rude to the waiter, and that really turned me off."
+  },
+  {
+   "situation": "친구가 같이 해외 여행 가자고 제안해요.",
+   "line": "Let's go to Japan next month! What do you think?",
+   "use": [
+    "w07-all-in",
+    "w07-run-the-numbers",
+    "w07-afford"
+   ],
+   "sample": "I'm all in! Let me run the numbers first and see if I can afford it."
+  },
+  {
+   "situation": "친구 모임이 왜 그렇게 끈끈한지 누가 물어봐요.",
+   "line": "Your friend group seems really close. What's the secret?",
+   "use": [
+    "w07-have-each-other-s-backs",
+    "w07-show-up",
+    "w07-open-up"
+   ],
+   "sample": "We have each other's backs. We show up for each other and we're not afraid to open up."
+  },
+  {
+   "situation": "동료가 갑자기 열심히 하게 된 계기를 물어봐요.",
+   "line": "You've been working so hard lately. What changed?",
+   "use": [
+    "w07-light-a-fire-under-someone",
+    "w07-it-hit-me"
+   ],
+   "sample": "My manager's feedback lit a fire under me. It hit me that I was wasting my potential."
+  }
+ ],
+ "paragraphs": [
+  {
+   "topic": "새로운 모임에 마음을 열게 된 경험",
+   "use": [
+    "w07-let-one-s-guard-down",
+    "w07-open-up",
+    "w07-have-each-other-s-backs",
+    "w07-show-up"
+   ],
+   "text": "At first, I didn't let my guard down in the English study group. But over time, I started to open up. Now we have each other's backs, and everyone shows up for each other."
+  },
+  {
+   "topic": "결심하고 떠난 여행",
+   "use": [
+    "w07-it-hit-me",
+    "w07-hit-the-road",
+    "w07-run-the-numbers",
+    "w07-all-in"
+   ],
+   "text": "One night it hit me that I'd never traveled alone. I ran the numbers, saved for three months, and went all in. Then I hit the road with just a backpack."
+  }
+ ]
+}

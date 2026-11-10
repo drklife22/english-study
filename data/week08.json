@@ -1,0 +1,502 @@
+{
+ "week": 8,
+ "date": "2026-10-31",
+ "title": "타블로의 고민 상담",
+ "subtitle": "Hey Tablo",
+ "video": "https://youtu.be/9GZggCBZurY",
+ "expressions": [
+  {
+   "en": "here I am (still) ~ing",
+   "ko": "(남들은 다 앞서가는데) 나는 아직 ~하고 있다",
+   "note": "자조 섞인 한탄. 문장 맨 앞에 와요.",
+   "match": [
+    "here i am",
+    "and here i am"
+   ],
+   "examples": [
+    {
+     "en": "Everyone's buying houses, and [here I am] still living with my parents.",
+     "ko": "다들 집 사는데 나는 아직 부모님이랑 살고 있네."
+    },
+    {
+     "en": "My friends are all married, and [here I am] still swiping on dating apps.",
+     "ko": "친구들은 다 결혼했는데 나는 아직 데이팅 앱이나 넘기고 있어."
+    },
+    {
+     "en": "It's 2 a.m., and [here I am], still doing homework.",
+     "ko": "새벽 두 시인데 나는 아직 숙제하고 있다."
+    }
+   ],
+   "id": "w08-here-i-am-still-ing",
+   "week": 8
+  },
+  {
+   "en": "keep someone awake",
+   "ko": "~를 잠 못 들게 하다",
+   "note": "걱정·소음·카페인 등이 주어로 와요. keep me up도 같은 뜻.",
+   "match": [
+    "keep me awake",
+    "keeps me awake",
+    "kept me awake",
+    "keeping me awake",
+    "keep you awake",
+    "keeps you awake",
+    "keep me up",
+    "kept me up",
+    "keeps me up"
+   ],
+   "examples": [
+    {
+     "en": "The noise from upstairs [kept me awake] all night.",
+     "ko": "윗집 소음 때문에 밤새 잠을 못 잤어."
+    },
+    {
+     "en": "What [keeps you awake] at night these days?",
+     "ko": "요즘 무엇 때문에 밤에 잠 못 들어?"
+    },
+    {
+     "en": "Too much coffee [keeps me up].",
+     "ko": "커피를 너무 마시면 잠이 안 와."
+    }
+   ],
+   "id": "w08-keep-someone-awake",
+   "week": 8
+  },
+  {
+   "en": "~-inducing",
+   "ko": "~을 유발하는, ~을 불러일으키는",
+   "note": "anxiety-inducing, sleep-inducing, cringe-inducing 처럼 하이픈으로 붙여요.",
+   "match": [
+    "inducing"
+   ],
+   "examples": [
+    {
+     "en": "Job interviews are so anxiety-[inducing].",
+     "ko": "면접은 정말 불안을 유발해."
+    },
+    {
+     "en": "That lecture was totally sleep-[inducing].",
+     "ko": "그 강의는 완전 수면제였어."
+    },
+    {
+     "en": "Watching my old videos is cringe-[inducing].",
+     "ko": "내 옛날 영상 보면 오글거려."
+    }
+   ],
+   "id": "w08-inducing",
+   "week": 8
+  },
+  {
+   "en": "rest on",
+   "ko": "~에 달려 있다, ~에 기대다",
+   "note": "rest on one's shoulders = ~의 어깨에 달려 있다.",
+   "match": [
+    "rest on",
+    "rests on",
+    "rested on",
+    "resting on"
+   ],
+   "examples": [
+    {
+     "en": "The whole project [rests on] this one meeting.",
+     "ko": "프로젝트 전체가 이 회의 하나에 달려 있어."
+    },
+    {
+     "en": "Don't let everything [rest on] your shoulders.",
+     "ko": "모든 걸 네 어깨에 짊어지려고 하지 마."
+    },
+    {
+     "en": "His argument [rests on] old data.",
+     "ko": "그의 주장은 오래된 데이터에 기대고 있어."
+    }
+   ],
+   "id": "w08-rest-on",
+   "week": 8
+  },
+  {
+   "en": "what ifs",
+   "ko": "'만약에 ~하면 어쩌지' 하는 걱정들",
+   "note": "명사로 써요. Stop living in the what-ifs.",
+   "match": [
+    "what ifs",
+    "what-ifs",
+    "what if"
+   ],
+   "examples": [
+    {
+     "en": "I spent all night thinking about the [what-ifs].",
+     "ko": "밤새 '만약에'라는 걱정만 했어."
+    },
+    {
+     "en": "Don't let the [what-ifs] stop you from trying.",
+     "ko": "'만약에' 하는 걱정 때문에 시도를 포기하지 마."
+    },
+    {
+     "en": "[What if] I fail? — Then you'll learn something.",
+     "ko": "실패하면 어쩌지? — 그럼 뭔가 배우겠지."
+    }
+   ],
+   "id": "w08-what-ifs",
+   "week": 8
+  },
+  {
+   "en": "put off",
+   "ko": "미루다, 연기하다",
+   "note": "put off + ~ing / put it off. 명사형 procrastinate보다 일상적.",
+   "match": [
+    "put off",
+    "putting off",
+    "puts off",
+    "put it off",
+    "put them off"
+   ],
+   "examples": [
+    {
+     "en": "I keep [putting off] going to the dentist.",
+     "ko": "치과 가는 걸 계속 미루고 있어."
+    },
+    {
+     "en": "Let's not [put it off] any longer.",
+     "ko": "더는 미루지 말자."
+    },
+    {
+     "en": "They [put off] the wedding until next spring.",
+     "ko": "그들은 결혼식을 내년 봄으로 미뤘어."
+    }
+   ],
+   "id": "w08-put-off",
+   "week": 8
+  },
+  {
+   "en": "in itself",
+   "ko": "그 자체로, 그것만으로도",
+   "note": "대상이 복수면 in themselves.",
+   "match": [
+    "in itself",
+    "in themselves",
+    "in and of itself"
+   ],
+   "examples": [
+    {
+     "en": "Getting an interview is an achievement [in itself].",
+     "ko": "면접 기회를 얻은 것만으로도 성과야."
+    },
+    {
+     "en": "The trip [in itself] wasn't expensive, but the food was.",
+     "ko": "여행 자체는 비싸지 않았는데 음식이 비쌌어."
+    },
+    {
+     "en": "Learning a language is fun [in itself].",
+     "ko": "언어를 배우는 건 그 자체로 재밌어."
+    }
+   ],
+   "id": "w08-in-itself",
+   "week": 8
+  },
+  {
+   "en": "all over the place",
+   "ko": "들쭉날쭉한, 중구난방인 / 사방에",
+   "note": "생각·일정·글이 정리 안 됐을 때도 써요.",
+   "match": [],
+   "examples": [
+    {
+     "en": "My schedule is [all over the place] this week.",
+     "ko": "이번 주 내 일정이 엉망진창이야."
+    },
+    {
+     "en": "Sorry, my thoughts are [all over the place] right now.",
+     "ko": "미안, 지금 생각이 정리가 안 돼."
+    },
+    {
+     "en": "There were toys [all over the place].",
+     "ko": "사방에 장난감이 널려 있었어."
+    }
+   ],
+   "id": "w08-all-over-the-place",
+   "week": 8
+  },
+  {
+   "en": "work one's butt off",
+   "ko": "죽어라 일하다, 뼈 빠지게 노력하다",
+   "note": "캐주얼한 표현. 공식 자리에선 work extremely hard.",
+   "match": [
+    "work my butt off",
+    "worked my butt off",
+    "working my butt off",
+    "works her butt off",
+    "works his butt off",
+    "worked her butt off",
+    "worked his butt off",
+    "worked our butts off",
+    "butt off",
+    "butts off"
+   ],
+   "examples": [
+    {
+     "en": "I [worked my butt off] to pass that exam.",
+     "ko": "그 시험 붙으려고 죽어라 공부했어."
+    },
+    {
+     "en": "She [works her butt off] every single day.",
+     "ko": "그녀는 매일 뼈 빠지게 일해."
+    },
+    {
+     "en": "We [worked our butts off], and it paid off.",
+     "ko": "우리는 죽어라 노력했고, 결국 보상받았어."
+    }
+   ],
+   "id": "w08-work-one-s-butt-off",
+   "week": 8
+  },
+  {
+   "en": "put aside",
+   "ko": "(돈·시간을) 따로 떼어 두다 / 잠시 제쳐 두다",
+   "note": "put something to the side도 같은 뜻.",
+   "match": [
+    "put aside",
+    "putting aside",
+    "puts aside",
+    "put it aside",
+    "put to the side",
+    "put it to the side",
+    "set aside"
+   ],
+   "examples": [
+    {
+     "en": "I [put aside] 100,000 won every month for travel.",
+     "ko": "매달 여행용으로 10만 원씩 따로 떼어 둬."
+    },
+    {
+     "en": "Let's [put our differences aside] for now.",
+     "ko": "일단 서로 다른 의견은 제쳐 두자."
+    },
+    {
+     "en": "Try to [put aside] an hour a day for yourself.",
+     "ko": "하루 한 시간은 너 자신을 위해 떼어 둬 봐."
+    }
+   ],
+   "id": "w08-put-aside",
+   "week": 8
+  },
+  {
+   "en": "find a balance",
+   "ko": "(A와 B 사이에서) 균형을 찾다",
+   "note": "find a balance between work and life.",
+   "match": [
+    "find a balance",
+    "found a balance",
+    "finding a balance",
+    "strike a balance",
+    "find the balance",
+    "find balance"
+   ],
+   "examples": [
+    {
+     "en": "It's hard to [find a balance] between work and family.",
+     "ko": "일과 가족 사이에서 균형을 찾기가 어려워."
+    },
+    {
+     "en": "I'm still [finding a balance] between studying and resting.",
+     "ko": "아직 공부와 휴식 사이에서 균형을 찾는 중이야."
+    },
+    {
+     "en": "You need to [find the balance] that works for you.",
+     "ko": "너한테 맞는 균형을 찾아야 해."
+    }
+   ],
+   "id": "w08-find-a-balance",
+   "week": 8
+  },
+  {
+   "en": "run into",
+   "ko": "(문제에) 부딪히다 / (사람을) 우연히 마주치다",
+   "note": "run into trouble / run into an old friend.",
+   "match": [
+    "run into",
+    "ran into",
+    "running into",
+    "runs into"
+   ],
+   "examples": [
+    {
+     "en": "I [ran into] my old teacher at the supermarket.",
+     "ko": "마트에서 옛날 선생님을 우연히 마주쳤어."
+    },
+    {
+     "en": "We [ran into] a few problems with the app.",
+     "ko": "앱에서 문제가 몇 가지 생겼어."
+    },
+    {
+     "en": "If you [run into] trouble, call me.",
+     "ko": "문제 생기면 전화해."
+    }
+   ],
+   "id": "w08-run-into",
+   "week": 8
+  },
+  {
+   "en": "back in the day",
+   "ko": "예전에, 그 시절엔",
+   "note": "약간 그리운 뉘앙스. 문장 앞이나 끝에.",
+   "match": [],
+   "examples": [
+    {
+     "en": "[Back in the day], we used to write letters.",
+     "ko": "예전엔 우리 편지를 썼었지."
+    },
+    {
+     "en": "This street was full of bookstores [back in the day].",
+     "ko": "그 시절엔 이 거리에 서점이 가득했어."
+    },
+    {
+     "en": "My dad was a great dancer [back in the day].",
+     "ko": "우리 아빠 왕년에 춤 엄청 잘 추셨어."
+    }
+   ],
+   "id": "w08-back-in-the-day",
+   "week": 8
+  },
+  {
+   "en": "be hell-bent on",
+   "ko": "(누가 뭐래도) ~하기로 작정하다",
+   "note": "강한 고집. 캐주얼하지만 다소 센 표현.",
+   "match": [
+    "hell-bent on",
+    "hellbent on",
+    "hell bent on"
+   ],
+   "examples": [
+    {
+     "en": "She's [hell-bent on] running a marathon this year.",
+     "ko": "그녀는 올해 마라톤을 뛰겠다고 작정했어."
+    },
+    {
+     "en": "Why are you so [hell-bent on] moving abroad?",
+     "ko": "왜 그렇게 해외로 가려고 작정한 거야?"
+    },
+    {
+     "en": "He was [hell-bent on] proving everyone wrong.",
+     "ko": "그는 모두가 틀렸다는 걸 증명하겠다고 작정했어."
+    }
+   ],
+   "id": "w08-be-hell-bent-on",
+   "week": 8
+  },
+  {
+   "en": "way ahead of",
+   "ko": "~보다 훨씬 앞서 있는",
+   "note": "way가 '훨씬'을 강조. way ahead of one's time = 시대를 앞서간.",
+   "match": [
+    "way ahead of",
+    "way ahead",
+    "ahead of"
+   ],
+   "examples": [
+    {
+     "en": "My friends seem [way ahead of] me in life.",
+     "ko": "친구들이 인생에서 나보다 훨씬 앞서 있는 것 같아."
+    },
+    {
+     "en": "That designer was [way ahead of] her time.",
+     "ko": "그 디자이너는 시대를 훨씬 앞서갔어."
+    },
+    {
+     "en": "Don't worry, you're [way ahead of] schedule.",
+     "ko": "걱정 마, 일정보다 훨씬 앞서 있어."
+    }
+   ],
+   "id": "w08-way-ahead-of",
+   "week": 8
+  },
+  {
+   "en": "end up ~ing",
+   "ko": "결국 ~하게 되다",
+   "note": "계획과 다르게 흘러간 결과. end up + 장소/명사도 가능.",
+   "match": [
+    "end up",
+    "ended up",
+    "ending up",
+    "ends up"
+   ],
+   "examples": [
+    {
+     "en": "We [ended up] staying home because of the rain.",
+     "ko": "비 때문에 결국 집에 있었어."
+    },
+    {
+     "en": "I [ended up] talking to her for three hours.",
+     "ko": "결국 그녀랑 세 시간 동안 얘기했어."
+    },
+    {
+     "en": "If you keep skipping meals, you'll [end up] sick.",
+     "ko": "계속 끼니를 거르면 결국 아플 거야."
+    }
+   ],
+   "id": "w08-end-up-ing",
+   "week": 8
+  }
+ ],
+ "roleplays": [
+  {
+   "situation": "친구가 요즘 왜 그렇게 피곤해 보이냐고 물어봐요.",
+   "line": "You look exhausted. Are you sleeping okay?",
+   "use": [
+    "w08-keep-someone-awake",
+    "w08-what-ifs",
+    "w08-inducing"
+   ],
+   "sample": "Not really. The what-ifs keep me awake at night. This whole job search is so anxiety-inducing."
+  },
+  {
+   "situation": "친구가 다이어트 계획이 어떻게 되고 있냐고 물어봐요.",
+   "line": "How's your plan to start working out going?",
+   "use": [
+    "w08-put-off",
+    "w08-end-up-ing"
+   ],
+   "sample": "Honestly, I keep putting it off. I always end up watching Netflix instead."
+  },
+  {
+   "situation": "후배가 일과 공부를 같이 하느라 힘들다고 상담해요.",
+   "line": "I'm working and studying at the same time. It's too much.",
+   "use": [
+    "w08-find-a-balance",
+    "w08-in-itself",
+    "w08-put-aside"
+   ],
+   "sample": "Doing both is impressive in itself. Try to find a balance — maybe put aside one evening a week just to rest."
+  },
+  {
+   "situation": "친구가 다른 사람들이 다 앞서가는 것 같다고 우울해해요.",
+   "line": "Everyone around me is way more successful than me.",
+   "use": [
+    "w08-here-i-am-still-ing",
+    "w08-way-ahead-of",
+    "w08-back-in-the-day"
+   ],
+   "sample": "I feel that way too! Everyone seems way ahead of me, and here I am still figuring things out. But back in the day, we were all just kids."
+  }
+ ],
+ "paragraphs": [
+  {
+   "topic": "요즘 나의 고민",
+   "use": [
+    "w08-here-i-am-still-ing",
+    "w08-what-ifs",
+    "w08-keep-someone-awake",
+    "w08-find-a-balance"
+   ],
+   "text": "My friends are getting promoted, and here I am still trying to figure out my career. The what-ifs keep me awake some nights. I'm trying to find a balance between pushing myself and being kind to myself."
+  },
+  {
+   "topic": "열심히 해서 이뤄 낸 일",
+   "use": [
+    "w08-be-hell-bent-on",
+    "w08-work-one-s-butt-off",
+    "w08-run-into",
+    "w08-end-up-ing"
+   ],
+   "text": "Last year I was hell-bent on passing the certification exam. I worked my butt off for six months. I ran into a lot of problems along the way, but I ended up passing with a great score."
+  }
+ ]
+}

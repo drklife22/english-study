@@ -1,0 +1,93 @@
+week: 1
+date: 2026-09-04
+title: 제니 영어 인터뷰
+subtitle: BLACKPINK JENNIE
+video: https://www.youtube.com/watch?v=lzWF94mipFY
+
+## blow up | 대박 나다, 갑자기 확 뜨다 | 영상·노래·가게가 순식간에 유명해질 때. 화가 폭발한다는 뜻으로도 써요.
+match: blow up; blew up; blown up; blowing up; blows up
+- My friend's bakery [blew up] after a food blogger posted about it. = 푸드 블로거가 글을 올린 뒤로 친구네 빵집이 대박 났어.
+- Nobody expected that silly dance to [blow up] like that. = 그 엉뚱한 춤이 그렇게 뜰 줄은 아무도 몰랐어.
+- Her podcast is [blowing up] right now. = 요즘 그녀의 팟캐스트가 엄청 뜨고 있어.
+
+## tap into | (잠재된 것을) 끌어내다, 깊이 파고들어 활용하다 | 한 번 해보는 것보다 그 안의 가능성·감정을 깊이 끌어내는 느낌이에요.
+- Painting helps me [tap into] feelings I can't put into words. = 그림을 그리면 말로 못 하는 감정을 끌어낼 수 있어.
+- Good teachers know how to [tap into] students' curiosity. = 좋은 선생님은 학생들의 호기심을 끌어낼 줄 알아.
+- We need to [tap into] the younger market. = 우리는 젊은 층 시장을 공략해야 해.
+
+## in a good way | 좋은 의미로, 좋은 쪽으로 | 특이하거나 예상 밖이지만 칭찬이라는 걸 덧붙일 때 써요.
+- This place is kind of weird, [in a good way]. = 여기 좀 특이하다, 좋은 의미로.
+- You've changed a lot — [in a good way]! = 너 많이 변했다, 좋은 쪽으로!
+- The ending surprised me [in a good way]. = 결말이 좋은 의미로 놀라웠어.
+
+## hold on to | 꽉 붙잡다, 놓지 않고 간직하다 | 물건뿐 아니라 꿈·추억·신념을 지킬 때도 써요.
+match: hold on to; held on to; holding on to; holds on to; hold onto; held onto
+- I still [hold on to] the letters my grandma wrote me. = 할머니가 써 주신 편지를 아직도 간직하고 있어.
+- [Hold on to] that feeling when things get hard. = 힘들 때 그 마음을 꼭 붙잡아.
+- She [held on to] her dream even when no one believed in her. = 아무도 믿어 주지 않을 때도 그녀는 꿈을 놓지 않았어.
+
+## can't wait | 너무 기대돼, 빨리 하고 싶어 | can't wait for + 명사 / can't wait to + 동사
+match: can't wait; cannot wait; couldn't wait; can not wait
+- I [can't wait] to see you this weekend! = 이번 주말에 너 보는 거 너무 기대돼!
+- We [can't wait] for the summer break. = 여름방학이 너무 기다려져.
+- I [couldn't wait] to tell my mom the news. = 엄마한테 그 소식을 빨리 말하고 싶어서 못 참겠더라.
+
+## caring person | 배려심 많은 사람, 다정한 사람 | 남의 감정과 필요를 잘 챙기는 사람을 묘사할 때.
+match: caring person; caring friend; caring people
+- My roommate is such a [caring person]; she always checks if I've eaten. = 내 룸메이트는 정말 다정해. 내가 밥 먹었는지 늘 챙겨.
+- You don't have to say yes to everything to be a [caring person]. = 배려심 있는 사람이 되려고 모든 걸 다 들어줄 필요는 없어.
+- He's quiet, but he's a really [caring person]. = 그는 말수는 적지만 정말 다정한 사람이야.
+
+## jam | 신나게 즐기다, 리듬 타다, 흥얼거리다 | 음악에 맞춰 신나게 노는 느낌의 구어 표현.
+match: jam; jamming; jammed; jams; jam out
+- We were [jamming] to old K-pop songs in the car. = 우리는 차에서 옛날 케이팝에 맞춰 신나게 놀았어.
+- Let's put on some music and [jam] for a bit. = 음악 틀고 좀 신나게 놀자.
+- He was [jamming out] with his headphones on at the gym. = 그는 헬스장에서 헤드폰 끼고 리듬을 타고 있었어.
+
+## put effort into | ~에 노력을 쏟다, 공을 들이다 | put a lot of / more / so much effort into 처럼 중간에 넣어 강조해요.
+match: put effort into; put a lot of effort into; put more effort into; putting effort into; puts effort into
+- I want to [put more effort into] my English this year. = 올해는 영어에 더 공을 들이고 싶어.
+- You can tell he [put a lot of effort into] this gift. = 이 선물에 그가 공을 많이 들였다는 게 느껴져.
+- She [puts effort into] every little detail. = 그녀는 사소한 것 하나하나에 정성을 들여.
+
+## at an all-time high | 역대 최고 수준인, 최고조인 | 수치·관심·인기가 지금까지 중 가장 높을 때.
+match: at an all-time high; an all-time high; all-time high
+- My stress level is [at an all-time high] this week. = 이번 주 내 스트레스 지수가 역대 최고야.
+- Interest in Korean food is [at an all-time high]. = 한국 음식에 대한 관심이 역대 최고 수준이야.
+- Rent prices hit [an all-time high] last month. = 지난달 월세가 역대 최고치를 찍었어.
+
+## in time | 시간이 지나면, 결국에는 | on time(제시간에)과 헷갈리지 않게! 문장 끝에 자주 와요.
+- Don't worry, you'll get used to it [in time]. = 걱정 마, 시간이 지나면 익숙해질 거야.
+- [In time], I realized she was right. = 시간이 지나고 나서야 그녀가 옳았다는 걸 알았어.
+- The pain will fade [in time]. = 아픔은 시간이 지나면 옅어질 거야.
+
+## flow well | 매끄럽게 이어지다, 순조롭게 흘러가다 | 대화·글·행사가 막힘없이 자연스러울 때. flow together는 '조화롭게 어우러지다'.
+match: flow well; flowed well; flows well; flow together; flowed together; flows together; flowing
+- Our first meeting [flowed really well], like we'd known each other for years. = 첫 만남이 정말 자연스럽게 흘러갔어, 몇 년 알던 사이처럼.
+- Read it out loud to check if the sentences [flow well]. = 소리 내 읽어 보면서 문장이 매끄럽게 이어지는지 확인해 봐.
+- The colors in this room [flow together] nicely. = 이 방은 색감이 잘 어우러져.
+
+## embrace | 기꺼이 받아들이다, 포용하다 / 껴안다 | 변화·기회·나다움을 긍정적으로 받아들일 때 자주 써요.
+match: embrace; embraced; embracing; embraces
+- I'm learning to [embrace] my curly hair. = 곱슬머리를 있는 그대로 받아들이는 법을 배우는 중이야.
+- Our team [embraced] the new system pretty quickly. = 우리 팀은 새 시스템을 꽤 빨리 받아들였어.
+- You have to [embrace] the awkward stage when you learn something new. = 새로운 걸 배울 땐 어색한 단계를 받아들여야 해.
+
+## time flies | 시간이 쏜살같이 간다 | 놀라움을 담아 감탄처럼 말해요. Time flies when you're having fun.
+match: time flies; time really flies; time flew; time is flying
+- [Time flies] — it's already been a year since I moved here! = 시간 진짜 빠르다, 여기 이사 온 지 벌써 1년이야!
+- [Time flies] when you're with good friends. = 좋은 친구들이랑 있으면 시간이 금방 가.
+- Wow, [time really flies]. My nephew is in middle school now. = 와, 시간 정말 빠르다. 조카가 벌써 중학생이야.
+
+## in person | 직접, 실제로 만나서 | 온라인·전화가 아니라 얼굴 보고 할 때.
+- It's so nice to finally meet you [in person]! = 드디어 직접 만나게 돼서 정말 반가워요!
+- I'd rather talk about this [in person]. = 이건 직접 만나서 얘기하는 게 좋겠어.
+- She looks even taller [in person]. = 그녀는 실제로 보면 더 키가 커 보여.
+
+@role 친구가 요즘 시작한 유튜브 채널이 어떻게 되고 있는지 물어봐요. | So how's your YouTube channel going? | blow up; can't wait | It's still small, but one video kind of blew up last week! I can't wait to post the next one.
+@role 3년 만에 오랜 친구를 만났어요. 첫인사를 해 보세요. | Oh my gosh, look at you! It's been forever! | in person; time flies; in a good way | I know! Time flies! It's so good to see you in person. You look different — in a good way!
+@role 동료가 발표가 너무 떨린다고 해요. 응원해 주세요. | I'm so nervous about my presentation tomorrow. | put effort into; in time; hold on to | You put so much effort into it, so you'll be fine. Hold on to that confidence. It gets easier in time.
+@role 새 회사 분위기가 어떤지 친구가 물어봐요. | How do you like your new team? | caring person; embrace; flow well | My manager is a really caring person, and meetings flow really well. I'm trying to embrace the new way of doing things.
+
+@para 요즘 내가 푹 빠진 취미 | tap into; put effort into; time flies; can't wait | These days I'm into drawing. It helps me tap into a side of myself I didn't know I had. I've been putting a lot of effort into it every night, and time flies when I'm drawing. I can't wait to show my friends what I've made.
+@para 오랜만에 만난 친구 이야기 | in person; time flies; in a good way; flow well | Last weekend I met an old friend in person for the first time in three years. Time really flies! She had changed a lot, in a good way. Our conversation flowed so well that we talked for five hours.

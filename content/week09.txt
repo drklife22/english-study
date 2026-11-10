@@ -1,0 +1,109 @@
+week: 9
+date: 2026-11-06
+title: Anne Hathaway Life in Looks
+subtitle: From The Devil Wears Prada to Interstellar
+video: https://youtu.be/wZFblGM42Mw
+
+## feel like a lifetime ago | 아주 오래전 일처럼 느껴지다 | 실제론 얼마 안 됐어도 많은 게 변했을 때.
+match: feels like a lifetime ago; felt like a lifetime ago; feel like a lifetime ago; a lifetime ago
+- My college days [feel like a lifetime ago]. = 대학 시절이 아주 먼 옛날처럼 느껴져.
+- We only met last year, but it [feels like a lifetime ago]. = 작년에 만났을 뿐인데 아주 오래전 일 같아.
+- That job [feels like a lifetime ago] now. = 그 직장은 이제 까마득한 옛날 같아.
+
+## part with | (아끼던 것을) 떠나보내다, 처분하다 | 마음이 쉽지 않다는 뉘앙스가 있어요.
+match: part with; parted with; parting with; parts with
+- I can't [part with] my old teddy bear. = 오래된 곰 인형을 도저히 못 버리겠어.
+- She finally [parted with] her first car. = 그녀는 마침내 첫 차를 떠나보냈어.
+- It's hard to [part with] clothes you love. = 좋아하는 옷을 처분하기는 어려워.
+
+## come up with | (아이디어를) 생각해 내다, 내놓다 | 머리를 짜내서 떠올리는 느낌.
+match: come up with; came up with; coming up with; comes up with
+- Who [came up with] this amazing name? = 이 멋진 이름 누가 생각해 냈어?
+- We need to [come up with] a plan by Friday. = 금요일까지 계획을 짜내야 해.
+- I'm bad at [coming up with] gift ideas. = 나는 선물 아이디어 떠올리는 걸 잘 못해.
+
+## as an homage to | ~에 대한 오마주로, 경의를 표하며 | homage는 프랑스식으로 '오마주'라고도 발음해요.
+match: homage to; an homage; a homage; homage
+- The café's design is [an homage to] old Seoul. = 그 카페 디자인은 옛 서울에 대한 오마주야.
+- I wore red [as an homage to] my favorite movie. = 내가 제일 좋아하는 영화에 대한 오마주로 빨간 옷을 입었어.
+- The opening scene is a clear [homage to] classic Hollywood. = 오프닝 장면은 고전 할리우드에 대한 확실한 오마주야.
+
+## go for | (특정 느낌·스타일을) 노리다, 추구하다 / 선택하다 | I'm going for a cozy vibe. / I'll go for the pasta.
+match: go for; going for; went for; goes for
+- For the party, I'm [going for] a casual look. = 파티엔 캐주얼한 느낌으로 가려고.
+- What kind of vibe are you [going for]? = 어떤 분위기를 노리는 거야?
+- I think I'll [go for] the chicken salad. = 나는 치킨 샐러드로 할게.
+
+## be entrusted with | (중요한 일·물건을) 맡다, 위임받다 | 신뢰가 깔려 있는 표현.
+match: entrusted with; entrusted
+- I was [entrusted with] planning the company trip. = 회사 워크숍 기획을 맡게 됐어.
+- She's been [entrusted with] a lot of responsibility. = 그녀는 막중한 책임을 맡았어.
+- It's an honor to be [entrusted with] your wedding photos. = 결혼식 사진을 맡겨 주셔서 영광이에요.
+
+## get chills | 소름이 돋다 (감동·전율로) | give me chills = 소름 돋게 하다.
+match: get chills; got chills; getting chills; gets chills; give me chills; gave me chills; gives me chills; chills
+- I [got chills] when the choir started singing. = 합창단이 노래를 시작하자 소름이 돋았어.
+- That ending still [gives me chills]. = 그 결말은 아직도 소름 돋아.
+- Her speech was so powerful, I [got chills]. = 그녀의 연설이 너무 강렬해서 소름이 돋았어.
+
+## not think anything of it | 대수롭지 않게 여기다, 별생각 없이 넘기다 | 나중에 중요한 일로 밝혀질 때 자주 써요.
+match: think anything of it; thought anything of it; think much of it; thought much of it; think twice about it
+- He sneezed a few times, but I didn't [think anything of it]. = 그가 재채기를 몇 번 했는데 대수롭지 않게 넘겼어.
+- She waved at me, and I didn't [think much of it]. = 그녀가 손을 흔들었는데 별생각 없었어.
+- At first, nobody [thought anything of it]. = 처음엔 아무도 대수롭지 않게 생각했어.
+
+## be struck by | ~에 깊은 인상을 받다, ~가 확 와닿다 | 순간적으로 강하게 느끼는 것.
+match: struck by; struck
+- I was [struck by] how kind everyone was. = 모두가 정말 친절해서 깊은 인상을 받았어.
+- She was [struck by] the beauty of the city at night. = 그녀는 밤 도시의 아름다움에 반했어.
+- What [struck] me most was his honesty. = 가장 인상 깊었던 건 그의 솔직함이었어.
+
+## earmark | (특정 용도로) 따로 떼어 두다, 찜해 두다 | 돈·시간·자원을 어디에 쓸지 미리 정해 두는 것.
+match: earmark; earmarked; earmarking; earmarks
+- I've [earmarked] this money for a new bike. = 이 돈은 새 자전거 사려고 따로 떼어 뒀어.
+- This weekend is [earmarked] for cleaning. = 이번 주말은 대청소하는 날로 정해 뒀어.
+- The city [earmarked] funds for a new park. = 시에서 새 공원을 위한 예산을 배정했어.
+
+## build up | (체력·힘·자신감을) 기르다, 키우다 | build up stamina / strength / confidence.
+match: build up; built up; building up; builds up
+- I'm swimming to [build up] my stamina. = 체력을 기르려고 수영하고 있어.
+- It takes time to [build up] confidence. = 자신감을 키우는 데는 시간이 걸려.
+- She slowly [built up] her savings. = 그녀는 천천히 저축을 늘렸어.
+
+## go the extra mile | 한 발 더 노력하다, 기대 이상으로 애쓰다 | 서비스·업무에서 칭찬할 때 자주 써요.
+match: go the extra mile; went the extra mile; going the extra mile; goes the extra mile; the extra mile
+- The hotel staff [went the extra mile] for us. = 호텔 직원들이 우리를 위해 정말 신경 써 줬어.
+- If you [go the extra mile], people will notice. = 한 발 더 노력하면 사람들이 알아봐.
+- She always [goes the extra mile] for her students. = 그녀는 늘 학생들을 위해 기대 이상으로 애써.
+
+## happy place | 마음이 편해지는 곳, 나만의 행복 공간 | 실제 장소뿐 아니라 활동·상태도 가능. Go to your happy place!
+match: happy place
+- The beach is my [happy place]. = 바다는 내 행복 공간이야.
+- When I'm stressed, I go to my [happy place]: the kitchen. = 스트레스 받으면 내 행복 공간인 부엌으로 가.
+- Reading in bed on a rainy day is my [happy place]. = 비 오는 날 침대에서 책 읽는 게 나만의 행복이야.
+
+## look someone up and down | (평가하듯) 위아래로 훑어보다 | 보통 무례하거나 평가하는 시선.
+match: up and down
+- The guard looked me [up and down] before letting me in. = 경비원이 나를 위아래로 훑어보더니 들여보내 줬어.
+- She looked him [up and down] and said nothing. = 그녀는 그를 위아래로 훑어보고 아무 말도 안 했어.
+- I hate it when people look me [up and down]. = 사람들이 나를 위아래로 훑어보는 거 정말 싫어.
+
+## apply oneself | (공부·일에) 전념하다, 열심히 몰두하다 | 재능은 있는데 노력하면 된다는 맥락에서 자주 나와요.
+match: apply myself; applied myself; apply yourself; applies himself; applies herself; applied himself; applied herself; applying myself; apply themselves
+- If you [apply yourself], you can pass easily. = 열심히 하면 쉽게 붙을 수 있어.
+- I really [applied myself] in my last year of school. = 졸업반 때 정말 열심히 공부했어.
+- He's smart, but he doesn't [apply himself]. = 그는 머리는 좋은데 노력을 안 해.
+
+## count on | ~를 믿다, 의지하다, 기대다 | You can count on me. = 날 믿어도 돼.
+match: count on; counted on; counting on; counts on
+- You can always [count on] me. = 언제든 나를 믿어도 돼.
+- We're [counting on] you to finish this by Friday. = 금요일까지 끝내 줄 거라고 믿고 있어.
+- Don't [count on] the weather being nice. = 날씨가 좋을 거라고 기대하진 마.
+
+@role 친구가 이사하면서 물건을 정리 중이냐고 물어봐요. | Are you getting rid of stuff before you move? | part with; feel like a lifetime ago | Trying to! But it's hard to part with my old diaries. High school feels like a lifetime ago.
+@role 동료가 다음 행사 컨셉을 같이 정하자고 해요. | What kind of look should we do for the year-end party? | go for; come up with; as an homage to | Let's go for a retro vibe. I came up with an idea — a 90s theme as an homage to our company's early days.
+@role 친구가 콘서트 어땠냐고 물어봐요. | How was the concert last night? | get chills; be struck by | Amazing! I got chills during the last song. I was struck by how good her live voice is.
+@role 친구가 중요한 일을 부탁하면서 걱정해요. | I need someone to handle the money for our trip. Can I trust you? | count on; be entrusted with; go the extra mile | Of course, you can count on me. I'm honored to be entrusted with it, and I'll go the extra mile to keep it organized.
+
+@para 나의 행복 공간 | happy place; earmark; build up; apply oneself | My happy place is the swimming pool. I've earmarked every Tuesday and Thursday evening for swimming. I'm slowly building up my stamina, and when I really apply myself, I can swim a full kilometer.
+@para 기억에 남는 첫 출근 날 | feel like a lifetime ago; look someone up and down; not think anything of it; be struck by | My first day at work feels like a lifetime ago. A senior coworker looked me up and down, and I didn't think anything of it. Later, I was struck by how kind she actually was.
