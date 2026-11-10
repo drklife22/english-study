@@ -45,7 +45,7 @@ match: keep me on my toes; keeps me on my toes; kept me on my toes; on my toes; 
 - It was a crazy day, but [long story short], everything worked out. = 정신없는 하루였는데, 결론만 말하면 다 잘 풀렸어.
 
 ## go-to | 늘 찾는, 단골의, 가장 애용하는 | my go-to + 명사 (메뉴·옷·노래·카페 등). 사람에게도 써요: my go-to person.
-match: go-to; go to
+match: go-to
 - Kimchi fried rice is my [go-to] meal when I'm busy. = 바쁠 때 내 단골 메뉴는 김치볶음밥이야.
 - This hoodie is my [go-to] on lazy days. = 늘어지는 날엔 이 후드티만 입어.
 - She's my [go-to] person for computer problems. = 컴퓨터 문제 생기면 늘 그녀를 찾아.
@@ -82,7 +82,7 @@ match: blow my mind; blew my mind; blows my mind; blowing my mind; blew his mind
 ## a giving person | 잘 베푸는 사람, 마음이 넉넉한 사람 | 시간·마음·물건을 아낌없이 나누는 사람.
 match: giving person; giving people; giving nature
 - My dad is [a giving person]; he'd give you his last dollar. = 우리 아빠는 정말 잘 베푸는 분이라 마지막 남은 돈도 내어 주실 거야.
-- She's so [giving] with her time. = 그녀는 자기 시간을 정말 아낌없이 내어 줘.
+- She's [so giving] with her time. = 그녀는 자기 시간을 정말 아낌없이 내어 줘.
 - I want to be a more [giving person] this year. = 올해는 좀 더 베푸는 사람이 되고 싶어.
 
 ## keep one's distance | 거리를 두다 | 물리적인 거리와 감정적인 거리 둘 다 가능해요.

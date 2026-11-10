@@ -50,15 +50,18 @@ const sameWord = (a, b) => {
   return la.replace(/e$/, '') === lb.replace(/e$/, '');
 };
 
-const SKIP = new Set(['someone', "someone's", 'something', "one's", 'oneself', 'sth', 'sb', 'a', 'b',
+const SKIP = new Set(['someone', "someone's", "one's", 'oneself', 'sth', 'sb', 'a', 'b',
   'an', 'the', 'be', '~', 'still', 'ing', 'doing']);
+
+// 한 단어만 남으면 너무 흔해서 오탐이 나는 단어들
+const COMMON = new Set(['like', 'up', 'in', 'on', 'to', 'go', 'get', 'time', 'it', 'out', 'off', 'into', 'way', 'or', 'find', 'have', 'take', 'make', 'come', 'feel', 'look']);
 
 // 표현 머리말에서 체크용 핵심 단어 목록 만들기
 function headwordVariants(en) {
   return en.split('/').map(part => {
     const cleaned = part.replace(/\([^)]*\)/g, ' ').replace(/~[a-z-]*/gi, ' ');
     return words(cleaned).filter(w => !SKIP.has(w));
-  }).filter(v => v.length);
+  }).filter(v => v.length && !(v.length === 1 && COMMON.has(v[0])));
 }
 
 function seqMatch(textWords, keys, maxGap = 3) {
@@ -96,6 +99,36 @@ export function usesExpr(text, expr) {
     if (keys.length > 1 && seqMatch(tw, keys)) return true;
   }
   return false;
+}
+
+// 원문에서 표현이 있는 위치(글자 범위)를 찾는다. 하이라이트용. 못 찾으면 null
+export function findSpan(text, expr) {
+  const toks = [];
+  const re = /[A-Za-z0-9'’]+/g;
+  let m;
+  while ((m = re.exec(text))) toks.push({ w: norm(m[0]), s: m.index, e: m.index + m[0].length });
+  const tw = toks.map(t => t.w);
+  const range = (keys, gap, exact) => {
+    for (let st = 0; st < tw.length; st++) {
+      const eq = (a, b) => (exact ? a === b : sameWord(a, b));
+      if (!eq(tw[st], keys[0])) continue;
+      let pos = st, ok = true;
+      for (let k = 1; k < keys.length; k++) {
+        let found = -1;
+        for (let j = pos + 1; j <= Math.min(tw.length - 1, pos + 1 + gap); j++) if (eq(tw[j], keys[k])) { found = j; break; }
+        if (found < 0) { ok = false; break; }
+        pos = found;
+      }
+      if (ok) return [toks[st].s, toks[pos].e];
+    }
+    return null;
+  };
+  const phrases = [...(expr.match || []), ...expr.examples.map(x => bracketText(x.en))]
+    .map(p => words(p.replace(/-/g, ' '))).filter(k => k.length);
+  for (const k of phrases.sort((a, b) => b.length - a.length)) { const r = range(k, 0, true); if (r) return r; }
+  for (const k of headwordVariants(expr.en)) { const r = range(k, 3, false); if (r) return r; }
+  for (const k of phrases) { if (k.length > 1) { const r = range(k.filter(w => !SKIP.has(w)), 3, false); if (r) return r; } }
+  return null;
 }
 
 // 단어 단위 LCS로 정확도(0~100)와 비교 결과 만들기

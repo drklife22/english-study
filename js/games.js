@@ -1,6 +1,7 @@
 // 연습 모드 모음. 모든 모드는 끝없이 이어지며, 나가기를 누를 때까지 계속 출제한다.
 import { esc, hl, blankOut, bindSay, sayBtn, answerBox, toast, el } from './ui.js';
-import { bracketText, stripBrackets, shuffle, pick, sample, roleplaysOf, getExpr } from './data.js';
+import { bracketText, stripBrackets, shuffle, pick, sample, roleplaysOf, getExpr, getScene } from './data.js';
+import { createPlayer, ytLink } from './yt.js';
 import { review, weightedPick, setBest, getState, isDue, item } from './store.js';
 import { speak, canListen, listen, stopListening } from './speech.js';
 import { compare, diffHtml, usesExpr, looseEqual } from './match.js';
@@ -10,7 +11,8 @@ export const MODES = [
   { id: 'match', emoji: '⚡', name: '스피드 매칭', desc: '표현과 뜻 빨리 짝짓기', tag: '게임' },
   { id: 'cloze', emoji: '🧩', name: '빈칸 러시', desc: '문맥 보고 빈칸 채우기, 연속 정답 도전', tag: '게임' },
   { id: 'dictation', emoji: '🎧', name: '듣고 받아쓰기', desc: '원어민 음성 듣고 문장 쓰기', tag: 'input' },
-  { id: 'shadow', emoji: '🗣️', name: '섀도잉 챌린지', desc: '듣고 따라 말하면 정확도 채점', tag: 'output' },
+  { id: 'scene', emoji: '🎬', name: '영상 섀도잉', desc: '실제 영상 속 장면을 듣고 따라 말하기', tag: 'output' },
+  { id: 'shadow', emoji: '🗣️', name: '섀도잉 챌린지', desc: '예문을 듣고 따라 말하면 정확도 채점', tag: 'output' },
   { id: 'speak', emoji: '🚀', name: '한→영 순간 말하기', desc: '한국어 보고 바로 영어로 말하기', tag: 'output' },
   { id: 'roleplay', emoji: '🎭', name: '상황 롤플레이', desc: '대화 상황에 배운 표현으로 대답', tag: 'output' },
   { id: 'boss', emoji: '👾', name: '표현 보스전', desc: '여러 문제 섞어서 목숨 3개로 버티기', tag: '게임' },
@@ -544,7 +546,99 @@ function boss(root, ctx) {
   return () => clearInterval(timer);
 }
 
-const RUNNERS = { flash, match, cloze, dictation, shadow, speak: speakMode, roleplay, boss };
+/* ---------------- 영상 섀도잉 ---------------- */
+function scene(root, ctx) {
+  const f = frame(root, 'scene', ctx.exit);
+  const pool = ctx.pool.filter(e => getScene(e.id));
+  if (!pool.length) { f.body.innerHTML = '<div class="empty">선택한 범위에 영상 장면이 없어요.</div>'; return; }
+  f.body.innerHTML = `
+    <div class="video-wrap"><div class="video-box"></div></div>
+    <div class="video-error hide feedback info"></div>
+    <div class="scene-area"></div>`;
+  const area = f.body.querySelector('.scene-area');
+  let rate = 1, hideText = false, last = null, sc = null;
+  const player = createPlayer(f.body.querySelector('.video-box'), getScene(pool[0].id).videoId, {
+    onError: () => {
+      const box = f.body.querySelector('.video-error');
+      box.classList.remove('hide');
+      box.innerHTML = `이 영상은 사이트 안에서 재생이 막혀 있어요. <a href="${ytLink(sc.videoId, sc.start)}" target="_blank" rel="noopener">유튜브에서 이 장면 열기 ↗</a>`;
+    },
+  });
+  const next = () => {
+    const e = weightedPick(pool, last?.id); last = e;
+    sc = getScene(e.id);
+    const plain = stripBrackets(sc.text);
+    player.load(sc.videoId);
+    area.innerHTML = '';
+    const card = el(`
+      <div>
+        <div class="card">
+          <div class="row between"><span class="chip accent">${e.week}회차 · ${esc(e.en)}</span>
+            <button class="chip-toggle ${hideText ? 'on' : ''}" data-hide>${hideText ? '자막 보이기' : '자막 가리기'}</button></div>
+          <p class="q-sentence mt ${hideText ? 'masked' : ''}" style="margin-bottom:4px">${hl(sc.text)}</p>
+          <p class="small muted" style="margin:0">${esc(e.ko)}</p>
+        </div>
+        <div class="grid3">
+          <button class="btn" data-play>▶ 듣기</button>
+          <button class="btn ${rate < 1 ? 'warn' : ''}" data-slow>🐢 ${rate < 1 ? '0.75배' : '1배'}</button>
+          <button class="btn" data-ctx>⏪ 앞부터</button>
+        </div>
+        ${canListen()
+          ? `<button class="btn primary block mt" data-rec>🎤 따라 말하기</button><div class="interim center mt"></div>`
+          : `<p class="small muted mt">이 브라우저는 음성 인식이 안 돼요. 소리 내 따라 말한 뒤 스스로 평가해 주세요.</p>`}
+        <div class="after"></div>
+      </div>`);
+    const play = () => player.playSegment(sc.start, sc.end, rate);
+    card.querySelector('[data-play]').onclick = play;
+    card.querySelector('[data-slow]').onclick = ev => {
+      rate = rate < 1 ? 1 : 0.75;
+      ev.target.textContent = '🐢 ' + (rate < 1 ? '0.75배' : '1배');
+      ev.target.classList.toggle('warn', rate < 1);
+      play();
+    };
+    card.querySelector('[data-ctx]').onclick = () => player.playSegment(Math.max(0, sc.start - 6), sc.end, rate);
+    card.querySelector('[data-hide]').onclick = ev => {
+      hideText = !hideText;
+      card.querySelector('.q-sentence').classList.toggle('masked', hideText);
+      ev.target.classList.toggle('on', hideText);
+      ev.target.textContent = hideText ? '자막 보이기' : '자막 가리기';
+    };
+    const after = card.querySelector('.after');
+    const rec = card.querySelector('[data-rec]');
+    if (!rec) {
+      after.append(rateButtons(ok => { review(e.id, ok); f.mark(ok); next(); }, ['잘 안 됐어요', '조금 막혔어요', '자연스러웠어요']));
+    } else {
+      rec.onclick = async () => {
+        if (rec.dataset.on) { stopListening(); return; }
+        player.pause();
+        rec.dataset.on = 1; rec.textContent = '⏹ 그만 말하기'; rec.classList.add('bad');
+        const interim = card.querySelector('.interim');
+        let said = '';
+        try { said = await listen({ onInterim: t => { interim.textContent = t; } }); }
+        catch (err) { toast('음성 인식 오류: ' + err.message); }
+        delete rec.dataset.on; rec.textContent = '🎤 다시 말하기'; rec.classList.remove('bad');
+        interim.textContent = said ? `"${said}"` : '잘 안 들렸어요. 다시 해 볼까요?';
+        if (!said) return;
+        const r = compare(plain, said);
+        const usedIt = usesExpr(said, e);
+        const ok = r.score >= 80 ? true : r.score >= 55 ? 'hard' : false;
+        after.innerHTML = '';
+        after.append(el(`<div class="feedback ${ok === true ? 'good' : ok ? 'info' : 'bad'}">
+          <b>${r.score >= 80 ? '👏 훌륭해요' : r.score >= 55 ? '👍 거의 다 왔어요' : '💪 한 번 더'} · ${r.score}%</b>
+          ${usedIt ? ' · ✅ 표현 OK' : ''}<br>${diffHtml(r)}</div>`));
+        const row = el('<div class="grid2 mt"><button class="btn">다시 도전</button><button class="btn primary">다음 장면 ▶</button></div>');
+        row.children[0].onclick = () => { after.innerHTML = ''; play(); };
+        row.children[1].onclick = () => { review(e.id, ok); f.mark(ok); next(); };
+        after.append(row);
+      };
+    }
+    area.append(card);
+  };
+  next();
+  return () => player.destroy();
+}
+
+const RUNNERS = { scene, flash, match, cloze, dictation, shadow, speak: speakMode, roleplay, boss };
 
 export function runMode(mode, root, ctx) {
   stopListening();

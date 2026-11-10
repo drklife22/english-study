@@ -1,8 +1,9 @@
-import { loadAll, getIndex, getWeek, getExpr, allExprs, exprsOfWeeks, paragraphsOf, stripBrackets, sample, pick } from './data.js';
+import { loadAll, getIndex, getWeek, getExpr, allExprs, exprsOfWeeks, paragraphsOf, stripBrackets, pick, getScene, weekVideoId } from './data.js';
+import { createPlayer, ytLink } from './yt.js';
 import * as S from './store.js';
 import { esc, hl, toast, el, bindSay, sayBtn, answerBox, weekLabel } from './ui.js';
 import { MODES, runMode, runReview, buildReviewQueue } from './games.js';
-import { setSpeechSettings, speak, stopListening } from './speech.js';
+import { setSpeechSettings, speak, stopListening, listen, canListen } from './speech.js';
 import { usesExpr } from './match.js';
 import * as Sync from './sync.js';
 
@@ -111,22 +112,83 @@ function viewWeeks() {
     ${ws.map(weekCard).join('')}`;
 }
 
+let weekPlayer = null;
 function viewWeek(n) {
   const w = getWeek(n);
   if (!w) { app.innerHTML = '<div class="empty">없는 회차예요.</div>'; return; }
+  const vid = weekVideoId(w.week);
+  const sceneCount = w.expressions.filter(e => getScene(e.id)).length;
   app.innerHTML = `
     <a class="small" href="#/weeks">‹ 회차 목록</a>
     <h1 style="margin-top:8px">${esc(w.title)}</h1>
     <div class="row mb"><span class="chip accent">${esc(weekLabel(w))}</span>${w.subtitle ? `<span class="small muted">${esc(w.subtitle)}</span>` : ''}</div>
     <div class="grid2 mb">
       <button class="btn primary" data-practice>🎮 이 회차 연습하기</button>
-      ${w.video ? `<a class="btn" href="${esc(w.video)}" target="_blank" rel="noopener">▶ 영상 보기</a>` : '<button class="btn" data-openall>모두 펼치기</button>'}
+      ${sceneCount ? '<button class="btn" data-scene>🎬 영상 섀도잉</button>' : '<button class="btn" data-openall>모두 펼치기</button>'}
     </div>
+    ${vid ? `
+    <div class="card" style="padding:12px">
+      <div class="video-wrap"><div class="video-box"></div></div>
+      <div class="video-error hide feedback info">이 영상은 사이트 안에서 재생이 막혀 있어요. <a href="${ytLink(vid)}" target="_blank" rel="noopener">유튜브에서 보기 ↗</a></div>
+      <div class="video-ctrls">
+        <button class="btn sm" data-back="5">⏪ 5초</button>
+        <button class="btn sm" data-back="3">⏪ 3초</button>
+        <button class="btn sm" data-toggle>⏯</button>
+        <select class="btn sm" data-rate>
+          <option value="0.5">0.5배</option><option value="0.75">0.75배</option><option value="1" selected>1배</option>
+        </select>
+        <button class="btn sm" data-a>A</button><button class="btn sm" data-b>B</button>
+        <button class="btn sm ghost hide" data-unloop>🔁 반복 끄기</button>
+      </div>
+      <p class="small muted" style="margin:8px 0 0">A·B를 눌러 구간을 잡으면 그 부분만 반복돼요. 표현 옆 🎬를 누르면 그 장면으로 가요.</p>
+      ${canListen() ? `<button class="btn sm block mt" data-say>🎤 들은 문장 따라 말해 보기</button><div class="interim mt"></div>` : ''}
+    </div>` : ''}
     <div class="list"></div>`;
   app.querySelector('[data-practice]').onclick = () => {
     S.setSetting('scope', [w.week]); S.setSetting('weakOnly', false);
     location.hash = '#/practice';
   };
+  app.querySelector('[data-scene]')?.addEventListener('click', () => {
+    S.setSetting('scope', [w.week]); S.setSetting('weakOnly', false);
+    location.hash = '#/play/scene';
+  });
+  if (vid) {
+    weekPlayer = createPlayer(app.querySelector('.video-box'), vid, {
+      onError: () => app.querySelector('.video-error')?.classList.remove('hide'),
+    });
+    const P = weekPlayer;
+    let A = null;
+    app.querySelectorAll('[data-back]').forEach(b => b.onclick = () => P.seekBy(-Number(b.dataset.back)));
+    app.querySelector('[data-toggle]').onclick = () => P.toggle();
+    app.querySelector('[data-rate]').onchange = ev => P.setRate(Number(ev.target.value));
+    const aBtn = app.querySelector('[data-a]'), bBtn = app.querySelector('[data-b]'), un = app.querySelector('[data-unloop]');
+    const fmt = t => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
+    aBtn.onclick = () => { A = P.time(); aBtn.textContent = 'A ' + fmt(A); aBtn.classList.add('warn'); };
+    bBtn.onclick = () => {
+      const B = P.time();
+      if (A == null || B <= A) { toast('먼저 A를 누르고, 조금 뒤에 B를 눌러 주세요'); return; }
+      P.setLoop(A, B); bBtn.textContent = 'B ' + fmt(B); bBtn.classList.add('warn'); un.classList.remove('hide');
+      P.playSegment(A, null);
+      P.setLoop(A, B);
+    };
+    un.onclick = () => {
+      P.setLoop(null, null); A = null;
+      aBtn.textContent = 'A'; bBtn.textContent = 'B';
+      aBtn.classList.remove('warn'); bBtn.classList.remove('warn'); un.classList.add('hide');
+    };
+    const sayB = app.querySelector('[data-say]');
+    if (sayB) sayB.onclick = async () => {
+      if (sayB.dataset.on) { stopListening(); return; }
+      P.pause();
+      sayB.dataset.on = 1; sayB.textContent = '⏹ 그만 말하기';
+      const out = app.querySelector('.interim');
+      let said = '';
+      try { said = await listen({ onInterim: t => { out.textContent = t; } }); } catch (e) { toast('음성 인식 오류: ' + e.message); }
+      delete sayB.dataset.on; sayB.textContent = '🎤 들은 문장 따라 말해 보기';
+      const used = w.expressions.filter(e => usesExpr(said, e)).map(e => e.en);
+      out.innerHTML = said ? `"${esc(said)}"${used.length ? `<br><span class="chip good">✓ ${used.map(esc).join(', ')}</span>` : ''}` : '잘 안 들렸어요';
+    };
+  }
   const list = app.querySelector('.list');
   w.expressions.forEach(e => list.append(exprCard(e)));
   app.querySelector('[data-openall]')?.addEventListener('click', () =>
@@ -140,6 +202,7 @@ function exprCard(e) {
       <div class="expr-head">
         <span class="status-dot s${lv}"></span>
         <div style="flex:1"><div class="expr-en">${esc(e.en)}</div><div class="expr-ko">${esc(e.ko)}</div></div>
+        ${getScene(e.id) && weekPlayer ? '<button class="icon-btn" type="button" data-scene aria-label="영상 장면">🎬</button>' : ''}
         ${sayBtn(e.en)}
       </div>
       <div class="expr-body hide"></div>
@@ -147,8 +210,10 @@ function exprCard(e) {
   const body = card.querySelector('.expr-body');
   const renderBody = () => {
     const mine = S.getState().sentences[e.id] || [];
+    const sc = getScene(e.id);
     body.innerHTML = `
       ${e.note ? `<div class="note">💡 ${esc(e.note)}</div>` : ''}
+      ${sc ? `<div class="note scene-note"><span class="small muted">🎬 영상 속 문장</span><br>${hl(sc.text)}</div>` : ''}
       ${e.examples.map(x => `<div class="ex">${sayBtn(stripBrackets(x.en))}<div><div class="ex-en">${hl(x.en)}</div><div class="ex-ko">${esc(x.ko)}</div></div></div>`).join('')}
       <div class="status-row">
         <button class="btn sm ${lv === 1 ? 'bad' : ''}" data-l="1">몰라요</button>
@@ -190,6 +255,15 @@ function exprCard(e) {
     if (!body.innerHTML) renderBody();
   };
   bindSay(card.querySelector('.expr-head'));
+  const playScene = ev => {
+    ev.stopPropagation();
+    const sc = getScene(e.id);
+    if (!weekPlayer || !sc) return;
+    weekPlayer.playSegment(sc.start, sc.end);
+    document.querySelector('.video-wrap')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+  card.querySelector('[data-scene]')?.addEventListener('click', playScene);
+  card.addEventListener('click', ev => { if (ev.target.closest('.scene-note')) playScene(ev); });
   return card;
 }
 
@@ -499,6 +573,7 @@ function renderSyncCard() {
 /* ---------------- 라우터 ---------------- */
 function route() {
   cleanup(); cleanup = () => {};
+  if (weekPlayer) { weekPlayer.destroy(); weekPlayer = null; }
   stopListening();
   if (window.speechSynthesis) speechSynthesis.cancel();
   const [, page = '', arg] = location.hash.split('/');

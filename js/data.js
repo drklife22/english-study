@@ -13,7 +13,20 @@ export async function loadAll() {
     weeks.set(w.week, w);
     for (const e of w.expressions) exprById.set(e.id, e);
   }
+  try {
+    scenes = await fetch('data/scenes.json', { cache: 'no-cache' }).then(r => (r.ok ? r.json() : {}));
+  } catch (e) { scenes = {}; }
 }
+
+// 영상 속 장면: { start, end, text, videoId }
+let scenes = {};
+export function getScene(id) {
+  const e = exprById.get(id);
+  const w = e && scenes[e.week];
+  const s = w && w.scenes[id];
+  return s ? { ...s, videoId: w.videoId } : null;
+}
+export const weekVideoId = n => scenes[n]?.videoId || '';
 
 export const getIndex = () => index || [];
 export const getWeek = n => weeks.get(Number(n));
