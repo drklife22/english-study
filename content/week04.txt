@@ -2,7 +2,7 @@ week: 4
 date:
 title: 호주 억양 특강 — Sam Campbell 스탠드업
 subtitle: Growing Up In Australia With This Body
-video:
+video: https://youtu.be/114RXNUAlk0
 
 ## sticky beak | 참견쟁이 / 기웃거리며 구경하다 | 호주·영국 구어. 미국식은 nosy. have a sticky beak = 슬쩍 구경하다.
 match: sticky beak; stickybeak

@@ -2,7 +2,7 @@ week: 6
 date: 2026-10-13
 title: Sadie Sink 인터뷰
 subtitle: Glamour Unfiltered
-video:
+video: https://youtu.be/3o85PFvBZ8s
 
 ## take a step back | 한 발짝 물러서다, 거리를 두고 돌아보다 | 2회차에도 나온 표현! 감정·상황에서 잠시 떨어지는 것.
 match: take a step back; took a step back; taking a step back; takes a step back

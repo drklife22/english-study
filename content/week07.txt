@@ -2,7 +2,7 @@ week: 7
 date: 2026-10-25
 title: Katie Paris TED
 subtitle: Campaigns Spend Millions to Influence Voters. This Works Better
-video:
+video: https://youtu.be/ueOxonBk970
 
 ## the ick | 갑자기 확 정 떨어지는 느낌 | 원래 데이팅 슬랭. give someone the ick / get the ick.
 match: the ick; an ick; ick
