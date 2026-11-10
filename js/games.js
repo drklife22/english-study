@@ -1,7 +1,7 @@
 // 연습 모드 모음. 모든 모드는 끝없이 이어지며, 나가기를 누를 때까지 계속 출제한다.
 import { esc, hl, blankOut, bindSay, sayBtn, answerBox, toast, el } from './ui.js';
 import { bracketText, stripBrackets, shuffle, pick, sample, roleplaysOf, getExpr, getScene } from './data.js';
-import { createPlayer, ytLink } from './yt.js';
+import { createPlayer, ytLink, isEmbedBlocked } from './yt.js';
 import { review, weightedPick, setBest, getState, isDue, item } from './store.js';
 import { speak, canListen, listen, stopListening } from './speech.js';
 import { compare, diffHtml, usesExpr, looseEqual } from './match.js';
@@ -556,19 +556,30 @@ function scene(root, ctx) {
     <div class="video-error hide feedback info"></div>
     <div class="scene-area"></div>`;
   const area = f.body.querySelector('.scene-area');
+  const errBox = f.body.querySelector('.video-error');
   let rate = 1, hideText = false, last = null, sc = null;
-  const player = createPlayer(f.body.querySelector('.video-box'), getScene(pool[0].id).videoId, {
-    onError: () => {
-      const box = f.body.querySelector('.video-error');
-      box.classList.remove('hide');
-      box.innerHTML = `이 영상은 사이트 안에서 재생이 막혀 있어요. <a href="${ytLink(sc.videoId, sc.start)}" target="_blank" rel="noopener">유튜브에서 이 장면 열기 ↗</a>`;
+  const hideErr = () => errBox.classList.add('hide');
+  const player = createPlayer(f.body.querySelector('.video-box'), null, {
+    onPlaying: hideErr,
+    onError: (code, vid) => {
+      if (!sc || vid !== sc.videoId) return; // 지금 장면과 상관없는 영상의 오류는 무시
+      errBox.classList.remove('hide');
+      errBox.innerHTML = (isEmbedBlocked(code)
+        ? '이 영상은 사이트 안에서 재생이 막혀 있어요. '
+        : '영상을 불러오지 못했어요. ▶ 듣기를 다시 눌러 보거나 ')
+        + `<a href="${ytLink(sc.videoId, sc.start)}" target="_blank" rel="noopener">유튜브에서 이 장면 열기 ↗</a>`;
     },
   });
   const next = () => {
     const e = weightedPick(pool, last?.id); last = e;
     sc = getScene(e.id);
     const plain = stripBrackets(sc.text);
-    player.load(sc.videoId);
+    hideErr();
+    const cur = sc;
+    // 장면 시작점에 맞춰 두고, 브라우저가 허용하면 바로 그 장면을 재생
+    player.load(sc.videoId, sc.start).then(() => {
+      if (sc === cur && f.body.isConnected) player.playSegment(cur.start, cur.end, rate);
+    });
     area.innerHTML = '';
     const card = el(`
       <div>

@@ -15,8 +15,12 @@ function loadApi() {
 
 export const ytLink = (id, t = 0) => `https://youtu.be/${id}${t ? `?t=${Math.floor(t)}` : ''}`;
 
-// mount 안에 플레이어를 만든다. onError(code)는 퍼가기 금지 등 재생 불가일 때
-export function createPlayer(mount, videoId, { onError } = {}) {
+// 퍼가기(사이트 안 재생)가 막힌 영상의 오류 코드
+export const isEmbedBlocked = code => code === 101 || code === 150;
+
+// mount 안에 플레이어를 만든다.
+// onError(code, videoId): 재생 오류 / onPlaying(videoId): 정상 재생이 시작됐을 때
+export function createPlayer(mount, videoId, { onError, onPlaying } = {}) {
   const holder = document.createElement('div');
   mount.innerHTML = '';
   mount.append(holder);
@@ -31,7 +35,8 @@ export function createPlayer(mount, videoId, { onError } = {}) {
       playerVars: { playsinline: 1, rel: 0, modestbranding: 1, cc_load_policy: 0 },
       events: {
         onReady: () => ready(),
-        onError: e => onError && onError(e.data),
+        onError: e => onError && onError(e.data, currentId),
+        onStateChange: e => { if (e.data === 1 && onPlaying) onPlaying(currentId); },
       },
     });
   });
@@ -48,10 +53,14 @@ export function createPlayer(mount, videoId, { onError } = {}) {
 
   return {
     ready: readyP,
-    async load(id) {
+    // 영상을 바꾸거나, 같은 영상이면 start 위치에 맞춰 둔다 (재생은 하지 않음)
+    async load(id, start = 0) {
       await readyP;
-      if (id !== currentId) { currentId = id; player.cueVideoById(id); }
+      loop = null; segEnd = null;
+      currentId = id;
+      player.cueVideoById({ videoId: id, startSeconds: Math.floor(start) });
     },
+    get videoId() { return currentId; },
     async playSegment(start, end, rate) {
       await readyP;
       loop = null;

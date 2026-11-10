@@ -1,5 +1,5 @@
 import { loadAll, getIndex, getWeek, getExpr, allExprs, exprsOfWeeks, paragraphsOf, stripBrackets, pick, getScene, weekVideoId } from './data.js';
-import { createPlayer, ytLink } from './yt.js';
+import { createPlayer, ytLink, isEmbedBlocked } from './yt.js';
 import * as S from './store.js';
 import { esc, hl, toast, el, bindSay, sayBtn, answerBox, weekLabel } from './ui.js';
 import { MODES, runMode, runReview, buildReviewQueue } from './games.js';
@@ -154,7 +154,8 @@ function viewWeek(n) {
   });
   if (vid) {
     weekPlayer = createPlayer(app.querySelector('.video-box'), vid, {
-      onError: () => app.querySelector('.video-error')?.classList.remove('hide'),
+      onError: code => { if (isEmbedBlocked(code)) app.querySelector('.video-error')?.classList.remove('hide'); },
+      onPlaying: () => app.querySelector('.video-error')?.classList.add('hide'),
     });
     const P = weekPlayer;
     let A = null;
