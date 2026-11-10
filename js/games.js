@@ -559,7 +559,7 @@ function scene(root, ctx) {
   const errBox = f.body.querySelector('.video-error');
   let rate = 1, hideText = false, last = null, sc = null;
   const hideErr = () => errBox.classList.add('hide');
-  const player = createPlayer(f.body.querySelector('.video-box'), null, {
+  const player = createPlayer(f.body.querySelector('.video-box'), getScene(pool[0].id).videoId, {
     onPlaying: hideErr,
     onError: (code, vid) => {
       if (!sc || vid !== sc.videoId) return; // 지금 장면과 상관없는 영상의 오류는 무시

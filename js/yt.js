@@ -39,15 +39,7 @@ export function createPlayer(mount, videoId, { onError, onPlaying } = {}) {
         onReady: () => ready(),
         onError: e => onError && onError(e.data, currentId),
         onStateChange: e => {
-          if (e.data !== 1) return;
-          if (preview) {
-            const st = preview.start;
-            preview = null;
-            player.pauseVideo();
-            player.seekTo(st, true);
-            player.unMute();
-          }
-          if (onPlaying) onPlaying(currentId);
+          if (e.data === 1 && onPlaying) onPlaying(currentId);
         },
       },
     });
@@ -58,6 +50,17 @@ export function createPlayer(mount, videoId, { onError, onPlaying } = {}) {
     segTimer = setInterval(() => {
       if (!player || !mount.isConnected) return clearInterval(segTimer);
       const t = player.getCurrentTime();
+      // 소리 없이 재생 중인 미리보기: 화면이 그려질 만큼 조금 재생한 뒤 장면 시작점에서 멈춘다
+      if (preview) {
+        if (player.getPlayerState() === 1 && t >= preview.start + 0.4) {
+          const st = preview.start;
+          preview = null;
+          player.pauseVideo();
+          player.seekTo(st, true);
+          player.unMute();
+        }
+        return;
+      }
       if (loop && t >= loop.b) player.seekTo(loop.a, true);
       else if (segEnd != null && t >= segEnd) { player.pauseVideo(); segEnd = null; }
     }, 150);
@@ -85,6 +88,14 @@ export function createPlayer(mount, videoId, { onError, onPlaying } = {}) {
         player.mute();
         player.seekTo(start, true);
         player.playVideo();
+        watch();
+        // 소리 없는 재생까지 막히면, 장면 위치에 맞춘 대기 화면이라도 보여 준다
+        setTimeout(() => {
+          if (token !== sceneToken || !preview) return;
+          preview = null;
+          player.unMute();
+          player.cueVideoById({ videoId: id, startSeconds: Math.floor(start) });
+        }, 3000);
       }, 1500);
     },
     get videoId() { return currentId; },
