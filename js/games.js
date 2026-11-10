@@ -575,11 +575,7 @@ function scene(root, ctx) {
     sc = getScene(e.id);
     const plain = stripBrackets(sc.text);
     hideErr();
-    const cur = sc;
-    // 장면 시작점에 맞춰 두고, 브라우저가 허용하면 바로 그 장면을 재생
-    player.load(sc.videoId, sc.start).then(() => {
-      if (sc === cur && f.body.isConnected) player.playSegment(cur.start, cur.end, rate);
-    });
+    player.showScene(sc.videoId, sc.start, sc.end, rate);
     area.innerHTML = '';
     const card = el(`
       <div>

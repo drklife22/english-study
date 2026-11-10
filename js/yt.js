@@ -25,6 +25,8 @@ export function createPlayer(mount, videoId, { onError, onPlaying } = {}) {
   mount.innerHTML = '';
   mount.append(holder);
   let player = null, ready, segTimer = null, loop = null, segEnd = null, currentId = videoId;
+  let preview = null; // 소리 없이 잠깐 재생해서 장면 화면에 멈춰 두는 중이면 { start }
+  let sceneToken = 0;
   const readyP = new Promise(r => { ready = r; });
 
   loadApi().then(YT => {
@@ -36,7 +38,17 @@ export function createPlayer(mount, videoId, { onError, onPlaying } = {}) {
       events: {
         onReady: () => ready(),
         onError: e => onError && onError(e.data, currentId),
-        onStateChange: e => { if (e.data === 1 && onPlaying) onPlaying(currentId); },
+        onStateChange: e => {
+          if (e.data !== 1) return;
+          if (preview) {
+            const st = preview.start;
+            preview = null;
+            player.pauseVideo();
+            player.seekTo(st, true);
+            player.unMute();
+          }
+          if (onPlaying) onPlaying(currentId);
+        },
       },
     });
   });
@@ -53,17 +65,34 @@ export function createPlayer(mount, videoId, { onError, onPlaying } = {}) {
 
   return {
     ready: readyP,
-    // 영상을 바꾸거나, 같은 영상이면 start 위치에 맞춰 둔다 (재생은 하지 않음)
-    async load(id, start = 0) {
+    // 장면을 띄운다. 먼저 소리 켜고 그 장면 재생을 시도하고,
+    // 브라우저가 막으면 소리 없이 잠깐 재생해 장면 화면에서 멈춰 둔다.
+    async showScene(id, start, end, rate = 1) {
       await readyP;
-      loop = null; segEnd = null;
+      const token = ++sceneToken;
+      loop = null; preview = null;
       currentId = id;
-      player.cueVideoById({ videoId: id, startSeconds: Math.floor(start) });
+      player.unMute();
+      player.loadVideoById({ videoId: id, startSeconds: start });
+      player.setPlaybackRate(rate);
+      segEnd = end;
+      watch();
+      setTimeout(() => {
+        if (token !== sceneToken || !mount.isConnected) return;
+        if (player.getPlayerState() === 1) return; // 잘 재생 중
+        segEnd = null;
+        preview = { start };
+        player.mute();
+        player.seekTo(start, true);
+        player.playVideo();
+      }, 1500);
     },
     get videoId() { return currentId; },
     async playSegment(start, end, rate) {
       await readyP;
+      sceneToken++; preview = null;
       loop = null;
+      player.unMute();
       if (rate) player.setPlaybackRate(rate);
       player.seekTo(start, true);
       player.playVideo();
