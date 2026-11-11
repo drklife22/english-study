@@ -165,11 +165,11 @@ p { margin: 0 0 .75rem; }
 }
 .chip-toggle.on { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
 
-input[type="text"], textarea, select {
+input[type="text"], input[type="password"], textarea, select {
   width: 100%; border: 1px solid var(--line); background: var(--surface); border-radius: 12px;
   padding: 12px; outline: none;
 }
-input[type="text"]:focus, textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 textarea { min-height: 120px; resize: vertical; line-height: 1.6; }
 
 .hero {
@@ -294,3 +294,20 @@ button.chip { cursor: pointer; }
 .scene-note:hover { outline: 1px solid var(--accent); }
 .video-ctrls { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
 .video-ctrls select { padding: 4px 6px; }
+
+/* dictation */
+.dict-layout { display: grid; gap: 12px; }
+@media (min-width: 900px) {
+  .app:has(.dict-layout) { max-width: 1180px; }
+  .dict-layout { grid-template-columns: 1fr 1fr; align-items: start; }
+  .dict-video { position: sticky; top: 64px; }
+}
+.dict-input textarea { min-height: 320px; font-size: 1rem; }
+.kbd-help { margin: 8px 0 0; line-height: 1.8; }
+kbd { background: var(--surface-2); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 0 5px; font-size: .8em; font-family: inherit; }
+.dict-script { max-height: 60vh; overflow-y: auto; line-height: 1.75; }
+.dict-line { display: flex; gap: 10px; align-items: baseline; padding: 2px 0; }
+.dict-t { border: none; background: none; color: var(--accent); cursor: pointer; font-size: .78rem; font-variant-numeric: tabular-nums; flex-shrink: 0; width: 38px; text-align: right; padding: 0; }
+.dict-script .ok, .ok-sample { color: var(--good); }
+.dict-script .miss, .miss-sample { color: var(--bad); text-decoration: underline wavy; text-underline-offset: 3px; }
+.token-card input { flex: 1; }

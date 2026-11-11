@@ -12,6 +12,7 @@ const blank = () => ({
   paragraphs: [],   // [{ id, ts, topic, use, text }]
   best: {},         // mode -> score
   days: {},         // 'YYYY-MM-DD' -> 답한 문제 수
+  dictation: [],    // [{ week, ts, range, score, total, matched, missed }]
   settings: { accent: 'en-US', rate: 0.95, scope: [], theme: 'auto', newPerDay: 10 },
   updatedAt: 0,
 });
@@ -148,6 +149,13 @@ export function setBest(mode, score, lowerIsBetter = false) {
   return better;
 }
 
+export function saveDictation(r) {
+  state.dictation = [{ ...r, ts: Date.now() }, ...(state.dictation || [])].slice(0, 200);
+  const t = today();
+  state.days[t] = (state.days[t] || 0) + 1;
+  persist();
+}
+
 export function setSetting(k, v) { state.settings[k] = v; persist(); }
 
 export function streak() {
@@ -181,6 +189,9 @@ export function merge(a, b) {
     const lower = k.startsWith('match');
     if (out.best[k] == null || (lower ? v < out.best[k] : v > out.best[k])) out.best[k] = v;
   }
+  const dm = new Map();
+  for (const d of [...(a.dictation || []), ...(b.dictation || [])]) dm.set(d.week + ':' + d.ts, d);
+  out.dictation = [...dm.values()].sort((x, y) => y.ts - x.ts);
   out.days = { ...a.days };
   for (const [k, v] of Object.entries(b.days || {})) out.days[k] = Math.max(out.days[k] || 0, v);
   out.settings = (a.updatedAt || 0) >= (b.updatedAt || 0)

@@ -6,6 +6,7 @@ import { MODES, runMode, runReview, buildReviewQueue } from './games.js';
 import { setSpeechSettings, speak, stopListening, listen, canListen } from './speech.js';
 import { usesExpr } from './match.js';
 import * as Sync from './sync.js';
+import { viewDictationList, viewDictation, tokenCardHtml, bindTokenCard } from './dictation.js';
 
 const app = document.getElementById('app');
 let cleanup = () => {};
@@ -126,6 +127,7 @@ function viewWeek(n) {
       <button class="btn primary" data-practice>🎮 이 회차 연습하기</button>
       ${sceneCount ? '<button class="btn" data-scene>🎬 영상 섀도잉</button>' : '<button class="btn" data-openall>모두 펼치기</button>'}
     </div>
+    ${vid ? `<a class="btn block mb" href="#/dictation/${w.week}">⌨️ 영상 전체 딕테이션</a>` : ''}
     ${vid ? `
     <div class="card" style="padding:12px">
       <div class="video-wrap"><div class="video-box"></div></div>
@@ -287,7 +289,9 @@ function viewPractice() {
     </div>
     <div class="section-title"><h2>연습 방식</h2></div>
     <div class="grid2 wide">${MODES.map(modeCard).join('')}</div>
-    <a class="card flat row between mt" href="#/paragraph" style="color:var(--text)">
+    <a class="card flat row between mt" href="#/dictation" style="color:var(--text)">
+      <div><b>⌨️ 영상 전체 딕테이션</b><div class="small muted">영상을 들으며 전체 대본 받아 적고 채점하기</div></div><span>›</span></a>
+    <a class="card flat row between" href="#/paragraph" style="color:var(--text)">
       <div><b>✍️ 문단 만들기</b><div class="small muted">여러 표현을 한 번에 엮어 말하기·쓰기</div></div><span>›</span></a>`;
   app.querySelector('[data-all]').onclick = () => { S.setSetting('scope', []); viewPractice(); };
   app.querySelectorAll('[data-w]').forEach(b => b.onclick = () => {
@@ -505,6 +509,10 @@ function viewMe() {
       </div>
       <div class="row mt small muted">최고 기록 · 보스전 ${st.best.boss ?? '-'}점 · 매칭 ${st.best.match ? st.best.match.toFixed(1) + '초' : '-'} · 빈칸 연속 ${st.best.cloze ?? '-'}</div>
     </div>
+    ${(st.dictation || []).length ? `<div class="card"><b>⌨️ 딕테이션 기록</b>
+      <ul class="list-plain mt">${st.dictation.slice(0, 5).map(d => `<li class="row between"><a href="#/dictation/${d.week}">${d.week}회차 ${d.range === 'full' ? '전체' : '일부'}</a>
+        <span><b>${d.score}%</b> <span class="small muted">${new Date(d.ts).toLocaleDateString('ko-KR')}</span></span></li>`).join('')}</ul></div>` : ''}
+    ${tokenCardHtml(true)}
     <div class="card stack">
       <b>설정</b>
       <label class="small">발음 억양
@@ -532,6 +540,7 @@ function viewMe() {
       <button class="btn sm ghost" data-reset>기록 전체 초기화</button>
     </div>`;
   renderSyncCard();
+  bindTokenCard(app, () => viewMe());
   app.querySelectorAll('[data-s]').forEach(s => s.onchange = () => {
     const k = s.dataset.s;
     S.setSetting(k, ['rate', 'newPerDay'].includes(k) ? Number(s.value) : s.value);
@@ -578,7 +587,7 @@ function route() {
   stopListening();
   if (window.speechSynthesis) speechSynthesis.cancel();
   const [, page = '', arg] = location.hash.split('/');
-  const tab = { '': 'home', weeks: 'weeks', week: 'weeks', practice: 'practice', play: 'practice', review: 'home', paragraph: 'paragraph', me: 'me' }[page] || 'home';
+  const tab = { '': 'home', weeks: 'weeks', week: 'weeks', practice: 'practice', play: 'practice', review: 'home', paragraph: 'paragraph', me: 'me', dictation: 'practice' }[page] || 'home';
   document.querySelectorAll('.tabbar a').forEach(a => a.classList.toggle('active', a.dataset.tab === tab));
   window.scrollTo(0, 0);
   switch (page) {
@@ -589,6 +598,9 @@ function route() {
     case 'review': return viewReview();
     case 'paragraph': return viewParagraph();
     case 'me': return viewMe();
+    case 'dictation':
+      if (arg) { cleanup = viewDictation(app, arg); return; }
+      return viewDictationList(app);
     default: return viewHome();
   }
 }

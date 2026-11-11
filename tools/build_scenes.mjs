@@ -7,30 +7,16 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { usesExpr, findSpan } from '../js/match.js';
+import { parseTranscript } from '../js/transcript.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const srcDir = process.argv[2];
 if (!srcDir) { console.error('대본 폴더를 지정하세요'); process.exit(1); }
 
-const toSec = t => {
-  t = t.trim();
-  if (/^\d+s$/.test(t)) return Number(t.slice(0, -1));
-  const p = t.split(':').map(Number);
-  return p.length === 3 ? p[0] * 3600 + p[1] * 60 + p[2] : p[0] * 60 + p[1];
-};
-const clean = s => s
-  .replace(/\[[^\]]*\]/g, ' ').replace(/\([^)]*\)/g, ' ').replace(/>>/g, ' ')
-  .replace(/(^|\s)-\s/g, ' ').replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim();
 const videoId = url => (url.match(/(?:youtu\.be\/|v=)([\w-]{11})/) || [])[1] || '';
 
 function parseScript(file) {
-  const rows = [];
-  for (const line of fs.readFileSync(file, 'utf8').split('\n').slice(2)) {
-    const [t, ...rest] = line.split('\t');
-    if (!t || !rest.length) continue;
-    const text = clean(rest.join(' '));
-    if (text) rows.push({ t: toSec(t), text });
-  }
+  const { title, rows } = parseTranscript(fs.readFileSync(file, 'utf8'));
   // 단어마다 줄 번호를 붙인 뒤 문장 단위로 나눈다
   const toks = [];
   rows.forEach((r, i) => r.text.split(' ').forEach(w => toks.push({ w, row: i })));
@@ -50,7 +36,7 @@ function parseScript(file) {
     text: r.text + (rows[i + 1] ? ' ' + rows[i + 1].text : ''), start: r.t, end: rowEnd(i + 1 < rows.length ? i + 1 : i),
     n: 99,
   }));
-  return { title: fs.readFileSync(file, 'utf8').split('\n')[0].trim(), cands, pairs };
+  return { title, cands, pairs };
 }
 
 const index = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/index.json'))).weeks;
