@@ -166,12 +166,9 @@ export function viewDictation(app, n) {
             ${LEVELS.map(l => `<button class="chip-toggle ${l.id === level ? 'on' : ''}" data-level="${l.id}">${l.name}</button>`).join('')}
           </div>
           <label class="row small muted mt" style="cursor:pointer"><input type="checkbox" data-follow checked> 영상 따라 대본 자동 스크롤</label>
-          <p class="small muted kbd-help">⌨️ 빈칸에서 <kbd>Enter</kbd> 확인·다음 빈칸 · <kbd>Ctrl</kbd>+<kbd>Enter</kbd> 이 줄 다시 듣기 · <kbd>Esc</kbd> 재생/멈춤 · <kbd>Ctrl</kbd>+<kbd>←</kbd>/<kbd>→</kbd> 3초 이동 · <kbd>Ctrl</kbd>+<kbd>↓</kbd> 속도</p>
+          <p class="small muted kbd-help">⌨️ 빈칸에서 <kbd>Enter</kbd> 다음 빈칸 · <kbd>Ctrl</kbd>+<kbd>Enter</kbd> 이 줄 다시 듣기 · <kbd>Esc</kbd> 재생/멈춤 · <kbd>Ctrl</kbd>+<kbd>←</kbd>/<kbd>→</kbd> 3초 이동 · <kbd>Ctrl</kbd>+<kbd>↓</kbd> 속도</p>
           <div class="row between small mt"><span data-progress class="muted"></span><span data-pos class="muted">0:00</span></div>
-          <div class="grid2 mt">
-            <button class="btn" data-score="partial">지금까지 채점</button>
-            <button class="btn primary" data-score="full">전체 채점</button>
-          </div>
+          <div class="dict-stage card flat mt" data-stage></div>
           <div data-result></div>
         </div>
         <div class="card dict-script" data-script></div>
@@ -184,7 +181,7 @@ export function viewDictation(app, n) {
     player = createPlayer(app.querySelector('.video-box'), vid, {
       onError: code => { if (isEmbedBlocked(code)) app.querySelector('.video-error').classList.remove('hide'); },
     });
-    let lines = [], inputs = [], focusedRow = 0;
+    let lines = [], inputs = [], focusedRow = 0, round = 1;
 
     const render = lvl => {
       const ratio = LEVELS.find(l => l.id === lvl).ratio;
@@ -198,23 +195,66 @@ export function viewDictation(app, n) {
       let k = 0;
       lines.forEach(ln => ln.parts.forEach(p => { if (p.blank) { p.input = scriptBox.querySelectorAll('.blank-in')[k++]; inputs.push(p); } }));
       inputs.forEach((p, idx) => bindInput(p, idx));
+      startRound1();
+    };
+    // 같은 빈칸으로 처음부터
+    const startRound1 = () => {
+      scriptBox.querySelectorAll('.answer-tip').forEach(x => x.remove());
+      inputs.forEach(p => {
+        p.input.value = ''; p.input.readOnly = false; p.r1 = '';
+        p.input.className = 'blank-in' + (p.expr ? ' expr' : '');
+      });
+      round = 1;
       app.querySelector('[data-result]').innerHTML = '';
-      updateProgress();
       dirty = false;
+      renderStage(); updateProgress();
     };
 
-    const check = p => {
-      const v = p.input.value.trim();
-      p.input.classList.remove('right', 'wrong');
-      if (!v) return null;
-      const ok = normWord(v) === normWord(p.core);
-      p.input.classList.add(ok ? 'right' : 'wrong');
-      return ok;
+    // 스터디 방식 3단계: 1차 듣기(검정) → 2차 듣기(파랑) → 3차 대본 보며 채점(빨강)
+    const STAGES = {
+      1: { title: '1차 듣기', desc: '영상을 처음부터 들으면서 들리는 빈칸을 채우세요. 정답은 아직 보여 주지 않아요.', next: '1차 끝 → 2차 듣기' },
+      2: { title: '2차 듣기', desc: '다시 처음부터 들으면서 못 채운 빈칸을 <b class="blue-text">파란색</b>으로 채우세요. 1차에 쓴 답은 그대로 고정돼요.', next: '2차 끝 → 대본 보며 채점' },
+      3: { title: '3차 대본 보며 채점', desc: '<b class="red-text">빨간색</b>이 오답이에요. 대본과 정답을 보며 한 번 더 들어 보세요. 줄 앞 시간을 누르면 그 줄이 재생돼요.' },
     };
+    const renderStage = () => {
+      const st = STAGES[round];
+      const box = app.querySelector('[data-stage]');
+      box.innerHTML = `
+        <div class="steps">${[1, 2, 3].map(i => `<span class="step ${i === round ? 'on' : i < round ? 'done' : ''}">${i}</span>`).join('<i></i>')}</div>
+        <b>${st.title}</b>
+        <p class="small muted" style="margin:4px 0 10px">${st.desc}</p>
+        <div class="grid2">
+          <button class="btn" data-from-start>⏮ 처음부터 재생</button>
+          ${st.next ? `<button class="btn primary" data-next-round>${st.next}</button>` : '<button class="btn primary" data-again-same>🔁 같은 빈칸으로 다시</button>'}
+        </div>`;
+      box.querySelector('[data-from-start]').onclick = () => player.playSegment(0, null);
+      box.querySelector('[data-next-round]')?.addEventListener('click', nextRound);
+      box.querySelector('[data-again-same]')?.addEventListener('click', startRound1);
+    };
+    const nextRound = () => {
+      if (round === 1) {
+        const filled = inputs.filter(p => p.input.value.trim()).length;
+        if (!filled && !confirm('아직 채운 빈칸이 없어요. 2차로 넘어갈까요?')) return;
+        inputs.forEach(p => {
+          p.r1 = p.input.value.trim();
+          if (p.r1) { p.input.readOnly = true; p.input.classList.add('r1'); } else p.input.classList.add('r2');
+        });
+        round = 2;
+        renderStage(); updateProgress();
+        player.playSegment(0, null);
+        inputs.find(p => !p.r1)?.input.focus({ preventScroll: true });
+      } else if (round === 2) {
+        round = 3;
+        inputs.forEach(p => { p.input.readOnly = true; });
+        grade();
+        renderStage(); updateProgress();
+      }
+    };
+
     const updateProgress = () => {
-      const done = inputs.filter(p => p.input.classList.contains('right')).length;
+      const filled = inputs.filter(p => p.input.value.trim()).length;
       const expr = inputs.filter(p => p.expr).length;
-      app.querySelector('[data-progress]').textContent = `빈칸 ${inputs.length}개 (표현 ${expr}) · 맞힘 ${done}`;
+      app.querySelector('[data-progress]').textContent = `${STAGES[round].title} · 빈칸 ${inputs.length}개 (표현 ${expr}) · 채운 칸 ${filled}`;
     };
     const playRow = li => {
       const ln = lines[li], next = lines[li + 1];
@@ -224,14 +264,13 @@ export function viewDictation(app, n) {
     function bindInput(p, idx) {
       const el = p.input;
       el.addEventListener('focus', () => { focusedRow = Number(el.dataset.row); });
-      el.addEventListener('input', () => { dirty = true; el.classList.remove('right', 'wrong', 'revealed'); });
-      el.addEventListener('blur', () => { check(p); updateProgress(); });
+      el.addEventListener('input', () => { dirty = true; updateProgress(); });
       el.addEventListener('keydown', e => {
         if (e.key === 'Enter' && e.ctrlKey) { e.preventDefault(); playRow(Number(el.dataset.row)); return; }
         if (e.key === 'Enter') {
           e.preventDefault();
-          check(p); updateProgress();
-          const nextP = inputs[idx + 1];
+          // 2차에서는 아직 비어 있던(파란색) 빈칸으로만 이동
+          const nextP = inputs.slice(idx + 1).find(q => !q.input.readOnly);
           if (nextP) nextP.input.focus();
         }
       });
@@ -288,50 +327,53 @@ export function viewDictation(app, n) {
       }
     }, 300);
 
-    app.querySelectorAll('[data-score]').forEach(b => b.onclick = () => {
-      const range = b.dataset.score;
-      const upTo = player.time();
-      const pool = range === 'full' ? inputs : inputs.filter(p => lines[Number(p.input.dataset.row)].t < upTo);
-      if (!pool.length) { toast('영상을 조금 재생한 뒤에 채점해 주세요'); return; }
+    const grade = () => {
       scriptBox.querySelectorAll('.answer-tip').forEach(x => x.remove());
-      let right = 0, exprRight = 0, exprTotal = 0;
+      const eq = (x, y) => !!x && normWord(x) === normWord(y);
+      let ok1 = 0, okAll = 0, exprRight = 0, exprTotal = 0;
       const missed = [];
-      pool.forEach(p => {
-        const ok = check(p) === true;
-        if (ok) right++;
+      inputs.forEach(p => {
+        const v = p.input.value.trim();
+        const ok = eq(v, p.core);
+        if (p.r1 && eq(p.r1, p.core)) ok1++;
+        if (ok) okAll++;
         if (p.expr) { exprTotal++; if (ok) exprRight++; }
-        if (!ok) {
-          missed.push(p.core);
+        p.input.classList.remove('r1', 'r2');
+        if (ok) p.input.classList.add(p.r1 ? 'g1' : 'g2');
+        else {
           p.input.classList.add('wrong');
-          p.input.title = '정답: ' + p.core;
+          missed.push(p.core);
           p.input.insertAdjacentHTML('afterend', `<span class="answer-tip">${esc(p.core)}</span>`);
         }
       });
+      const total = inputs.length;
+      const s1 = Math.round(ok1 / total * 100), s2 = Math.round(okAll / total * 100);
       const dedup = arr => [...new Set(arr)];
-      const score = Math.round(right / pool.length * 100);
       S.saveDictation({
-        week: w.week, range, level: LEVELS.find(l => l.id === (S.getState().settings.dictLevel || 'normal')).name,
-        score, total: pool.length, matched: right, missed: dedup(missed).slice(0, 20),
-        upTo: range === 'full' ? null : Math.round(upTo),
+        week: w.week, range: 'full', level: LEVELS.find(l => l.id === (S.getState().settings.dictLevel || 'normal')).name,
+        r1: s1, score: s2, total, matched: okAll, missed: dedup(missed).slice(0, 20), upTo: null,
       });
       dirty = false;
-      updateProgress();
-      const grade = score >= 90 ? '🏆 거의 완벽해요!' : score >= 75 ? '👏 아주 잘했어요' : score >= 50 ? '👍 절반 넘게 맞혔어요' : '💪 다음엔 더 잘 들릴 거예요';
+      const gradeMsg = s2 >= 90 ? '🏆 거의 완벽해요!' : s2 >= 75 ? '👏 아주 잘했어요' : s2 >= 50 ? '👍 절반 넘게 맞혔어요' : '💪 다음엔 더 잘 들릴 거예요';
       app.querySelector('[data-result]').innerHTML = `
         <div class="card mt">
-          <div class="row between"><b>${grade}</b><span class="chip accent">${range === 'full' ? '전체' : `0:00 ~ ${fmt(upTo)}`}</span></div>
+          <b>${gradeMsg}</b>
           <div class="grid3 mt">
-            <div class="stat"><b>${score}%</b><span>정답률</span></div>
-            <div class="stat"><b>${right}/${pool.length}</b><span>맞힌 빈칸</span></div>
+            <div class="stat"><b>${s1}%</b><span>1차 듣기</span></div>
+            <div class="stat"><b class="blue-text">${s2}%</b><span>2차 듣기 후 ${s2 > s1 ? `(+${s2 - s1})` : ''}</span></div>
             <div class="stat"><b>${exprTotal ? `${exprRight}/${exprTotal}` : '-'}</b><span>표현 빈칸</span></div>
           </div>
-          ${missed.length ? `<p class="small muted mt" style="margin-bottom:4px">틀린 단어 (대본에 정답이 빨간색으로 표시돼요)</p>
-            <div class="checklist">${dedup(missed).slice(0, 20).map(m => `<span class="chip bad">${esc(m)}</span>`).join('')}</div>` : ''}
-          <button class="btn sm mt" data-retry>🔄 새 빈칸으로 다시 하기</button>
+          <p class="small muted mt" style="margin-bottom:4px">대본 색: 검정 = 1차에 맞힘 · <span class="blue-text">파랑</span> = 2차에 맞힘 · <span class="red-text">빨강</span> = 오답(→ 정답)</p>
+          ${missed.length ? `<div class="checklist">${dedup(missed).slice(0, 20).map(m => `<span class="chip bad">${esc(m)}</span>`).join('')}</div>` : ''}
+          <div class="grid2 mt">
+            <button class="btn sm" data-same>🔁 같은 빈칸으로 다시</button>
+            <button class="btn sm" data-retry>🎲 새 빈칸으로 다시</button>
+          </div>
         </div>`;
+      app.querySelector('[data-same]').onclick = startRound1;
       app.querySelector('[data-retry]').onclick = () => render(S.getState().settings.dictLevel || 'normal');
       renderHistory(app.querySelector('[data-history]'), w.week);
-    });
+    };
 
     render(level);
     renderHistory(app.querySelector('[data-history]'), w.week);
@@ -358,6 +400,6 @@ function renderHistory(box, week) {
   box.innerHTML = `<div class="card mt"><b>📒 이 회차 딕테이션 기록</b>
     <ul class="list-plain mt">${list.map(d => `<li class="row between">
       <span>${new Date(d.ts).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
-        <span class="chip">${d.range === 'full' ? '전체' : `~${fmt(d.upTo || 0)}`}</span>${d.level ? ` <span class="chip">${esc(d.level)}</span>` : ''}</span>
-      <b>${d.score}% <span class="small muted">(${d.matched}/${d.total})</span></b></li>`).join('')}</ul></div>`;
+        ${d.level ? `<span class="chip">${esc(d.level)}</span>` : ''}</span>
+      <b>${d.r1 != null ? `<span class="small muted">1차 ${d.r1}% →</span> ` : ''}${d.score}% <span class="small muted">(${d.matched}/${d.total})</span></b></li>`).join('')}</ul></div>`;
 }

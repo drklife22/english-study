@@ -389,3 +389,20 @@ kbd { background: var(--surface-2); border: 1px solid var(--line); border-bottom
 .hm-key { padding: 10px 0; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); font-weight: 700; cursor: pointer; }
 .hm-key.hit { background: var(--good-soft); color: var(--good); border-color: transparent; }
 .hm-key.miss { background: var(--bad-soft); color: var(--bad); border-color: transparent; opacity: .6; }
+
+/* 딕테이션 3단계 */
+.dict-stage { padding: 12px 14px; }
+.steps { display: flex; align-items: center; gap: 0; margin-bottom: 8px; }
+.steps i { flex: 1; height: 2px; background: var(--line); max-width: 40px; }
+.step { width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font-size: .8rem; font-weight: 800; background: var(--surface-2); color: var(--muted); }
+.step.on { background: var(--accent); color: var(--accent-text); }
+.step.done { background: var(--good-soft); color: var(--good); }
+.blue-text { color: var(--blue); }
+.red-text { color: var(--bad); }
+:root { --blue: #2563eb; }
+:root[data-theme="dark"] { --blue: #7aa7ff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --blue: #7aa7ff; } }
+.blank-in.r1 { background: transparent; border-bottom-color: var(--muted); color: var(--text); }
+.blank-in.r2 { color: var(--blue); font-weight: 700; border-bottom-color: var(--blue); }
+.blank-in.g1 { background: transparent; border-bottom-color: var(--good); color: var(--text); }
+.blank-in.g2 { background: transparent; border-bottom-color: var(--blue); color: var(--blue); font-weight: 700; }
