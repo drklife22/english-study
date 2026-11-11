@@ -2,20 +2,25 @@
 import { esc, hl, blankOut, bindSay, sayBtn, answerBox, toast, el } from './ui.js';
 import { bracketText, stripBrackets, shuffle, pick, sample, roleplaysOf, getExpr, getScene } from './data.js';
 import { createPlayer, ytLink, isEmbedBlocked } from './yt.js';
+import { rain, crossword, hangman } from './games2.js';
 import { review, weightedPick, setBest, getState, isDue, item } from './store.js';
 import { speak, canListen, listen, stopListening } from './speech.js';
 import { compare, diffHtml, usesExpr, looseEqual } from './match.js';
 
+// cat: game(게임) / listen(듣기·이해) / speak(말하기)
 export const MODES = [
-  { id: 'flash', emoji: '🃏', name: '플래시카드', desc: '뜻을 보고 표현 떠올리기', tag: 'input' },
-  { id: 'match', emoji: '⚡', name: '스피드 매칭', desc: '표현과 뜻 빨리 짝짓기', tag: '게임' },
-  { id: 'cloze', emoji: '🧩', name: '빈칸 러시', desc: '문맥 보고 빈칸 채우기, 연속 정답 도전', tag: '게임' },
-  { id: 'dictation', emoji: '🎧', name: '듣고 받아쓰기', desc: '원어민 음성 듣고 문장 쓰기', tag: 'input' },
-  { id: 'scene', emoji: '🎬', name: '영상 섀도잉', desc: '실제 영상 속 장면을 듣고 따라 말하기', tag: 'output' },
-  { id: 'shadow', emoji: '🗣️', name: '섀도잉 챌린지', desc: '예문을 듣고 따라 말하면 정확도 채점', tag: 'output' },
-  { id: 'speak', emoji: '🚀', name: '한→영 순간 말하기', desc: '한국어 보고 바로 영어로 말하기', tag: 'output' },
-  { id: 'roleplay', emoji: '🎭', name: '상황 롤플레이', desc: '대화 상황에 배운 표현으로 대답', tag: 'output' },
-  { id: 'boss', emoji: '👾', name: '표현 보스전', desc: '여러 문제 섞어서 목숨 3개로 버티기', tag: '게임' },
+  { id: 'rain', emoji: '☔', name: '표현 소나기', desc: '떨어지는 뜻을 보고 바닥에 닿기 전에 영어로 입력', tag: '게임', cat: 'game' },
+  { id: 'cross', emoji: '🔠', name: '십자말풀이', desc: '배운 표현으로 만든 퍼즐을 뜻·예문 힌트로 풀기', tag: '게임', cat: 'game' },
+  { id: 'hangman', emoji: '🎈', name: '풍선 행맨', desc: '뜻을 보고 알파벳을 하나씩 맞혀 표현 완성', tag: '게임', cat: 'game' },
+  { id: 'match', emoji: '⚡', name: '스피드 매칭', desc: '표현과 뜻 빨리 짝짓기', tag: '게임', cat: 'game' },
+  { id: 'cloze', emoji: '🧩', name: '빈칸 러시', desc: '문맥 보고 빈칸 채우기, 연속 정답 도전', tag: '게임', cat: 'game' },
+  { id: 'boss', emoji: '👾', name: '표현 보스전', desc: '여러 문제 섞어서 목숨 3개로 버티기', tag: '게임', cat: 'game' },
+  { id: 'flash', emoji: '🃏', name: '플래시카드', desc: '뜻을 보고 표현 떠올리기', tag: 'input', cat: 'listen' },
+  { id: 'dictation', emoji: '🎧', name: '듣고 받아쓰기', desc: '원어민 음성 듣고 문장 쓰기', tag: 'input', cat: 'listen' },
+  { id: 'scene', emoji: '🎬', name: '영상 섀도잉', desc: '실제 영상 속 장면을 듣고 따라 말하기', tag: 'output', cat: 'speak' },
+  { id: 'shadow', emoji: '🗣️', name: '섀도잉 챌린지', desc: '예문을 듣고 따라 말하면 정확도 채점', tag: 'output', cat: 'speak' },
+  { id: 'speak', emoji: '🚀', name: '한→영 순간 말하기', desc: '한국어 보고 바로 영어로 말하기', tag: 'output', cat: 'speak' },
+  { id: 'roleplay', emoji: '🎭', name: '상황 롤플레이', desc: '대화 상황에 배운 표현으로 대답', tag: 'output', cat: 'speak' },
 ];
 
 // 공통 상단바
@@ -645,7 +650,10 @@ function scene(root, ctx) {
   return () => player.destroy();
 }
 
-const RUNNERS = { scene, flash, match, cloze, dictation, shadow, speak: speakMode, roleplay, boss };
+const kit = { frame };
+const RUNNERS = {
+  rain: (r, c) => rain(r, c, kit), cross: (r, c) => crossword(r, c, kit), hangman: (r, c) => hangman(r, c, kit),
+  scene, flash, match, cloze, dictation, shadow, speak: speakMode, roleplay, boss };
 
 export function runMode(mode, root, ctx) {
   stopListening();

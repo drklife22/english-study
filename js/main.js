@@ -68,7 +68,7 @@ function viewHome() {
 
     <div class="section-title"><h2>바로 연습하기</h2><a class="small" href="#/practice">전체 보기</a></div>
     <div class="grid2">
-      ${['speak', 'cloze', 'roleplay', 'boss'].map(id => modeCard(MODES.find(m => m.id === id))).join('')}
+      ${['speak', 'rain', 'roleplay', 'cross'].map(id => modeCard(MODES.find(m => m.id === id))).join('')}
     </div>
     <a class="card flat row between" href="#/paragraph" style="margin-top:10px;color:var(--text)">
       <div><b>✍️ 표현 여러 개로 문단 만들기</b><div class="small muted">랜덤 표현 3~5개를 넣어 말하거나 써 보기</div></div><span>›</span>
@@ -89,10 +89,10 @@ function viewHome() {
     </div>`;
 }
 
-function modeCard(m) {
+function modeCard(m, showTag = true) {
   return `<a class="mode-card" href="#/play/${m.id}" style="color:var(--text)">
     <span class="emoji">${m.emoji}</span><b>${esc(m.name)}</b><span>${esc(m.desc)}</span>
-    <span class="tag"><span class="chip ${m.tag === 'output' ? 'accent' : m.tag === '게임' ? 'warn' : ''}">${m.tag}</span></span></a>`;
+    ${showTag ? `<span class="tag"><span class="chip ${m.tag === 'output' ? 'accent' : m.tag === '게임' ? 'warn' : ''}">${m.tag}</span></span>` : ''}</a>`;
 }
 
 function weekCard(w) {
@@ -271,6 +271,15 @@ function exprCard(e) {
 }
 
 /* ---------------- 연습 고르기 ---------------- */
+const PRACTICE_CATS = [
+  { id: 'game', title: '🎮 게임', desc: '재미있게 반복하며 표현 익히기' },
+  { id: 'listen', title: '🎧 듣기·이해', desc: '듣고 알아보고 받아 적기',
+    extra: [{ href: '#/dictation', emoji: '⌨️', name: '영상 빈칸 딕테이션', desc: '실제 영상 대본의 빈칸을 들으며 채우기' }] },
+  { id: 'speak', title: '🗣️ 말하기', desc: '소리 내 따라 하고 직접 말하기' },
+  { id: 'write', title: '✍️ 쓰기', desc: '여러 표현을 엮어 내 이야기 만들기',
+    extra: [{ href: '#/paragraph', emoji: '✍️', name: '문단 만들기', desc: '랜덤 표현 3~5개로 문단 말하기·쓰기' }] },
+];
+
 function viewPractice() {
   const st = S.getState().settings;
   const idx = getIndex();
@@ -287,12 +296,12 @@ function viewPractice() {
       </div>
       <label class="row mt small" style="cursor:pointer"><input type="checkbox" data-weak ${st.weakOnly ? 'checked' : ''}> 약한 표현만 (몰라요·헷갈려요)</label>
     </div>
-    <div class="section-title"><h2>연습 방식</h2></div>
-    <div class="grid2 wide">${MODES.map(modeCard).join('')}</div>
-    <a class="card flat row between mt" href="#/dictation" style="color:var(--text)">
-      <div><b>⌨️ 영상 빈칸 딕테이션</b><div class="small muted">대본 빈칸을 영상 들으며 채우고 채점하기</div></div><span>›</span></a>
-    <a class="card flat row between" href="#/paragraph" style="color:var(--text)">
-      <div><b>✍️ 문단 만들기</b><div class="small muted">여러 표현을 한 번에 엮어 말하기·쓰기</div></div><span>›</span></a>`;
+    ${PRACTICE_CATS.map(c => `
+      <div class="section-title"><h2>${c.title}</h2><span class="small muted">${c.desc}</span></div>
+      <div class="grid2 wide">${[
+        ...MODES.filter(m => m.cat === c.id).map(m => modeCard(m, false)),
+        ...(c.extra || []).map(x => `<a class="mode-card" href="${x.href}" style="color:var(--text)"><span class="emoji">${x.emoji}</span><b>${x.name}</b><span>${x.desc}</span></a>`),
+      ].join('')}</div>`).join('')}`;
   app.querySelector('[data-all]').onclick = () => { S.setSetting('scope', []); viewPractice(); };
   app.querySelectorAll('[data-w]').forEach(b => b.onclick = () => {
     const n = Number(b.dataset.w);

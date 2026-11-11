@@ -323,3 +323,69 @@ kbd { background: var(--surface-2); border: 1px solid var(--line); border-bottom
 .answer-tip { color: var(--bad); font-weight: 700; font-size: .85em; margin-left: 3px; }
 .answer-tip::before { content: '→ '; }
 @media (max-width: 899px) { .dict-script { max-height: 55vh; } }
+
+/* 표현 소나기 */
+.rain-hud { margin-bottom: 8px; }
+.rain-stage {
+  position: relative; height: min(58vh, 520px); overflow: hidden; border-radius: 16px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 14%, var(--surface)) 0%, var(--surface) 70%);
+  border: 1px solid var(--line);
+}
+.rain-stage.paused::after { content: '⏸ 일시정지 (Esc 또는 ▶)'; position: absolute; inset: 0; display: grid; place-items: center; background: color-mix(in srgb, var(--bg) 70%, transparent); font-weight: 700; }
+.drop {
+  position: absolute; top: 0; padding: 6px 12px; border-radius: 999px; font-weight: 700; font-size: .95rem;
+  background: var(--surface); border: 2px solid var(--accent); color: var(--text); white-space: nowrap;
+  box-shadow: var(--shadow); will-change: transform;
+}
+.drop.pop { animation: pop .3s forwards; border-color: var(--good); color: var(--good); }
+.drop.splash { animation: splash .4s forwards; border-color: var(--bad); color: var(--bad); }
+@keyframes pop { to { opacity: 0; scale: 1.6; } }
+@keyframes splash { to { opacity: 0; scale: 1.3 .4; } }
+.rain-water {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 8%;
+  background: linear-gradient(180deg, color-mix(in srgb, #38bdf8 70%, transparent), #0ea5e9);
+  transition: height .5s; opacity: .85;
+}
+.rain-missed { position: absolute; left: 8px; bottom: 8px; z-index: 2; }
+.rain-input { font-size: 1.05rem; }
+.rain-input.shake { animation: shake .3s; border-color: var(--bad); }
+
+/* 십자말풀이 */
+.cw-wrap { display: grid; gap: 14px; }
+@media (min-width: 900px) { .app:has(.cw-wrap) { max-width: 1100px; } .cw-wrap { grid-template-columns: auto 1fr; align-items: start; } }
+.cw-board { overflow-x: auto; }
+.cw-grid { display: grid; gap: 2px; width: max-content; }
+.cw-cell { position: relative; width: var(--cw); height: var(--cw); background: var(--surface); border: 1px solid var(--line); border-radius: 4px; }
+.cw-cell.block { background: transparent; border-color: transparent; }
+.cw-cell input {
+  width: 100%; height: 100%; border: none; background: transparent; text-align: center; font-weight: 800;
+  font-size: calc(var(--cw) * .5); text-transform: uppercase; padding: 0; outline: none; color: var(--text); border-radius: 4px;
+}
+.cw-cell.hl { background: var(--accent-soft); }
+.cw-cell input:focus { box-shadow: inset 0 0 0 2px var(--accent); }
+.cw-cell.ok { background: var(--good-soft); }
+.cw-cell.ok input { color: var(--good); }
+.cw-cell.bad { background: var(--bad-soft); }
+.cw-cell.given input { color: var(--warn); }
+.cw-num { position: absolute; top: 1px; left: 2px; font-size: 9px; color: var(--muted); line-height: 1; pointer-events: none; }
+.cw-current { margin-bottom: 10px; background: var(--accent-soft); border-color: transparent; padding: 10px 12px; }
+.cw-list { list-style: none; padding: 0; margin: 6px 0 12px; }
+.cw-list li { padding: 6px 8px; border-radius: 8px; cursor: pointer; font-size: .9rem; }
+.cw-list li.on { background: var(--accent-soft); }
+.cw-list li.solved { color: var(--good); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--good) 50%, transparent); }
+
+/* 풍선 행맨 */
+.balloons { font-size: 1.7rem; letter-spacing: 2px; min-height: 2.2rem; }
+.balloon { display: inline-block; transition: transform .3s, opacity .3s; }
+.balloon.b1 { filter: hue-rotate(60deg); } .balloon.b2 { filter: hue-rotate(140deg); }
+.balloon.b3 { filter: hue-rotate(220deg); } .balloon.b4 { filter: hue-rotate(290deg); }
+.balloon.popped { transform: scale(1.8); opacity: 0; }
+.hm-word { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px; }
+.hm-w { display: inline-flex; gap: 4px; }
+.hm-ch { width: 1.3em; border-bottom: 3px solid var(--text); font-size: 1.5rem; font-weight: 800; text-align: center; min-height: 1.6em; text-transform: lowercase; }
+.hm-ch.punct { border-bottom-color: transparent; width: auto; }
+.hm-ch.missed { color: var(--bad); }
+.hm-keys { display: grid; grid-template-columns: repeat(10, 1fr); gap: 5px; margin-top: 12px; }
+.hm-key { padding: 10px 0; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); font-weight: 700; cursor: pointer; }
+.hm-key.hit { background: var(--good-soft); color: var(--good); border-color: transparent; }
+.hm-key.miss { background: var(--bad-soft); color: var(--bad); border-color: transparent; opacity: .6; }

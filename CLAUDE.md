@@ -18,7 +18,7 @@
 
 ## 구조
 - `content/*.txt` 원본 → `tools/build_data.py` → `data/index.json`, `data/weekNN.json`
-- `js/main.js` 라우터·화면, `js/games.js` 연습 모드, `js/store.js` 기록·간격 반복,
+- `js/main.js` 라우터·화면, `js/games.js` 연습 모드(`MODES`의 cat으로 연습 화면 분류), `js/games2.js` 표현 소나기·십자말풀이·풍선 행맨, `js/store.js` 기록·간격 반복,
   `js/sync.js` Firebase 동기화(`firebase-config.js`가 비어 있으면 꺼짐), `js/match.js` 표현 사용 체크·채점,
   `js/speech.js` 브라우저 TTS/STT, `js/yt.js` 유튜브 플레이어(구간 재생·A-B 반복),
   `js/dictation.js` 빈칸 딕테이션(대본은 `js/scripts.js`가 사용자 토큰으로 비공개 저장소에서 실행 중에 읽음 — 공개 저장소에 대본 전체를 넣지 않는다),
