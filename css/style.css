@@ -302,12 +302,24 @@ button.chip { cursor: pointer; }
   .dict-layout { grid-template-columns: 1fr 1fr; align-items: start; }
   .dict-video { position: sticky; top: 64px; }
 }
-.dict-input textarea { min-height: 320px; font-size: 1rem; }
 .kbd-help { margin: 8px 0 0; line-height: 1.8; }
 kbd { background: var(--surface-2); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 0 5px; font-size: .8em; font-family: inherit; }
-.dict-script { max-height: 60vh; overflow-y: auto; line-height: 1.75; }
+.dict-script { max-height: 70vh; overflow-y: auto; line-height: 2.1; position: relative; margin: 0; }
 .dict-line { display: flex; gap: 10px; align-items: baseline; padding: 2px 0; }
 .dict-t { border: none; background: none; color: var(--accent); cursor: pointer; font-size: .78rem; font-variant-numeric: tabular-nums; flex-shrink: 0; width: 38px; text-align: right; padding: 0; }
 .dict-script .ok, .ok-sample { color: var(--good); }
 .dict-script .miss, .miss-sample { color: var(--bad); text-decoration: underline wavy; text-underline-offset: 3px; }
 .token-card input { flex: 1; }
+.dict-line { border-radius: 8px; padding: 2px 6px; transition: background .2s; }
+.dict-line.now { background: var(--accent-soft); }
+.blank-in {
+  border: none; border-bottom: 2px solid var(--line); background: var(--surface-2); color: var(--text);
+  border-radius: 4px 4px 0 0; padding: 0 3px; font: inherit; min-width: 3ch; text-align: center; outline: none;
+}
+.blank-in:focus { border-bottom-color: var(--accent); background: var(--accent-soft); }
+.blank-in.expr { border-bottom-color: var(--warn); background: var(--warn-soft); }
+.blank-in.right { border-bottom-color: var(--good); background: var(--good-soft); color: var(--good); font-weight: 700; }
+.blank-in.wrong { border-bottom-color: var(--bad); background: var(--bad-soft); color: var(--bad); }
+.answer-tip { color: var(--bad); font-weight: 700; font-size: .85em; margin-left: 3px; }
+.answer-tip::before { content: '→ '; }
+@media (max-width: 899px) { .dict-script { max-height: 55vh; } }

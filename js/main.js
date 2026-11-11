@@ -127,7 +127,7 @@ function viewWeek(n) {
       <button class="btn primary" data-practice>🎮 이 회차 연습하기</button>
       ${sceneCount ? '<button class="btn" data-scene>🎬 영상 섀도잉</button>' : '<button class="btn" data-openall>모두 펼치기</button>'}
     </div>
-    ${vid ? `<a class="btn block mb" href="#/dictation/${w.week}">⌨️ 영상 전체 딕테이션</a>` : ''}
+    ${vid ? `<a class="btn block mb" href="#/dictation/${w.week}">⌨️ 영상 빈칸 딕테이션</a>` : ''}
     ${vid ? `
     <div class="card" style="padding:12px">
       <div class="video-wrap"><div class="video-box"></div></div>
@@ -290,7 +290,7 @@ function viewPractice() {
     <div class="section-title"><h2>연습 방식</h2></div>
     <div class="grid2 wide">${MODES.map(modeCard).join('')}</div>
     <a class="card flat row between mt" href="#/dictation" style="color:var(--text)">
-      <div><b>⌨️ 영상 전체 딕테이션</b><div class="small muted">영상을 들으며 전체 대본 받아 적고 채점하기</div></div><span>›</span></a>
+      <div><b>⌨️ 영상 빈칸 딕테이션</b><div class="small muted">대본 빈칸을 영상 들으며 채우고 채점하기</div></div><span>›</span></a>
     <a class="card flat row between" href="#/paragraph" style="color:var(--text)">
       <div><b>✍️ 문단 만들기</b><div class="small muted">여러 표현을 한 번에 엮어 말하기·쓰기</div></div><span>›</span></a>`;
   app.querySelector('[data-all]').onclick = () => { S.setSetting('scope', []); viewPractice(); };
