@@ -45,7 +45,10 @@ function parseScript(file) {
 const index = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/index.json'))).weeks;
 const out = {};
 for (const w of index) {
-  const file = path.join(srcDir, `대본_${w.week}회차`);
+  // 대본_N회차 또는 대본_N회차.txt (맥에서 올린 NFD 한글 이름도 찾기)
+  const want = [`대본_${w.week}회차`, `대본_${w.week}회차.txt`];
+  const hitName = fs.readdirSync(srcDir).find(n => want.includes(n.normalize('NFC')));
+  const file = path.join(srcDir, hitName || want[0]);
   const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', w.file)));
   if (!fs.existsSync(file)) { console.log(`${w.week}회차: 대본 없음`); continue; }
   const { cands, singles, pairs } = parseScript(file);

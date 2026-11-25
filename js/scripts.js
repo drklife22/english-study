@@ -20,13 +20,20 @@ export async function fetchScript(week) {
   if (cache.has(week)) return cache.get(week);
   const token = getToken();
   if (!token) throw new ScriptError('no-token', '대본을 불러오려면 GitHub 열쇠(토큰)가 필요해요.');
-  const file = encodeURIComponent(`대본_${week}회차`);
+  // 파일 이름은 '대본_N회차' 또는 '대본_N회차.txt' 둘 다 받는다.
+  // 맥에서 올린 파일은 한글 자모가 분리된(NFD) 이름일 수 있어 그 형태도 시도한다.
+  const get = name => fetch(`https://api.github.com/repos/${REPO}/contents/${encodeURIComponent(name)}`, {
+    headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github.raw' },
+    cache: 'no-store',
+  });
   let res;
   try {
-    res = await fetch(`https://api.github.com/repos/${REPO}/contents/${file}`, {
-      headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github.raw' },
-      cache: 'no-store',
-    });
+    const base = `대본_${week}회차`;
+    const names = [base, base + '.txt', base.normalize('NFD') + '.txt', base.normalize('NFD')];
+    for (const name of names) {
+      res = await get(name);
+      if (res.status !== 404) break;
+    }
   } catch (e) {
     throw new ScriptError('network', '인터넷 연결을 확인해 주세요.');
   }
