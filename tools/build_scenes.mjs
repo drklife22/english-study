@@ -31,12 +31,15 @@ function parseScript(file) {
   const cands = sentences.map(s => ({
     text: s.map(x => x.w).join(' '), start: rows[s[0].row].t, end: rowEnd(s[s.length - 1].row), n: s.length,
   }));
-  // 문장이 너무 길면 자막 두 줄 묶음도 후보로
+  // 문장이 너무 길면(문장부호 없는 자동 자막 등) 자막 한 줄, 그다음 두 줄 묶음을 후보로
+  const singles = rows.map((r, i) => ({ text: r.text, start: r.t, end: rowEnd(i), n: 50 }));
   const pairs = rows.map((r, i) => ({
     text: r.text + (rows[i + 1] ? ' ' + rows[i + 1].text : ''), start: r.t, end: rowEnd(i + 1 < rows.length ? i + 1 : i),
     n: 99,
   }));
-  return { title, cands, pairs };
+  // 문장부호가 거의 없는 자동 자막이면 한 줄 후보를 두 줄 묶음보다 먼저 쓴다
+  const punctuated = rows.filter(r => /[.?!]/.test(r.text)).length / rows.length > 0.2;
+  return { title, cands, singles: punctuated ? [] : singles, pairs };
 }
 
 const index = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/index.json'))).weeks;
@@ -45,10 +48,11 @@ for (const w of index) {
   const file = path.join(srcDir, `대본_${w.week}회차`);
   const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', w.file)));
   if (!fs.existsSync(file)) { console.log(`${w.week}회차: 대본 없음`); continue; }
-  const { cands, pairs } = parseScript(file);
+  const { cands, singles, pairs } = parseScript(file);
   const scenes = {};
   for (const e of data.expressions) {
-    const hit = cands.find(c => c.n <= 30 && usesExpr(c.text, e)) || pairs.find(c => usesExpr(c.text, e));
+    const hit = cands.find(c => c.n <= 30 && usesExpr(c.text, e))
+      || singles.find(c => usesExpr(c.text, e)) || pairs.find(c => usesExpr(c.text, e));
     if (!hit) continue;
     let text = hit.text;
     const span = findSpan(text, e);

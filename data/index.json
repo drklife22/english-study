@@ -79,6 +79,14 @@
    "subtitle": "Architectural Digest Open Door",
    "file": "week10.json",
    "count": 15
+  },
+  {
+   "week": 11,
+   "date": "2026-11-23",
+   "title": "사회적 건강 TED — Kasley Killam",
+   "subtitle": "Why Social Health Is Key to Happiness and Longevity",
+   "file": "week11.json",
+   "count": 18
   }
  ]
 }

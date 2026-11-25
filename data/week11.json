@@ -1,0 +1,574 @@
+{
+ "week": 11,
+ "date": "2026-11-23",
+ "title": "사회적 건강 TED — Kasley Killam",
+ "subtitle": "Why Social Health Is Key to Happiness and Longevity",
+ "video": "https://youtu.be/LpSDuDIaBGk",
+ "expressions": [
+  {
+   "en": "it's about ~ing",
+   "ko": "~하는 것이다, ~에 관한 것이다",
+   "note": "무언가를 정의하거나 핵심을 말할 때. about 뒤엔 명사나 -ing가 와요.",
+   "match": [
+    "it's about",
+    "it is about",
+    "it was about",
+    "is about"
+   ],
+   "examples": [
+    {
+     "en": "Good teamwork [is about] listening to each other.",
+     "ko": "좋은 팀워크란 서로의 말을 듣는 거야."
+    },
+    {
+     "en": "For me, travel [is about] meeting new people.",
+     "ko": "나한테 여행은 새로운 사람을 만나는 거야."
+    },
+    {
+     "en": "[It's not about] winning; it's about having fun.",
+     "ko": "이기는 게 중요한 게 아니라 즐기는 게 중요해."
+    }
+   ],
+   "id": "w11-it-s-about-ing",
+   "week": 11
+  },
+  {
+   "en": "just like ~",
+   "ko": "~인 것과 마찬가지로, ~처럼",
+   "note": "낯선 개념을 익숙한 것에 빗대 설명할 때. 발표·설명에 딱이에요.",
+   "match": [
+    "just like"
+   ],
+   "examples": [
+    {
+     "en": "[Just like] plants need water, people need attention.",
+     "ko": "식물에 물이 필요하듯 사람에겐 관심이 필요해."
+    },
+    {
+     "en": "She sings [just like] her mom.",
+     "ko": "그녀는 엄마랑 똑같이 노래해."
+    },
+    {
+     "en": "[Just like] any new skill, speaking English takes practice.",
+     "ko": "다른 기술처럼 영어 말하기도 연습이 필요해."
+    }
+   ],
+   "id": "w11-just-like",
+   "week": 11
+  },
+  {
+   "en": "double down on",
+   "ko": "~에 더 집중하다, 두 배로 공들이다",
+   "note": "원래 카드 게임에서 판돈을 두 배로 거는 것. 접지 않고 더 밀어붙이는 느낌.",
+   "match": [
+    "double down on",
+    "doubled down on",
+    "doubling down on",
+    "doubles down on",
+    "double down"
+   ],
+   "examples": [
+    {
+     "en": "After the bad review, the café [doubled down on] quality.",
+     "ko": "안 좋은 리뷰를 받은 뒤 그 카페는 품질에 더 공을 들였어."
+    },
+    {
+     "en": "I'm going to [double down on] my speaking practice this month.",
+     "ko": "이번 달엔 스피킹 연습에 더 집중할 거야."
+    },
+    {
+     "en": "Instead of giving up, she [doubled down].",
+     "ko": "그녀는 포기하는 대신 더 밀어붙였어."
+    }
+   ],
+   "id": "w11-double-down-on",
+   "week": 11
+  },
+  {
+   "en": "up to a point",
+   "ko": "어느 정도까지는 (그 이상은 아니다)",
+   "note": "부분적으로만 맞다는 뜻. but only up to a point로 한계를 강조해요.",
+   "match": [],
+   "examples": [
+    {
+     "en": "I agree with you [up to a point].",
+     "ko": "어느 정도까지는 네 말에 동의해."
+    },
+    {
+     "en": "Coffee keeps me awake, but only [up to a point].",
+     "ko": "커피가 잠을 깨워 주긴 하는데 어느 선까지만이야."
+    },
+    {
+     "en": "Rules are useful [up to a point].",
+     "ko": "규칙은 어느 정도까지는 쓸모가 있어."
+    }
+   ],
+   "id": "w11-up-to-a-point",
+   "week": 11
+  },
+  {
+   "en": "make its way into",
+   "ko": "~에 자리 잡다, ~까지 스며들다",
+   "note": "서서히 들어가 결국 자리 잡는 느낌. 사람이 주어면 make one's way into.",
+   "match": [
+    "made its way into",
+    "make its way into",
+    "making its way into",
+    "makes its way into",
+    "made their way into",
+    "made my way into",
+    "made his way into",
+    "made her way into"
+   ],
+   "examples": [
+    {
+     "en": "Korean slang has [made its way into] English dictionaries.",
+     "ko": "한국어 신조어가 영어 사전에까지 들어갔어."
+    },
+    {
+     "en": "That song somehow [made its way into] every café playlist.",
+     "ko": "그 노래가 어쩌다 모든 카페 플레이리스트에 자리 잡았어."
+    },
+    {
+     "en": "Bubble tea [made its way into] my daily routine.",
+     "ko": "버블티가 내 일상에 자리 잡아 버렸어."
+    }
+   ],
+   "id": "w11-make-its-way-into",
+   "week": 11
+  },
+  {
+   "en": "go weeks at a time without ~ing",
+   "ko": "한 번에 몇 주씩 ~하지 않고 지내다",
+   "note": "weeks 자리에 days, months를 넣어 응용해요.",
+   "match": [
+    "at a time without",
+    "weeks without",
+    "days without",
+    "months without"
+   ],
+   "examples": [
+    {
+     "en": "I sometimes [go weeks at a time without] cooking.",
+     "ko": "나는 가끔 몇 주씩 요리를 안 하고 지내."
+    },
+    {
+     "en": "He can [go days at a time without] talking to anyone.",
+     "ko": "그는 며칠씩 아무하고도 말 안 하고 지낼 수 있어."
+    },
+    {
+     "en": "Don't [go months without] seeing a doctor.",
+     "ko": "몇 달씩 병원 안 가고 그러지 마."
+    }
+   ],
+   "id": "w11-go-weeks-at-a-time-without-ing",
+   "week": 11
+  },
+  {
+   "en": "reach out to",
+   "ko": "~에게 연락하다, 도움을 청하다",
+   "note": "업무 이메일과 일상 모두에서 아주 자주 써요.",
+   "match": [
+    "reach out to",
+    "reached out to",
+    "reaching out to",
+    "reaches out to",
+    "reach out",
+    "reached out",
+    "reaching out"
+   ],
+   "examples": [
+    {
+     "en": "Feel free to [reach out to] me if you need anything.",
+     "ko": "필요한 거 있으면 언제든 연락 줘."
+    },
+    {
+     "en": "I [reached out to] an old coworker for advice.",
+     "ko": "예전 동료한테 조언을 구했어."
+    },
+    {
+     "en": "Thanks for [reaching out]!",
+     "ko": "연락 줘서 고마워!"
+    }
+   ],
+   "id": "w11-reach-out-to",
+   "week": 11
+  },
+  {
+   "en": "come up",
+   "ko": "(일·문제가) 생기다, (이야기가) 나오다",
+   "note": "약속을 미룰 때 something came up이 거의 공식처럼 쓰여요.",
+   "match": [
+    "come up",
+    "came up",
+    "coming up",
+    "comes up"
+   ],
+   "examples": [
+    {
+     "en": "Sorry, something [came up], so I can't make it.",
+     "ko": "미안, 일이 좀 생겨서 못 갈 것 같아."
+    },
+    {
+     "en": "Your name [came up] at lunch today.",
+     "ko": "오늘 점심 때 네 얘기가 나왔어."
+    },
+    {
+     "en": "Let me know if any problems [come up].",
+     "ko": "문제 생기면 알려 줘."
+    }
+   ],
+   "id": "w11-come-up",
+   "week": 11
+  },
+  {
+   "en": "juggle",
+   "ko": "(여러 가지를) 동시에 해내다, 병행하다",
+   "note": "공 여러 개를 저글링하듯 아슬아슬하게 병행하는 느낌.",
+   "match": [
+    "juggle",
+    "juggling",
+    "juggled",
+    "juggles"
+   ],
+   "examples": [
+    {
+     "en": "I'm [juggling] work, study, and the gym right now.",
+     "ko": "지금 일이랑 공부랑 운동을 다 병행하고 있어."
+    },
+    {
+     "en": "How do you [juggle] a full-time job and two kids?",
+     "ko": "풀타임 일이랑 아이 둘을 어떻게 다 해내?"
+    },
+    {
+     "en": "She [juggled] three projects last month.",
+     "ko": "그녀는 지난달에 프로젝트 세 개를 동시에 했어."
+    }
+   ],
+   "id": "w11-juggle",
+   "week": 11
+  },
+  {
+   "en": "dig into",
+   "ko": "자세히 들여다보다, 파고들다",
+   "note": "회의에서 Let's dig into ~ = 본격적으로 살펴봅시다. Dig in! = 어서 먹어!",
+   "match": [
+    "dig into",
+    "dug into",
+    "digging into",
+    "digs into",
+    "dig in"
+   ],
+   "examples": [
+    {
+     "en": "Let's [dig into] the survey results.",
+     "ko": "설문 결과를 자세히 들여다봅시다."
+    },
+    {
+     "en": "I want to [dig into] why this happened.",
+     "ko": "이게 왜 일어났는지 파고들어 보고 싶어."
+    },
+    {
+     "en": "The food's ready — [dig in]!",
+     "ko": "음식 다 됐어, 어서 먹어!"
+    }
+   ],
+   "id": "w11-dig-into",
+   "week": 11
+  },
+  {
+   "en": "chit-chat",
+   "ko": "가볍게 수다 떨다, 잡담",
+   "note": "동사·명사 둘 다. 깊은 대화가 아니라 가벼운 잡담. 비슷한 말 small talk.",
+   "match": [
+    "chit-chat",
+    "chit chat",
+    "chitchat",
+    "chit-chatted",
+    "chit-chatting",
+    "small talk"
+   ],
+   "examples": [
+    {
+     "en": "We [chit-chatted] while waiting for the bus.",
+     "ko": "버스 기다리면서 수다를 떨었어."
+    },
+    {
+     "en": "I'm not great at [small talk].",
+     "ko": "나는 가벼운 잡담에 약해."
+    },
+    {
+     "en": "Okay, enough [chit-chat]. Let's start.",
+     "ko": "자, 잡담은 그만하고 시작하자."
+    }
+   ],
+   "id": "w11-chit-chat",
+   "week": 11
+  },
+  {
+   "en": "invest in",
+   "ko": "~에 (시간·마음·돈을) 쏟다, 투자하다",
+   "note": "돈뿐 아니라 사람·관계·건강에도 써요.",
+   "match": [
+    "invest in",
+    "invested in",
+    "investing in",
+    "invests in",
+    "invest more in",
+    "invest time in",
+    "invested a lot of time in"
+   ],
+   "examples": [
+    {
+     "en": "It's worth [investing in] good shoes.",
+     "ko": "좋은 신발엔 돈을 쓸 가치가 있어."
+    },
+    {
+     "en": "I want to [invest more in] my friendships.",
+     "ko": "친구 관계에 더 정성을 들이고 싶어."
+    },
+    {
+     "en": "Our manager really [invests in] new team members.",
+     "ko": "우리 매니저는 새 팀원들에게 정말 공을 들여."
+    }
+   ],
+   "id": "w11-invest-in",
+   "week": 11
+  },
+  {
+   "en": "open up about",
+   "ko": "~에 대해 솔직하게 털어놓다",
+   "note": "감정이나 힘든 일을 이야기할 때. 7회차 open up과 함께 기억하세요.",
+   "match": [
+    "open up about",
+    "opened up about",
+    "opening up about",
+    "opens up about",
+    "open up",
+    "opened up",
+    "opening up"
+   ],
+   "examples": [
+    {
+     "en": "He finally [opened up about] his stress at work.",
+     "ko": "그는 마침내 회사 스트레스에 대해 털어놨어."
+    },
+    {
+     "en": "It's not easy to [open up about] money problems.",
+     "ko": "돈 문제를 털어놓기는 쉽지 않아."
+    },
+    {
+     "en": "Thanks for [opening up] to me.",
+     "ko": "나한테 솔직하게 말해 줘서 고마워."
+    }
+   ],
+   "id": "w11-open-up-about",
+   "week": 11
+  },
+  {
+   "en": "does ~ count?",
+   "ko": "~도 인정되나요?, ~도 쳐주나요?",
+   "note": "count가 '유효하다, 인정되다'라는 뜻. 기준에 들어가는지 물을 때.",
+   "match": [
+    "does that count",
+    "does it count",
+    "doesn't count",
+    "does this count",
+    "count as",
+    "counts as",
+    "counted as"
+   ],
+   "examples": [
+    {
+     "en": "I walked to work. [Does that count] as exercise?",
+     "ko": "걸어서 출근했는데, 그것도 운동으로 쳐 줘?"
+    },
+    {
+     "en": "Sorry, a text message [doesn't count].",
+     "ko": "미안, 문자는 인정 안 돼."
+    },
+    {
+     "en": "Watching dramas in English [counts as] studying, right?",
+     "ko": "영어로 드라마 보는 것도 공부로 치는 거 맞지?"
+    }
+   ],
+   "id": "w11-does-count",
+   "week": 11
+  },
+  {
+   "en": "keep in mind that",
+   "ko": "~라는 점을 명심하다, 염두에 두다",
+   "note": "부드럽게 주의를 줄 때. 조금 더 격식 있게는 bear in mind that.",
+   "match": [
+    "keep in mind",
+    "keeping in mind",
+    "kept in mind",
+    "bear in mind"
+   ],
+   "examples": [
+    {
+     "en": "[Keep in mind that] the last train leaves at midnight.",
+     "ko": "막차가 자정에 끊긴다는 거 명심해."
+    },
+    {
+     "en": "Just [keep in mind] it's his first week here.",
+     "ko": "그 사람 여기 온 지 첫 주라는 것만 염두에 둬."
+    },
+    {
+     "en": "[Bear in mind that] the price may change.",
+     "ko": "가격이 바뀔 수 있다는 점 유념하세요."
+    }
+   ],
+   "id": "w11-keep-in-mind-that",
+   "week": 11
+  },
+  {
+   "en": "put ~ into practice",
+   "ko": "~을 실천에 옮기다",
+   "note": "배운 것·계획을 실제 행동으로. put it into practice로 통째로 외워 두세요.",
+   "match": [
+    "put it into practice",
+    "putting it into practice",
+    "into practice"
+   ],
+   "examples": [
+    {
+     "en": "It's time to put the plan [into practice].",
+     "ko": "이제 계획을 실천에 옮길 때야."
+    },
+    {
+     "en": "I learned a lot, but [putting it into practice] is hard.",
+     "ko": "많이 배웠는데 실천하는 게 어려워."
+    },
+    {
+     "en": "Let's put today's expressions [into practice] at the next meetup.",
+     "ko": "다음 모임 때 오늘 배운 표현을 실제로 써 보자."
+    }
+   ],
+   "id": "w11-put-into-practice",
+   "week": 11
+  },
+  {
+   "en": "make a difference",
+   "ko": "변화를 만들다, 큰 차이를 만들다",
+   "note": "make a big difference, make more of a difference than ~로도 써요.",
+   "match": [
+    "make a difference",
+    "made a difference",
+    "makes a difference",
+    "making a difference",
+    "make a big difference",
+    "makes a big difference",
+    "made a big difference",
+    "make a huge difference"
+   ],
+   "examples": [
+    {
+     "en": "Your advice really [made a difference].",
+     "ko": "네 조언이 정말 큰 도움이 됐어."
+    },
+    {
+     "en": "Sleeping one more hour [makes a big difference].",
+     "ko": "한 시간 더 자는 게 큰 차이를 만들어."
+    },
+    {
+     "en": "I want a job where I can [make a difference].",
+     "ko": "의미 있는 변화를 만들 수 있는 일을 하고 싶어."
+    }
+   ],
+   "id": "w11-make-a-difference",
+   "week": 11
+  },
+  {
+   "en": "zoom out",
+   "ko": "한 발 물러나 크게 보다",
+   "note": "카메라 줌을 당기는 이미지. 반대는 zoom in(세부를 자세히 보다).",
+   "match": [
+    "zoom out",
+    "zoomed out",
+    "zooming out",
+    "zoom in",
+    "zoomed in"
+   ],
+   "examples": [
+    {
+     "en": "If you [zoom out], this mistake is really small.",
+     "ko": "멀리서 보면 이 실수는 정말 작은 거야."
+    },
+    {
+     "en": "Let's [zoom out] and think about our goal.",
+     "ko": "한발 물러나서 우리 목표를 생각해 보자."
+    },
+    {
+     "en": "Can we [zoom in] on the budget for a second?",
+     "ko": "예산 부분만 잠깐 자세히 볼까요?"
+    }
+   ],
+   "id": "w11-zoom-out",
+   "week": 11
+  }
+ ],
+ "roleplays": [
+  {
+   "situation": "친구가 오늘 저녁 약속을 기다리고 있는데, 갑자기 못 가게 됐어요.",
+   "line": "Hey, are we still on for dinner tonight?",
+   "use": [
+    "w11-come-up",
+    "w11-reach-out-to"
+   ],
+   "sample": "I'm so sorry, something came up at work. I'll reach out to you this weekend so we can pick another day."
+  },
+  {
+   "situation": "동료가 요즘 어떻게 그렇게 많은 일을 다 하냐고 물어봐요.",
+   "line": "How do you manage everything these days?",
+   "use": [
+    "w11-juggle",
+    "w11-up-to-a-point",
+    "w11-keep-in-mind-that"
+   ],
+   "sample": "Honestly, I'm juggling a lot. A good calendar helps, but only up to a point. I keep in mind that I can't do everything perfectly."
+  },
+  {
+   "situation": "친구가 이번 스터디에서 뭘 배웠냐고 물어봐요.",
+   "line": "So what was this week's TED talk about?",
+   "use": [
+    "w11-it-s-about-ing",
+    "w11-invest-in",
+    "w11-make-a-difference"
+   ],
+   "sample": "It's about social health. Investing in your relationships can make a big difference in your happiness."
+  },
+  {
+   "situation": "친구가 혼자 고민을 안고 지내는 것 같아요. 털어놓으라고 말해 주세요.",
+   "line": "I've been really stressed, but I don't want to bother anyone.",
+   "use": [
+    "w11-open-up-about",
+    "w11-reach-out-to",
+    "w11-does-count"
+   ],
+   "sample": "You can always open up about it with me. Reaching out isn't bothering anyone. And yes, a text counts as reaching out too!"
+  }
+ ],
+ "paragraphs": [
+  {
+   "topic": "내가 요즘 공들이는 관계",
+   "use": [
+    "w11-invest-in",
+    "w11-reach-out-to",
+    "w11-chit-chat",
+    "w11-make-a-difference"
+   ],
+   "text": "This year, I decided to invest more in my friendships. I reach out to one old friend every week, even just to chit-chat for ten minutes. It sounds small, but it has made a real difference in my mood."
+  },
+  {
+   "topic": "바쁜 일상과 균형",
+   "use": [
+    "w11-juggle",
+    "w11-go-weeks-at-a-time-without-ing",
+    "w11-zoom-out",
+    "w11-put-into-practice"
+   ],
+   "text": "I'm juggling work and study, so I sometimes go weeks at a time without seeing my friends. But when I zoom out, people matter more than my to-do list. So I'm putting it into practice: one coffee with a friend every Friday."
+  }
+ ]
+}
